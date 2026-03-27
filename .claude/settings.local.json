@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(cmd.exe /c \"where node 2>&1 && node --version 2>&1 && npm --version 2>&1\")",
+      "Bash(cmd.exe /c \"node --version\")",
+      "Bash(powershell.exe -Command \"node --version; npm --version\")",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
