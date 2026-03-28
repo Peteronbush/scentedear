@@ -2,9 +2,16 @@ export interface Fragrance {
   id: string;
   name: string;
   house: string;
+  concentration: string;
+  gender: string;
+  family: string;
+  topNotes: string[];
+  middleNotes: string[];
+  baseNotes: string[];
+  year: number;
+  longevityAvg: number;
+  projectionAvg: number;
   icon: string;
-  notes?: string[];
-  family?: string;
 }
 
 export interface OnboardingData {

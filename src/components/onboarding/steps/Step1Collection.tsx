@@ -2,19 +2,7 @@
 
 import { useState } from "react";
 import { Fragrance } from "@/types/fragrance";
-
-const SAMPLE_FRAGRANCES: Fragrance[] = [
-  { id: "1",  name: "Nishane Ege",        house: "Nishane",   icon: "🌿" },
-  { id: "2",  name: "Baccarat Rouge 540", house: "MFK",       icon: "🌊" },
-  { id: "3",  name: "Santal 33",          house: "Le Labo",   icon: "🪵" },
-  { id: "4",  name: "Pegasus",            house: "PDM",       icon: "🐴" },
-  { id: "5",  name: "Eau Givree",         house: "TdH",       icon: "❄️" },
-  { id: "6",  name: "Sycomore",           house: "Chanel",    icon: "🌾" },
-  { id: "7",  name: "Bois Imperial",      house: "Ex Nihilo", icon: "🌲" },
-  { id: "8",  name: "Imagination",        house: "LV",        icon: "✨" },
-  { id: "9",  name: "Hacivat",            house: "Nishane",   icon: "🎭" },
-  { id: "10", name: "Encre Noire",        house: "Lalique",   icon: "🖤" },
-];
+import { FRAGRANCES_DB } from "@/data/fragrances";
 
 interface Props {
   collection: Fragrance[];
@@ -26,12 +14,12 @@ export default function Step1Collection({ collection, favoriteId, onChange }: Pr
   const [query, setQuery] = useState("");
 
   const results = query.trim().length > 0
-    ? SAMPLE_FRAGRANCES.filter(
+    ? FRAGRANCES_DB.filter(
         (f) =>
           !collection.find((c) => c.id === f.id) &&
           (f.name.toLowerCase().includes(query.toLowerCase()) ||
             f.house.toLowerCase().includes(query.toLowerCase()))
-      )
+      ).slice(0, 10)
     : [];
 
   const addFragrance = (f: Fragrance) => {
@@ -78,11 +66,11 @@ export default function Step1Collection({ collection, favoriteId, onChange }: Pr
               className="w-full flex items-center gap-3 px-4 py-3 hover:bg-amber-50 transition-colors text-left"
             >
               <span className="text-2xl">{f.icon}</span>
-              <div>
+              <div className="flex-1 min-w-0">
                 <p className="font-medium text-stone-800 text-sm">{f.name}</p>
-                <p className="text-stone-400 text-xs">{f.house}</p>
+                <p className="text-stone-400 text-xs">{f.house} · {f.family}</p>
               </div>
-              <span className="ml-auto text-amber-600 text-sm font-medium">+ 추가</span>
+              <span className="ml-auto text-amber-600 text-sm font-medium shrink-0">+ 추가</span>
             </button>
           ))}
         </div>
@@ -111,7 +99,7 @@ export default function Step1Collection({ collection, favoriteId, onChange }: Pr
                 <span className="text-2xl">{f.icon}</span>
                 <div className="flex-1 min-w-0">
                   <p className="font-medium text-stone-800 text-sm truncate">{f.name}</p>
-                  <p className="text-stone-400 text-xs">{f.house}</p>
+                  <p className="text-stone-400 text-xs">{f.house} · {f.concentration}</p>
                 </div>
                 <button
                   onClick={() => toggleFavorite(f.id)}

@@ -1,12 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { FRAGRANCES_DB } from "@/data/fragrances";
 
-const PRESET_HOUSES = [
-  "Nishane", "Le Labo", "MFK", "Ex Nihilo", "PDM", "Chanel", "TdH", "LV",
-  "Byredo", "Diptyque", "Creed", "Tom Ford", "Amouage", "Parfums de Marly",
-  "Serge Lutens", "Memo Paris", "Xerjoff", "Initio",
-];
+const DB_HOUSES = Array.from(new Set(FRAGRANCES_DB.map((f) => f.house))).sort();
 
 interface Props {
   favoriteHouses: string[];
@@ -24,6 +21,10 @@ export default function Step2Houses({ favoriteHouses, onChange }: Props) {
     }
   };
 
+  const filteredHouses = query.trim()
+    ? DB_HOUSES.filter((h) => h.toLowerCase().includes(query.toLowerCase()))
+    : DB_HOUSES;
+
   const addCustom = () => {
     const trimmed = query.trim();
     if (trimmed && !favoriteHouses.includes(trimmed)) {
@@ -32,6 +33,8 @@ export default function Step2Houses({ favoriteHouses, onChange }: Props) {
     setQuery("");
   };
 
+  const isCustom = (h: string) => !DB_HOUSES.includes(h);
+
   return (
     <div className="space-y-6">
       <div>
@@ -39,9 +42,29 @@ export default function Step2Houses({ favoriteHouses, onChange }: Props) {
         <p className="text-stone-500 text-sm">마음에 드는 브랜드를 모두 선택해주세요</p>
       </div>
 
-      {/* Preset grid */}
+      {/* Search/filter */}
+      <div className="flex gap-2">
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && addCustom()}
+          placeholder="브랜드 검색 또는 직접 입력..."
+          className="flex-1 px-4 py-2.5 rounded-2xl border border-stone-200 bg-white focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-stone-800 placeholder:text-stone-400 text-sm"
+        />
+        {query.trim() && !DB_HOUSES.some((h) => h.toLowerCase() === query.toLowerCase()) && (
+          <button
+            onClick={addCustom}
+            className="px-4 py-2.5 rounded-2xl bg-amber-600 text-white font-medium text-sm hover:bg-amber-700 transition-colors"
+          >
+            추가
+          </button>
+        )}
+      </div>
+
+      {/* House grid */}
       <div className="flex flex-wrap gap-2">
-        {PRESET_HOUSES.map((house) => {
+        {filteredHouses.map((house) => {
           const selected = favoriteHouses.includes(house);
           return (
             <button
@@ -60,49 +83,28 @@ export default function Step2Houses({ favoriteHouses, onChange }: Props) {
         })}
       </div>
 
-      {/* Custom house search */}
-      <div>
-        <p className="text-sm font-semibold text-stone-600 mb-2">목록에 없는 브랜드 추가</p>
-        <div className="flex gap-2">
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && addCustom()}
-            placeholder="브랜드 이름 입력..."
-            className="flex-1 px-4 py-2.5 rounded-2xl border border-stone-200 bg-white focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-stone-800 placeholder:text-stone-400 text-sm"
-          />
-          <button
-            onClick={addCustom}
-            disabled={!query.trim()}
-            className="px-4 py-2.5 rounded-2xl bg-amber-600 text-white font-medium text-sm disabled:opacity-40 hover:bg-amber-700 transition-colors"
-          >
-            추가
-          </button>
-        </div>
-
-        {/* Custom selected */}
-        {favoriteHouses.filter((h) => !PRESET_HOUSES.includes(h)).length > 0 && (
-          <div className="mt-3 flex flex-wrap gap-2">
-            {favoriteHouses
-              .filter((h) => !PRESET_HOUSES.includes(h))
-              .map((h) => (
-                <span
-                  key={h}
-                  className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-amber-100 border border-amber-400 text-amber-700 text-sm font-medium"
+      {/* Custom selected */}
+      {favoriteHouses.filter(isCustom).length > 0 && (
+        <div>
+          <p className="text-xs font-semibold text-stone-500 mb-2">직접 추가한 브랜드</p>
+          <div className="flex flex-wrap gap-2">
+            {favoriteHouses.filter(isCustom).map((h) => (
+              <span
+                key={h}
+                className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-amber-100 border border-amber-400 text-amber-700 text-sm font-medium"
+              >
+                {h}
+                <button
+                  onClick={() => toggle(h)}
+                  className="text-amber-500 hover:text-amber-700 ml-0.5"
                 >
-                  {h}
-                  <button
-                    onClick={() => toggle(h)}
-                    className="text-amber-500 hover:text-amber-700 ml-0.5"
-                  >
-                    ✕
-                  </button>
-                </span>
-              ))}
+                  ✕
+                </button>
+              </span>
+            ))}
           </div>
-        )}
-      </div>
+        </div>
+      )}
 
       {favoriteHouses.length > 0 && (
         <p className="text-xs text-stone-400 text-center">

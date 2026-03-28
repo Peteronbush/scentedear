@@ -2,19 +2,7 @@
 
 import { useState } from "react";
 import { Fragrance } from "@/types/fragrance";
-
-const SAMPLE_FRAGRANCES: Fragrance[] = [
-  { id: "1",  name: "Nishane Ege",        house: "Nishane",   icon: "🌿" },
-  { id: "2",  name: "Baccarat Rouge 540", house: "MFK",       icon: "🌊" },
-  { id: "3",  name: "Santal 33",          house: "Le Labo",   icon: "🪵" },
-  { id: "4",  name: "Pegasus",            house: "PDM",       icon: "🐴" },
-  { id: "5",  name: "Eau Givree",         house: "TdH",       icon: "❄️" },
-  { id: "6",  name: "Sycomore",           house: "Chanel",    icon: "🌾" },
-  { id: "7",  name: "Bois Imperial",      house: "Ex Nihilo", icon: "🌲" },
-  { id: "8",  name: "Imagination",        house: "LV",        icon: "✨" },
-  { id: "9",  name: "Hacivat",            house: "Nishane",   icon: "🎭" },
-  { id: "10", name: "Encre Noire",        house: "Lalique",   icon: "🖤" },
-];
+import { FRAGRANCES_DB } from "@/data/fragrances";
 
 const DISLIKE_CATEGORIES = [
   "너무 달콤한 향",
@@ -41,12 +29,12 @@ export default function Step3Dislikes({
   const [query, setQuery] = useState("");
 
   const results = query.trim().length > 0
-    ? SAMPLE_FRAGRANCES.filter(
+    ? FRAGRANCES_DB.filter(
         (f) =>
           !dislikedFragrances.find((d) => d.id === f.id) &&
           (f.name.toLowerCase().includes(query.toLowerCase()) ||
             f.house.toLowerCase().includes(query.toLowerCase()))
-      )
+      ).slice(0, 10)
     : [];
 
   const toggleCategory = (cat: string) => {
