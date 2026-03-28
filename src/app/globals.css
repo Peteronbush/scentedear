@@ -50,3 +50,43 @@
 .confetti-dot {
   animation: confettiFall 1s ease-out forwards;
 }
+
+/* Weather animations */
+@keyframes sunPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(251,191,36,0.4); }
+  50%       { transform: scale(1.05); box-shadow: 0 0 0 16px rgba(251,191,36,0); }
+}
+@keyframes sunRay {
+  0%, 100% { opacity: 0.7; transform: scaleY(1); }
+  50%       { opacity: 1; transform: scaleY(1.2); }
+}
+@keyframes cloudFloat {
+  0%, 100% { transform: translateX(0); }
+  50%       { transform: translateX(8px); }
+}
+@keyframes rainDrop {
+  0%   { transform: translateY(-10px); opacity: 0; }
+  20%  { opacity: 1; }
+  100% { transform: translateY(60px); opacity: 0; }
+}
+@keyframes snowFall {
+  0%   { transform: translateY(-10px) rotate(0deg); opacity: 0; }
+  20%  { opacity: 1; }
+  100% { transform: translateY(70px) rotate(180deg); opacity: 0; }
+}
+@keyframes fogDrift {
+  0%, 100% { transform: translateX(0); opacity: 0.5; }
+  50%       { transform: translateX(12px); opacity: 0.8; }
+}
+@keyframes lightning {
+  0%, 90%, 100% { opacity: 0; }
+  92%, 96%       { opacity: 1; }
+}
+
+.sun-pulse { animation: sunPulse 3s ease-in-out infinite; }
+.sun-ray   { animation: sunRay 2s ease-in-out infinite; }
+.cloud-float { animation: cloudFloat 4s ease-in-out infinite; }
+.rain-drop { animation: rainDrop 1.2s linear infinite; }
+.snow-flake { animation: snowFall 2s linear infinite; }
+.fog-bar   { animation: fogDrift 4s ease-in-out infinite; }
+.lightning { animation: lightning 4s ease-in-out infinite; }
