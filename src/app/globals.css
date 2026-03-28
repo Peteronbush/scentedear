@@ -90,3 +90,9 @@
 .snow-flake { animation: snowFall 2s linear infinite; }
 .fog-bar   { animation: fogDrift 4s ease-in-out infinite; }
 .lightning { animation: lightning 4s ease-in-out infinite; }
+
+@keyframes slideUp {
+  from { transform: translateX(-50%) translateY(100%); }
+  to   { transform: translateX(-50%) translateY(0); }
+}
+.animate-slide-up { animation: slideUp 0.35s cubic-bezier(0.32,0.72,0,1) forwards; }
