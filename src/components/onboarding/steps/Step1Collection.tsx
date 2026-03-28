@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Fragrance } from "@/types/fragrance";
 import { FRAGRANCES_DB } from "@/data/fragrances";
 
+const ALL_HOUSES = Array.from(new Set(FRAGRANCES_DB.map((f) => f.house))).sort();
+
 interface Props {
   collection: Fragrance[];
   favoriteId: string | null;
@@ -12,14 +14,19 @@ interface Props {
 
 export default function Step1Collection({ collection, favoriteId, onChange }: Props) {
   const [query, setQuery] = useState("");
+  const [openHouse, setOpenHouse] = useState<string | null>(null);
 
-  const results = query.trim().length > 0
+  const searchResults = query.trim().length > 0
     ? FRAGRANCES_DB.filter(
         (f) =>
           !collection.find((c) => c.id === f.id) &&
           (f.name.toLowerCase().includes(query.toLowerCase()) ||
             f.house.toLowerCase().includes(query.toLowerCase()))
       ).slice(0, 10)
+    : [];
+
+  const houseFragrances = openHouse
+    ? FRAGRANCES_DB.filter((f) => f.house === openHouse && !collection.find((c) => c.id === f.id))
     : [];
 
   const addFragrance = (f: Fragrance) => {
@@ -37,6 +44,11 @@ export default function Step1Collection({ collection, favoriteId, onChange }: Pr
     onChange(collection, favoriteId === id ? null : id);
   };
 
+  const toggleHouse = (house: string) => {
+    setOpenHouse((prev) => (prev === house ? null : house));
+    setQuery("");
+  };
+
   return (
     <div className="space-y-6">
       <div>
@@ -50,16 +62,16 @@ export default function Step1Collection({ collection, favoriteId, onChange }: Pr
         <input
           type="text"
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => { setQuery(e.target.value); setOpenHouse(null); }}
           placeholder="향수 이름 또는 브랜드 검색..."
           className="w-full pl-10 pr-4 py-3 rounded-2xl border border-stone-200 bg-white focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-stone-800 placeholder:text-stone-400"
         />
       </div>
 
       {/* Search results */}
-      {results.length > 0 && (
+      {searchResults.length > 0 && (
         <div className="rounded-2xl border border-stone-200 bg-white overflow-hidden divide-y divide-stone-100">
-          {results.map((f) => (
+          {searchResults.map((f) => (
             <button
               key={f.id}
               onClick={() => addFragrance(f)}
@@ -76,8 +88,55 @@ export default function Step1Collection({ collection, favoriteId, onChange }: Pr
         </div>
       )}
 
-      {query.trim().length > 0 && results.length === 0 && (
+      {query.trim().length > 0 && searchResults.length === 0 && (
         <p className="text-center text-stone-400 text-sm py-2">검색 결과가 없습니다</p>
+      )}
+
+      {/* Brand accordion */}
+      {query.trim().length === 0 && (
+        <div className="space-y-2">
+          <p className="text-sm font-semibold text-stone-600">브랜드별 찾기</p>
+          <div className="flex flex-wrap gap-2">
+            {ALL_HOUSES.map((house) => (
+              <button
+                key={house}
+                onClick={() => toggleHouse(house)}
+                className={`px-3 py-1.5 rounded-full border text-xs font-medium transition-all duration-150 active:scale-95 ${
+                  openHouse === house
+                    ? "bg-amber-100 border-amber-500 text-amber-700"
+                    : "bg-white border-stone-200 text-stone-600 hover:border-amber-300 hover:bg-amber-50"
+                }`}
+              >
+                {house}
+                <span className="ml-1 text-stone-400">{openHouse === house ? "▲" : "▼"}</span>
+              </button>
+            ))}
+          </div>
+
+          {/* Expanded house fragrance list */}
+          {openHouse && (
+            <div className="rounded-2xl border border-amber-200 bg-white overflow-hidden divide-y divide-stone-100 mt-2">
+              {houseFragrances.length > 0 ? (
+                houseFragrances.map((f) => (
+                  <button
+                    key={f.id}
+                    onClick={() => addFragrance(f)}
+                    className="w-full flex items-center gap-3 px-4 py-3 hover:bg-amber-50 transition-colors text-left"
+                  >
+                    <span className="text-2xl">{f.icon}</span>
+                    <div className="flex-1 min-w-0">
+                      <p className="font-medium text-stone-800 text-sm">{f.name}</p>
+                      <p className="text-stone-400 text-xs">{f.family} · {f.concentration}</p>
+                    </div>
+                    <span className="ml-auto text-amber-600 text-sm font-medium shrink-0">+ 추가</span>
+                  </button>
+                ))
+              ) : (
+                <p className="text-center text-stone-400 text-sm py-4">모두 컬렉션에 추가됐어요</p>
+              )}
+            </div>
+          )}
+        </div>
       )}
 
       {/* Added collection */}
@@ -121,18 +180,16 @@ export default function Step1Collection({ collection, favoriteId, onChange }: Pr
               </div>
             ))}
           </div>
-          {collection.length > 0 && (
-            <p className="text-xs text-stone-400 text-center">
-              ★ 를 눌러 가장 좋아하는 향수를 선택하세요
-            </p>
-          )}
+          <p className="text-xs text-stone-400 text-center">
+            ★ 를 눌러 가장 좋아하는 향수를 선택하세요
+          </p>
         </div>
       )}
 
-      {collection.length === 0 && query.trim().length === 0 && (
-        <div className="rounded-2xl border-2 border-dashed border-stone-200 py-10 text-center text-stone-400">
+      {collection.length === 0 && query.trim().length === 0 && !openHouse && (
+        <div className="rounded-2xl border-2 border-dashed border-stone-200 py-8 text-center text-stone-400">
           <p className="text-3xl mb-2">🧴</p>
-          <p className="text-sm">향수를 검색해서 추가해보세요</p>
+          <p className="text-sm">브랜드를 선택하거나 검색해서 추가해보세요</p>
           <p className="text-xs mt-1 text-stone-300">건너뛰어도 괜찮아요</p>
         </div>
       )}
