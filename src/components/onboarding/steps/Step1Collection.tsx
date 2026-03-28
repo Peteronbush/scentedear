@@ -98,44 +98,43 @@ export default function Step1Collection({ collection, favoriteId, onChange }: Pr
           <p className="text-sm font-semibold text-stone-600">브랜드별 찾기</p>
           <div className="flex flex-wrap gap-2">
             {ALL_HOUSES.map((house) => (
-              <button
-                key={house}
-                onClick={() => toggleHouse(house)}
-                className={`px-3 py-1.5 rounded-full border text-xs font-medium transition-all duration-150 active:scale-95 ${
-                  openHouse === house
-                    ? "bg-amber-100 border-amber-500 text-amber-700"
-                    : "bg-white border-stone-200 text-stone-600 hover:border-amber-300 hover:bg-amber-50"
-                }`}
-              >
-                {house}
-                <span className="ml-1 text-stone-400">{openHouse === house ? "▲" : "▼"}</span>
-              </button>
+              <div key={house} className="contents">
+                <button
+                  onClick={() => toggleHouse(house)}
+                  className={`px-3 py-1.5 rounded-full border text-xs font-medium transition-all duration-150 active:scale-95 ${
+                    openHouse === house
+                      ? "bg-amber-100 border-amber-500 text-amber-700"
+                      : "bg-white border-stone-200 text-stone-600 hover:border-amber-300 hover:bg-amber-50"
+                  }`}
+                >
+                  {house}
+                  <span className="ml-1 text-stone-400">{openHouse === house ? "▲" : "▼"}</span>
+                </button>
+                {openHouse === house && (
+                  <div className="w-full rounded-2xl border border-amber-200 bg-white overflow-hidden divide-y divide-stone-100">
+                    {houseFragrances.length > 0 ? (
+                      houseFragrances.map((f) => (
+                        <button
+                          key={f.id}
+                          onClick={() => addFragrance(f)}
+                          className="w-full flex items-center gap-3 px-4 py-3 hover:bg-amber-50 transition-colors text-left"
+                        >
+                          <span className="text-2xl">{f.icon}</span>
+                          <div className="flex-1 min-w-0">
+                            <p className="font-medium text-stone-800 text-sm">{f.name}</p>
+                            <p className="text-stone-400 text-xs">{f.family} · {f.concentration}</p>
+                          </div>
+                          <span className="ml-auto text-amber-600 text-sm font-medium shrink-0">+ 추가</span>
+                        </button>
+                      ))
+                    ) : (
+                      <p className="text-center text-stone-400 text-sm py-4">모두 컬렉션에 추가됐어요</p>
+                    )}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
-
-          {/* Expanded house fragrance list */}
-          {openHouse && (
-            <div className="rounded-2xl border border-amber-200 bg-white overflow-hidden divide-y divide-stone-100 mt-2">
-              {houseFragrances.length > 0 ? (
-                houseFragrances.map((f) => (
-                  <button
-                    key={f.id}
-                    onClick={() => addFragrance(f)}
-                    className="w-full flex items-center gap-3 px-4 py-3 hover:bg-amber-50 transition-colors text-left"
-                  >
-                    <span className="text-2xl">{f.icon}</span>
-                    <div className="flex-1 min-w-0">
-                      <p className="font-medium text-stone-800 text-sm">{f.name}</p>
-                      <p className="text-stone-400 text-xs">{f.family} · {f.concentration}</p>
-                    </div>
-                    <span className="ml-auto text-amber-600 text-sm font-medium shrink-0">+ 추가</span>
-                  </button>
-                ))
-              ) : (
-                <p className="text-center text-stone-400 text-sm py-4">모두 컬렉션에 추가됐어요</p>
-              )}
-            </div>
-          )}
         </div>
       )}
 
