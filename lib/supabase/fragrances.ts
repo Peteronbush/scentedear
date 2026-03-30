@@ -1,17 +1,11 @@
-import { createClient } from "@supabase/supabase-js";
+import { getSupabase } from "./client";
 import { Fragrance, FragranceFilter } from "../../types/fragrance";
-
-// Public client (anon key — safe to use in browser)
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
 
 const TABLE = "fragrances";
 
 // ── getAllFragrances ──────────────────────────────────────────
 export async function getAllFragrances(): Promise<Fragrance[]> {
-  const { data, error } = await supabase
+  const { data, error } = await getSupabase()
     .from(TABLE)
     .select("*")
     .order("popularity", { ascending: false });
@@ -22,7 +16,7 @@ export async function getAllFragrances(): Promise<Fragrance[]> {
 
 // ── getFragranceById ─────────────────────────────────────────
 export async function getFragranceById(id: number): Promise<Fragrance | null> {
-  const { data, error } = await supabase
+  const { data, error } = await getSupabase()
     .from(TABLE)
     .select("*")
     .eq("id", id)
@@ -33,25 +27,21 @@ export async function getFragranceById(id: number): Promise<Fragrance | null> {
 }
 
 // ── searchFragrances ─────────────────────────────────────────
-export async function searchFragrances(
-  filters: FragranceFilter
-): Promise<Fragrance[]> {
-  let query = supabase.from(TABLE).select("*");
+export async function searchFragrances(filters: FragranceFilter): Promise<Fragrance[]> {
+  let query = getSupabase().from(TABLE).select("*");
 
   if (filters.query) {
-    query = query.or(
-      `name.ilike.%${filters.query}%,house.ilike.%${filters.query}%`
-    );
+    query = query.or(`name.ilike.%${filters.query}%,house.ilike.%${filters.query}%`);
   }
-  if (filters.house)       query = query.eq("house", filters.house);
-  if (filters.gender)      query = query.eq("gender", filters.gender);
-  if (filters.family)      query = query.ilike("family", `%${filters.family}%`);
-  if (filters.price_tier)  query = query.eq("price_tier", filters.price_tier);
-  if (filters.season)      query = query.contains("season", [filters.season]);
-  if (filters.occasion)    query = query.contains("occasion", [filters.occasion]);
-  if (filters.accord)      query = query.contains("accords", [filters.accord]);
-  if (filters.min_rating)  query = query.gte("rating_avg", filters.min_rating);
-  if (filters.min_popularity) query = query.gte("popularity", filters.min_popularity);
+  if (filters.house)            query = query.eq("house", filters.house);
+  if (filters.gender)           query = query.eq("gender", filters.gender);
+  if (filters.family)           query = query.ilike("family", `%${filters.family}%`);
+  if (filters.price_tier)       query = query.eq("price_tier", filters.price_tier);
+  if (filters.season)           query = query.contains("season", [filters.season]);
+  if (filters.occasion)         query = query.contains("occasion", [filters.occasion]);
+  if (filters.accord)           query = query.contains("accords", [filters.accord]);
+  if (filters.min_rating)       query = query.gte("rating_avg", filters.min_rating);
+  if (filters.min_popularity)   query = query.gte("popularity", filters.min_popularity);
 
   query = query
     .order("popularity", { ascending: false })
@@ -64,11 +54,8 @@ export async function searchFragrances(
 }
 
 // ── getFragrancesByAccord ────────────────────────────────────
-export async function getFragrancesByAccord(
-  accord: string,
-  limit = 20
-): Promise<Fragrance[]> {
-  const { data, error } = await supabase
+export async function getFragrancesByAccord(accord: string, limit = 20): Promise<Fragrance[]> {
+  const { data, error } = await getSupabase()
     .from(TABLE)
     .select("*")
     .contains("accords", [accord])
@@ -80,18 +67,12 @@ export async function getFragrancesByAccord(
 }
 
 // ── getSimilarFragrances ─────────────────────────────────────
-// Uses pgvector cosine similarity when embedding exists,
-// falls back to same-family query otherwise.
-export async function getSimilarFragrances(
-  id: number,
-  limit = 6
-): Promise<Fragrance[]> {
+export async function getSimilarFragrances(id: number, limit = 6): Promise<Fragrance[]> {
   const source = await getFragranceById(id);
   if (!source) return [];
 
-  // Vector path (embedding must be populated)
   if (source.embedding) {
-    const { data, error } = await supabase.rpc("match_fragrances", {
+    const { data, error } = await getSupabase().rpc("match_fragrances", {
       query_embedding: source.embedding,
       match_count: limit + 1,
     });
@@ -100,8 +81,7 @@ export async function getSimilarFragrances(
     }
   }
 
-  // Fallback: same family, sorted by popularity
-  const { data } = await supabase
+  const { data } = await getSupabase()
     .from(TABLE)
     .select("*")
     .eq("family", source.family)
