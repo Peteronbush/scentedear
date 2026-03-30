@@ -45,7 +45,7 @@ export default function SignupPage() {
     setLoading(true);
     try {
       // Placeholder — wire up Supabase signUp() here
-      localStorage.setItem("scentedear_logged_in", "true");
+      sessionStorage.setItem("scentedear_logged_in", "true");
       router.push("/onboarding");
     } catch {
       setErrors({ general: "회원가입 중 오류가 발생했습니다. 다시 시도해주세요." });

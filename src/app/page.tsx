@@ -7,7 +7,7 @@ export default function Root() {
   const router = useRouter();
 
   useEffect(() => {
-    const loggedIn = localStorage.getItem("scentedear_logged_in");
+    const loggedIn = sessionStorage.getItem("scentedear_logged_in");
     if (loggedIn) {
       const hasOnboarding = localStorage.getItem("scentedear_onboarding");
       router.replace(hasOnboarding ? "/home" : "/onboarding");

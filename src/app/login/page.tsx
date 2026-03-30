@@ -16,7 +16,7 @@ export default function LoginPage() {
       setError("이메일과 비밀번호를 입력해주세요.");
       return;
     }
-    localStorage.setItem("scentedear_logged_in", "true");
+    sessionStorage.setItem("scentedear_logged_in", "true");
     router.push("/home");
   };
 
