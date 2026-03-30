@@ -1,5 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
-import { Fragrance, FragranceFilter } from "@/types/fragrance";
+import { Fragrance, FragranceFilter } from "../../types/fragrance";
 
 // Public client (anon key — safe to use in browser)
 const supabase = createClient(

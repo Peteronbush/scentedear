@@ -24,7 +24,16 @@ const WEATHER_MSG: Record<string, string> = {
   stormy: "거친 날씨엔 가죽·스모키 향이 잘 맞아요",
 };
 
-function scoreFragrance(f: FragranceDB, data: OnboardingData, weatherFamilies: string[]): number {
+const WEATHER_SEASON: Record<string, string[]> = {
+  sunny:  ["Spring", "Summer"],
+  cloudy: ["Fall", "Spring"],
+  rainy:  ["Fall", "Winter"],
+  snowy:  ["Winter"],
+  foggy:  ["Fall", "Winter"],
+  stormy: ["Fall", "Winter"],
+};
+
+function scoreFragrance(f: FragranceDB, data: OnboardingData, weatherFamilies: string[], weatherCondition: string): number {
   let score = 0;
 
   // Weather family match
@@ -34,6 +43,10 @@ function scoreFragrance(f: FragranceDB, data: OnboardingData, weatherFamilies: s
   );
   if (familyMatch) score += 30;
 
+  // Season match with weather
+  const weatherSeasons = WEATHER_SEASON[weatherCondition] ?? [];
+  if (f.season.some((s) => weatherSeasons.includes(s))) score += 15;
+
   // Preferred house match
   if (data.favoriteHouses.includes(f.house)) score += 20;
 
@@ -41,9 +54,12 @@ function scoreFragrance(f: FragranceDB, data: OnboardingData, weatherFamilies: s
   if (data.collection.find((c) => c.id === f.id)) score -= 50;
 
   // Priority scoring
-  if (data.priorities[0] === "longevity") score += f.longevityAvg * 3;
-  else if (data.priorities[0] === "projection") score += f.projectionAvg * 3;
-  else score += (f.longevityAvg + f.projectionAvg);
+  if (data.priorities[0] === "longevity") score += (f.longevityAvg ?? 0) * 3;
+  else if (data.priorities[0] === "projection") score += (f.projectionAvg ?? 0) * 3;
+  else score += (f.longevityAvg ?? 0) + (f.projectionAvg ?? 0);
+
+  // Popularity boost
+  score += (f.popularity ?? 0) * 0.5;
 
   // Disliked categories
   const dislikedKeywords: Record<string, string[]> = {
@@ -57,7 +73,10 @@ function scoreFragrance(f: FragranceDB, data: OnboardingData, weatherFamilies: s
   };
   for (const cat of data.dislikedCategories) {
     const keywords = dislikedKeywords[cat] ?? [];
-    if (keywords.some((k) => f.family.toLowerCase().includes(k))) score -= 25;
+    if (keywords.some((k) =>
+      f.family.toLowerCase().includes(k) ||
+      f.accords.some((a) => a.toLowerCase().includes(k))
+    )) score -= 25;
   }
 
   // Small deterministic variance by id
@@ -80,7 +99,7 @@ export default function RecommendedFragrances({ weather, onboardingData }: Props
     };
 
     return FRAGRANCES_DB
-      .map((f) => ({ f, score: scoreFragrance(f, data, weatherFamilies) }))
+      .map((f) => ({ f, score: scoreFragrance(f, data, weatherFamilies, weather?.condition ?? "") }))
       .sort((a, b) => b.score - a.score)
       .slice(0, 8)
       .map((x) => x.f);

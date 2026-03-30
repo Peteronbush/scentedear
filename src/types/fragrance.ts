@@ -8,9 +8,9 @@ export interface Fragrance {
   topNotes: string[];
   middleNotes: string[];
   baseNotes: string[];
-  year: number;
-  longevityAvg: number;
-  projectionAvg: number;
+  year: number | null;
+  longevityAvg: number | null;
+  projectionAvg: number | null;
   icon: string;
 }
 

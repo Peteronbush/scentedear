@@ -1,4 +1,4 @@
-// Auto-generated from scentedeer_fragrances_v3.csv
+// Auto-generated from fragrances_enriched.csv
 export interface FragranceDB {
   id: string;
   name: string;
@@ -9,9 +9,20 @@ export interface FragranceDB {
   topNotes: string[];
   middleNotes: string[];
   baseNotes: string[];
-  year: number;
-  longevityAvg: number;
-  projectionAvg: number;
+  year: number | null;
+  descriptionKo: string | null;
+  longevityAvg: number | null;
+  projectionAvg: number | null;
+  ratingAvg: number | null;
+  accords: string[];
+  keywordsKo: string[];
+  season: string[];
+  occasion: string[];
+  intensity: number | null;
+  warmth: number | null;
+  sweetness: number | null;
+  popularity: number | null;
+  priceTier: string | null;
   icon: string;
 }
 
@@ -39,9 +50,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Driftwood"
     ],
     "year": 2015,
+    "descriptionKo": "지중해 바다를 담은 상쾌하고 깨끗한 수분계 향수",
     "longevityAvg": 8,
     "projectionAvg": 7,
-    "icon": "🌊"
+    "ratingAvg": 4.2,
+    "accords": [
+      "Aquatic",
+      "Woody",
+      "Musky",
+      "Fresh"
+    ],
+    "keywordsKo": [
+      "신선한",
+      "깔끔한",
+      "차가운",
+      "그린한"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Office",
+      "Date"
+    ],
+    "intensity": 2,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 8,
+    "priceTier": "Luxury",
+    "icon": "🌸"
   },
   {
     "id": "2",
@@ -63,9 +102,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Cedar"
     ],
     "year": 2015,
+    "descriptionKo": "달콤하고 관능적인 앰버 플로럴. 독보적인 존재감",
     "longevityAvg": 9,
     "projectionAvg": 9,
-    "icon": "🌸"
+    "ratingAvg": 4.5,
+    "accords": [
+      "Amber",
+      "Floral",
+      "Sweet",
+      "Woody"
+    ],
+    "keywordsKo": [
+      "달콤한",
+      "관능적인",
+      "강렬한",
+      "따뜻한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Date",
+      "Evening",
+      "Formal"
+    ],
+    "intensity": 5,
+    "warmth": 4,
+    "sweetness": 4,
+    "popularity": 10,
+    "priceTier": "Ultra",
+    "icon": "🌊"
   },
   {
     "id": "3",
@@ -88,9 +155,38 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Leather"
     ],
     "year": 2011,
+    "descriptionKo": "스모키하고 크리미한 샌달우드. 뉴욕 감성의 시그니처",
     "longevityAvg": 7,
     "projectionAvg": 6,
-    "icon": "🌶️"
+    "ratingAvg": 4,
+    "accords": [
+      "Woody",
+      "Smoky",
+      "Spicy",
+      "Leather"
+    ],
+    "keywordsKo": [
+      "스모키한",
+      "크리미한",
+      "우디한",
+      "드라이한"
+    ],
+    "season": [
+      "Fall",
+      "Winter",
+      "Spring"
+    ],
+    "occasion": [
+      "Casual",
+      "Office",
+      "Date"
+    ],
+    "intensity": 3,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 10,
+    "priceTier": "Luxury",
+    "icon": "🌿"
   },
   {
     "id": "4",
@@ -113,9 +209,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Musk"
     ],
     "year": 2011,
+    "descriptionKo": "부드럽고 파우더리한 라벤더 바닐라 우디 향",
     "longevityAvg": 8,
     "projectionAvg": 7,
-    "icon": "🍯"
+    "ratingAvg": 4.3,
+    "accords": [
+      "Powdery",
+      "Woody",
+      "Sweet",
+      "Floral"
+    ],
+    "keywordsKo": [
+      "파우더리한",
+      "달콤한",
+      "크리미한",
+      "따뜻한"
+    ],
+    "season": [
+      "Spring",
+      "Fall"
+    ],
+    "occasion": [
+      "Date",
+      "Formal",
+      "Evening"
+    ],
+    "intensity": 3,
+    "warmth": 4,
+    "sweetness": 4,
+    "popularity": 9,
+    "priceTier": "Luxury",
+    "icon": "🍋"
   },
   {
     "id": "5",
@@ -138,9 +262,38 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Musk"
     ],
     "year": 2020,
+    "descriptionKo": "시원하고 얼음처럼 깨끗한 우디 시프레",
     "longevityAvg": 8,
     "projectionAvg": 6,
-    "icon": "🌿"
+    "ratingAvg": 4.1,
+    "accords": [
+      "Woody",
+      "Chypre",
+      "Mossy",
+      "Floral"
+    ],
+    "keywordsKo": [
+      "차가운",
+      "깔끔한",
+      "드라이한",
+      "우디한"
+    ],
+    "season": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "occasion": [
+      "Casual",
+      "Office",
+      "Date"
+    ],
+    "intensity": 3,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 6,
+    "priceTier": "Luxury",
+    "icon": "🌹"
   },
   {
     "id": "6",
@@ -163,9 +316,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Cedarwood"
     ],
     "year": 2008,
+    "descriptionKo": "스모키하고 건조한 베티버 우드. 샤넬 레 엑스클루시프의 명작",
     "longevityAvg": 7,
     "projectionAvg": 6,
-    "icon": "🕯️"
+    "ratingAvg": 4.4,
+    "accords": [
+      "Woody",
+      "Smoky",
+      "Earthy",
+      "Spicy"
+    ],
+    "keywordsKo": [
+      "스모키한",
+      "드라이한",
+      "우디한",
+      "강렬한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Casual",
+      "Office",
+      "Evening"
+    ],
+    "intensity": 3,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 8,
+    "priceTier": "Luxury",
+    "icon": "🪵"
   },
   {
     "id": "7",
@@ -188,8 +369,36 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Labdanum"
     ],
     "year": 2007,
+    "descriptionKo": "따뜻하고 우아한 파우더리 파츄리 오리엔탈",
     "longevityAvg": 8,
     "projectionAvg": 7,
+    "ratingAvg": 4.3,
+    "accords": [
+      "Woody",
+      "Oriental",
+      "Powdery",
+      "Sweet"
+    ],
+    "keywordsKo": [
+      "파우더리한",
+      "따뜻한",
+      "관능적인",
+      "우디한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Date",
+      "Formal"
+    ],
+    "intensity": 4,
+    "warmth": 4,
+    "sweetness": 3,
+    "popularity": 8,
+    "priceTier": "Luxury",
     "icon": "🌙"
   },
   {
@@ -213,14 +422,42 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Musk"
     ],
     "year": 2019,
+    "descriptionKo": "강렬하고 왕족적인 우드 스파이시. 위엄 있는 존재감",
     "longevityAvg": 8,
     "projectionAvg": 8,
-    "icon": "🌶️"
+    "ratingAvg": 4.2,
+    "accords": [
+      "Woody",
+      "Spicy",
+      "Oud",
+      "Amber"
+    ],
+    "keywordsKo": [
+      "강렬한",
+      "스파이시한",
+      "우디한",
+      "이국적인"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Date",
+      "Formal"
+    ],
+    "intensity": 4,
+    "warmth": 4,
+    "sweetness": 2,
+    "popularity": 7,
+    "priceTier": "Luxury",
+    "icon": "✨"
   },
   {
     "id": "9",
     "name": "Bois Imperial",
-    "house": "Essential Parfums",
+    "house": "Ex Nihilo",
     "concentration": "EDP",
     "gender": "Unisex",
     "family": "Woody Amber",
@@ -238,9 +475,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Vanilla"
     ],
     "year": 2016,
+    "descriptionKo": "크리미하고 달콤한 우드 앰버. 부드러운 오우드",
     "longevityAvg": 8,
     "projectionAvg": 7,
-    "icon": "🌙"
+    "ratingAvg": 4.2,
+    "accords": [
+      "Woody",
+      "Amber",
+      "Sweet",
+      "Oud"
+    ],
+    "keywordsKo": [
+      "크리미한",
+      "달콤한",
+      "우디한",
+      "따뜻한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Date",
+      "Evening",
+      "Casual"
+    ],
+    "intensity": 3,
+    "warmth": 4,
+    "sweetness": 3,
+    "popularity": 8,
+    "priceTier": "Luxury",
+    "icon": "🍀"
   },
   {
     "id": "10",
@@ -262,9 +527,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Musk"
     ],
     "year": 2019,
+    "descriptionKo": "깔끔하고 세련된 시트러스 우디. LV 특유의 고급스러움",
     "longevityAvg": 7,
     "projectionAvg": 6,
-    "icon": "🌊"
+    "ratingAvg": 4.1,
+    "accords": [
+      "Citrus",
+      "Woody",
+      "Aquatic",
+      "Fresh"
+    ],
+    "keywordsKo": [
+      "깔끔한",
+      "신선한",
+      "시트러시한",
+      "가벼운"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Office",
+      "Sport"
+    ],
+    "intensity": 2,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 7,
+    "priceTier": "Ultra",
+    "icon": "🌺"
   },
   {
     "id": "11",
@@ -287,9 +580,38 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Ambergris"
     ],
     "year": 2017,
+    "descriptionKo": "파츄리와 우디 노트의 깊고 풍성한 조화",
     "longevityAvg": 9,
     "projectionAvg": 8,
-    "icon": "🌸"
+    "ratingAvg": 4.3,
+    "accords": [
+      "Woody",
+      "Floral",
+      "Musky",
+      "Earthy"
+    ],
+    "keywordsKo": [
+      "우디한",
+      "그린한",
+      "관능적인",
+      "강렬한"
+    ],
+    "season": [
+      "Spring",
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Casual",
+      "Date",
+      "Evening"
+    ],
+    "intensity": 4,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 8,
+    "priceTier": "Luxury",
+    "icon": "🏔️"
   },
   {
     "id": "12",
@@ -312,9 +634,36 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Cedarwood"
     ],
     "year": 2018,
+    "descriptionKo": "우롱차의 은은하고 스모키한 차향",
     "longevityAvg": 8,
     "projectionAvg": 6,
-    "icon": "🍵"
+    "ratingAvg": 4,
+    "accords": [
+      "Tea",
+      "Woody",
+      "Earthy",
+      "Smoky"
+    ],
+    "keywordsKo": [
+      "스모키한",
+      "그린한",
+      "드라이한",
+      "우디한"
+    ],
+    "season": [
+      "Spring",
+      "Fall"
+    ],
+    "occasion": [
+      "Casual",
+      "Office"
+    ],
+    "intensity": 3,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 7,
+    "priceTier": "Luxury",
+    "icon": "🌾"
   },
   {
     "id": "13",
@@ -334,9 +683,36 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Cashmere Wood"
     ],
     "year": 2006,
+    "descriptionKo": "극도로 건조하고 어두운 베티버. 미니멀리즘의 극치",
     "longevityAvg": 7,
     "projectionAvg": 5,
-    "icon": "🌍"
+    "ratingAvg": 4.1,
+    "accords": [
+      "Woody",
+      "Earthy",
+      "Smoky",
+      "Vetiver"
+    ],
+    "keywordsKo": [
+      "드라이한",
+      "스모키한",
+      "우디한",
+      "강렬한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Casual",
+      "Office"
+    ],
+    "intensity": 3,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 8,
+    "priceTier": "Mid",
+    "icon": "🍊"
   },
   {
     "id": "14",
@@ -361,9 +737,39 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Ambergris"
     ],
     "year": 2010,
+    "descriptionKo": "파인애플과 자작나무의 신선하고 스모키한 조화. 시대의 아이콘",
     "longevityAvg": 8,
     "projectionAvg": 8,
-    "icon": "🌿"
+    "ratingAvg": 4.4,
+    "accords": [
+      "Fruity",
+      "Smoky",
+      "Woody",
+      "Fresh"
+    ],
+    "keywordsKo": [
+      "신선한",
+      "스모키한",
+      "강렬한",
+      "시트러시한"
+    ],
+    "season": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "occasion": [
+      "Office",
+      "Date",
+      "Formal",
+      "Casual"
+    ],
+    "intensity": 4,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 10,
+    "priceTier": "Ultra",
+    "icon": "🌴"
   },
   {
     "id": "15",
@@ -386,9 +792,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Cedarwood"
     ],
     "year": 1995,
+    "descriptionKo": "맑고 차가운 산속 물의 청량감",
     "longevityAvg": 7,
     "projectionAvg": 6,
-    "icon": "🌊"
+    "ratingAvg": 4.1,
+    "accords": [
+      "Aquatic",
+      "Citrus",
+      "Woody",
+      "Tea"
+    ],
+    "keywordsKo": [
+      "신선한",
+      "차가운",
+      "깔끔한",
+      "시트러시한"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Sport",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 8,
+    "priceTier": "Ultra",
+    "icon": "🌬️"
   },
   {
     "id": "16",
@@ -411,9 +845,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Patchouli"
     ],
     "year": 2012,
+    "descriptionKo": "복잡하고 깊은 스파이시 우디. 최고 수준의 완성도",
     "longevityAvg": 9,
     "projectionAvg": 8,
-    "icon": "🪵"
+    "ratingAvg": 4.5,
+    "accords": [
+      "Woody",
+      "Spicy",
+      "Oud",
+      "Smoky"
+    ],
+    "keywordsKo": [
+      "강렬한",
+      "스파이시한",
+      "우디한",
+      "이국적인"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Formal",
+      "Date"
+    ],
+    "intensity": 5,
+    "warmth": 4,
+    "sweetness": 1,
+    "popularity": 9,
+    "priceTier": "Ultra",
+    "icon": "❄️"
   },
   {
     "id": "17",
@@ -436,9 +898,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Vetiver"
     ],
     "year": 2007,
+    "descriptionKo": "깨끗하고 플로럴한 고급스러운 남성향",
     "longevityAvg": 8,
     "projectionAvg": 7,
-    "icon": "🌸"
+    "ratingAvg": 4.2,
+    "accords": [
+      "Floral",
+      "Woody",
+      "Fresh",
+      "Aromatic"
+    ],
+    "keywordsKo": [
+      "깔끔한",
+      "플로럴한",
+      "신선한",
+      "가벼운"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Office",
+      "Casual",
+      "Date"
+    ],
+    "intensity": 3,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 7,
+    "priceTier": "Ultra",
+    "icon": "🔥"
   },
   {
     "id": "18",
@@ -461,9 +951,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Cocoa"
     ],
     "year": 2007,
+    "descriptionKo": "달콤하고 따뜻한 담배와 바닐라의 조화. 겨울 시그니처",
     "longevityAvg": 9,
     "projectionAvg": 8,
-    "icon": "🍯"
+    "ratingAvg": 4.4,
+    "accords": [
+      "Sweet",
+      "Tobacco",
+      "Vanilla",
+      "Warm Spicy"
+    ],
+    "keywordsKo": [
+      "달콤한",
+      "따뜻한",
+      "관능적인",
+      "스파이시한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Date",
+      "Formal"
+    ],
+    "intensity": 5,
+    "warmth": 5,
+    "sweetness": 5,
+    "popularity": 10,
+    "priceTier": "Luxury",
+    "icon": "🌷"
   },
   {
     "id": "19",
@@ -486,9 +1004,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Amber"
     ],
     "year": 2007,
+    "descriptionKo": "부드럽고 접근하기 쉬운 오우드 우드",
     "longevityAvg": 8,
     "projectionAvg": 7,
-    "icon": "🌙"
+    "ratingAvg": 4.2,
+    "accords": [
+      "Oud",
+      "Woody",
+      "Spicy",
+      "Amber"
+    ],
+    "keywordsKo": [
+      "우디한",
+      "스파이시한",
+      "따뜻한",
+      "크리미한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Date",
+      "Formal"
+    ],
+    "intensity": 4,
+    "warmth": 4,
+    "sweetness": 2,
+    "popularity": 9,
+    "priceTier": "Luxury",
+    "icon": "🍃"
   },
   {
     "id": "20",
@@ -511,9 +1057,36 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Musk"
     ],
     "year": 2007,
+    "descriptionKo": "어둡고 섹시한 로즈 오우드 오리엔탈",
     "longevityAvg": 9,
     "projectionAvg": 8,
-    "icon": "🌸"
+    "ratingAvg": 4.3,
+    "accords": [
+      "Floral",
+      "Oud",
+      "Earthy",
+      "Sweet"
+    ],
+    "keywordsKo": [
+      "관능적인",
+      "강렬한",
+      "이국적인",
+      "따뜻한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Date"
+    ],
+    "intensity": 5,
+    "warmth": 4,
+    "sweetness": 3,
+    "popularity": 8,
+    "priceTier": "Luxury",
+    "icon": "🦋"
   },
   {
     "id": "21",
@@ -537,9 +1110,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Amber"
     ],
     "year": 2008,
+    "descriptionKo": "깨끗하고 약간 스파이시한 우디 바닐라",
     "longevityAvg": 7,
     "projectionAvg": 6,
-    "icon": "🪵"
+    "ratingAvg": 4,
+    "accords": [
+      "Woody",
+      "Fresh",
+      "Spicy",
+      "Vanilla"
+    ],
+    "keywordsKo": [
+      "깔끔한",
+      "우디한",
+      "스파이시한",
+      "신선한"
+    ],
+    "season": [
+      "Spring",
+      "Fall"
+    ],
+    "occasion": [
+      "Casual",
+      "Date",
+      "Office"
+    ],
+    "intensity": 3,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 8,
+    "priceTier": "Luxury",
+    "icon": "🌸"
   },
   {
     "id": "22",
@@ -562,9 +1163,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Vetiver"
     ],
     "year": 2009,
+    "descriptionKo": "밝고 플로럴한 아프리칸 플로럴 우디",
     "longevityAvg": 7,
     "projectionAvg": 6,
-    "icon": "🌸"
+    "ratingAvg": 4.1,
+    "accords": [
+      "Floral",
+      "Woody",
+      "Musky",
+      "Citrus"
+    ],
+    "keywordsKo": [
+      "플로럴한",
+      "신선한",
+      "그린한",
+      "가벼운"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Date",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 7,
+    "priceTier": "Luxury",
+    "icon": "🌊"
   },
   {
     "id": "23",
@@ -586,9 +1215,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Amber"
     ],
     "year": 2021,
+    "descriptionKo": "부드럽고 따뜻한 우디 앰버 스킨센트",
     "longevityAvg": 7,
     "projectionAvg": 5,
-    "icon": "🌙"
+    "ratingAvg": 4,
+    "accords": [
+      "Woody",
+      "Amber",
+      "Musky",
+      "Soft"
+    ],
+    "keywordsKo": [
+      "따뜻한",
+      "크리미한",
+      "우디한",
+      "가벼운"
+    ],
+    "season": [
+      "Fall",
+      "Winter",
+      "Spring"
+    ],
+    "occasion": [
+      "Casual",
+      "Date"
+    ],
+    "intensity": 2,
+    "warmth": 4,
+    "sweetness": 2,
+    "popularity": 6,
+    "priceTier": "Luxury",
+    "icon": "🌿"
   },
   {
     "id": "24",
@@ -609,9 +1266,36 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Musk"
     ],
     "year": 1996,
+    "descriptionKo": "무화과 나무 전체를 담은 그린 우디. 디프티크 아이콘",
     "longevityAvg": 7,
     "projectionAvg": 5,
-    "icon": "🌱"
+    "ratingAvg": 4.2,
+    "accords": [
+      "Green",
+      "Woody",
+      "Fresh",
+      "Fig"
+    ],
+    "keywordsKo": [
+      "그린한",
+      "신선한",
+      "깔끔한",
+      "가벼운"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 8,
+    "priceTier": "Luxury",
+    "icon": "🍋"
   },
   {
     "id": "25",
@@ -633,9 +1317,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "White Musk"
     ],
     "year": 2003,
+    "descriptionKo": "크리미하고 깨끗한 샌달우드 플로럴",
     "longevityAvg": 7,
     "projectionAvg": 6,
-    "icon": "🌸"
+    "ratingAvg": 4.1,
+    "accords": [
+      "Woody",
+      "Creamy",
+      "Floral",
+      "Musky"
+    ],
+    "keywordsKo": [
+      "크리미한",
+      "깔끔한",
+      "우디한",
+      "플로럴한"
+    ],
+    "season": [
+      "Spring",
+      "Fall"
+    ],
+    "occasion": [
+      "Casual",
+      "Office",
+      "Date"
+    ],
+    "intensity": 2,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 7,
+    "priceTier": "Luxury",
+    "icon": "🌹"
   },
   {
     "id": "26",
@@ -656,9 +1368,36 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "White Musks"
     ],
     "year": 2004,
+    "descriptionKo": "해변의 투베로즈. 깨끗하고 관능적인 플로럴",
     "longevityAvg": 7,
     "projectionAvg": 6,
-    "icon": "🌊"
+    "ratingAvg": 4,
+    "accords": [
+      "Floral",
+      "Aquatic",
+      "Musky",
+      "White Floral"
+    ],
+    "keywordsKo": [
+      "플로럴한",
+      "신선한",
+      "관능적인",
+      "깔끔한"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Date"
+    ],
+    "intensity": 2,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 6,
+    "priceTier": "Luxury",
+    "icon": "🪵"
   },
   {
     "id": "27",
@@ -681,9 +1420,39 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Pepper"
     ],
     "year": 2016,
+    "descriptionKo": "달콤하고 스파이시한 애플 우디. 대중적 인기 최고",
     "longevityAvg": 9,
     "projectionAvg": 8,
-    "icon": "🌶️"
+    "ratingAvg": 4.4,
+    "accords": [
+      "Sweet",
+      "Spicy",
+      "Woody",
+      "Fruity"
+    ],
+    "keywordsKo": [
+      "달콤한",
+      "스파이시한",
+      "우디한",
+      "따뜻한"
+    ],
+    "season": [
+      "Fall",
+      "Winter",
+      "Spring"
+    ],
+    "occasion": [
+      "Date",
+      "Evening",
+      "Casual",
+      "Formal"
+    ],
+    "intensity": 4,
+    "warmth": 4,
+    "sweetness": 4,
+    "popularity": 9,
+    "priceTier": "Luxury",
+    "icon": "🌙"
   },
   {
     "id": "28",
@@ -706,9 +1475,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Musk"
     ],
     "year": 2012,
+    "descriptionKo": "따뜻하고 스파이시한 담배 바닐라 오리엔탈",
     "longevityAvg": 8,
     "projectionAvg": 7,
-    "icon": "🌙"
+    "ratingAvg": 4.2,
+    "accords": [
+      "Spicy",
+      "Tobacco",
+      "Sweet",
+      "Woody"
+    ],
+    "keywordsKo": [
+      "스파이시한",
+      "따뜻한",
+      "달콤한",
+      "강렬한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Date",
+      "Formal"
+    ],
+    "intensity": 4,
+    "warmth": 5,
+    "sweetness": 3,
+    "popularity": 8,
+    "priceTier": "Luxury",
+    "icon": "✨"
   },
   {
     "id": "29",
@@ -731,9 +1528,37 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Oakmoss"
     ],
     "year": 2019,
+    "descriptionKo": "그린하고 허브향 나는 아로마틱 프레시",
     "longevityAvg": 7,
     "projectionAvg": 6,
-    "icon": "🌾"
+    "ratingAvg": 3.9,
+    "accords": [
+      "Fresh",
+      "Aromatic",
+      "Green",
+      "Woody"
+    ],
+    "keywordsKo": [
+      "신선한",
+      "그린한",
+      "허브향",
+      "깔끔한"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Sport",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 6,
+    "priceTier": "Luxury",
+    "icon": "🍀"
   },
   {
     "id": "30",
@@ -756,4585 +1581,1745 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Amber"
     ],
     "year": 2019,
+    "descriptionKo": "달콤하고 우아한 피치 플로럴",
     "longevityAvg": 7,
     "projectionAvg": 6,
-    "icon": "🍒"
+    "ratingAvg": 4,
+    "accords": [
+      "Floral",
+      "Fruity",
+      "Sweet",
+      "Powdery"
+    ],
+    "keywordsKo": [
+      "달콤한",
+      "플로럴한",
+      "파우더리한",
+      "따뜻한"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Date",
+      "Office"
+    ],
+    "intensity": 3,
+    "warmth": 3,
+    "sweetness": 4,
+    "popularity": 6,
+    "priceTier": "Luxury",
+    "icon": "🌺"
   },
   {
     "id": "31",
-    "name": "Love Don't Be Shy",
-    "house": "Kilian",
+    "name": "Another 13",
+    "house": "Le Labo",
     "concentration": "EDP",
     "gender": "Unisex",
-    "family": "Gourmand Floral",
+    "family": "Woody Musky",
     "topNotes": [
-      "Neroli",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Orange Blossom",
-      "Iris"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Vanilla",
-      "Marshmallow"
-    ],
-    "year": 2007,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🍯"
-  },
-  {
-    "id": "32",
-    "name": "Black Phantom",
-    "house": "Kilian",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Gourmand",
-    "topNotes": [
-      "Rum",
-      "Dark Rum"
-    ],
-    "middleNotes": [
-      "Coffee",
-      "Caramel"
-    ],
-    "baseNotes": [
-      "Vanilla",
-      "Sandalwood",
-      "Musk"
-    ],
-    "year": 2015,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🍯"
-  },
-  {
-    "id": "33",
-    "name": "Apple Brandy",
-    "house": "Kilian",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Gourmand Woody",
-    "topNotes": [
-      "Apple",
-      "Brandy"
-    ],
-    "middleNotes": [
-      "Cinnamon",
-      "Clove"
-    ],
-    "baseNotes": [
-      "Vanilla",
-      "Sandalwood",
-      "Amber"
-    ],
-    "year": 2020,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🍯"
-  },
-  {
-    "id": "34",
-    "name": "Good Girl Gone Bad",
-    "house": "Kilian",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral",
-    "topNotes": [
-      "Tuberose",
-      "Jasmine"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Lily of the Valley"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Ambergris"
-    ],
-    "year": 2012,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "35",
-    "name": "Straight to Heaven",
-    "house": "Kilian",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Woody Aromatic",
-    "topNotes": [
-      "Rum",
-      "Cardamom"
-    ],
-    "middleNotes": [
-      "Patchouli",
-      "Vetiver"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2007,
-    "longevityAvg": 9,
-    "projectionAvg": 7,
-    "icon": "🪵"
-  },
-  {
-    "id": "36",
-    "name": "Angels' Share",
-    "house": "Kilian",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Gourmand",
-    "topNotes": [
-      "Cognac",
-      "Cinnamon"
-    ],
-    "middleNotes": [
-      "Oakwood",
-      "Tonka Bean"
-    ],
-    "baseNotes": [
-      "Vanilla",
-      "Sandalwood",
-      "Caramel"
-    ],
-    "year": 2019,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🍯"
-  },
-  {
-    "id": "37",
-    "name": "Moonlight in Heaven",
-    "house": "Kilian",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Fruity",
-    "topNotes": [
-      "Grapefruit",
-      "Coconut"
+      "Ambrox",
+      "Moss"
     ],
     "middleNotes": [
       "Jasmine",
-      "Tuberose"
+      "Ambrette Seeds"
     ],
     "baseNotes": [
       "Musk",
-      "Vanilla"
+      "Ambergris",
+      "Oakmoss"
     ],
-    "year": 2016,
-    "longevityAvg": 7,
+    "year": 2010,
+    "descriptionKo": "피부에 녹아드는 극도로 관능적인 앰브록시드 머스크. 뉴요커의 세컨드 스킨",
+    "longevityAvg": 8,
     "projectionAvg": 6,
-    "icon": "🍒"
+    "ratingAvg": 4.4,
+    "accords": [
+      "Musky",
+      "Woody",
+      "Mossy",
+      "Animalic"
+    ],
+    "keywordsKo": [
+      "관능적인",
+      "크리미한",
+      "가벼운",
+      "따뜻한"
+    ],
+    "season": [
+      "Spring",
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Casual",
+      "Date",
+      "Evening"
+    ],
+    "intensity": 2,
+    "warmth": 3,
+    "sweetness": 1,
+    "popularity": 9,
+    "priceTier": "Luxury",
+    "icon": "🏔️"
   },
   {
-    "id": "38",
-    "name": "Imperial Tea",
-    "house": "Kilian",
+    "id": "32",
+    "name": "Thé Matcha 26",
+    "house": "Le Labo",
     "concentration": "EDP",
     "gender": "Unisex",
-    "family": "Aromatic Tea",
+    "family": "Green Aromatic",
     "topNotes": [
       "Bergamot",
-      "Lemon"
+      "Bitter Orange"
     ],
     "middleNotes": [
-      "Tea",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Cedar"
-    ],
-    "year": 2007,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🍵"
-  },
-  {
-    "id": "39",
-    "name": "Playing with the Devil",
-    "house": "Kilian",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral Woody",
-    "topNotes": [
-      "Bergamot",
-      "Pink Pepper"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
+      "Matcha Tea",
+      "Fig",
       "Vetiver"
     ],
-    "year": 2011,
+    "baseNotes": [
+      "Cedarwood",
+      "Musk"
+    ],
+    "year": 2013,
+    "descriptionKo": "쌉싸름하고 그린한 말차의 정수. 어시 베티버와의 조화",
     "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
+    "projectionAvg": 5,
+    "ratingAvg": 4,
+    "accords": [
+      "Tea",
+      "Green",
+      "Earthy",
+      "Woody"
+    ],
+    "keywordsKo": [
+      "그린한",
+      "드라이한",
+      "신선한",
+      "허브향"
+    ],
+    "season": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "occasion": [
+      "Casual",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 6,
+    "priceTier": "Luxury",
+    "icon": "🌾"
   },
   {
-    "id": "40",
-    "name": "Vodka on the Rocks",
-    "house": "Kilian",
+    "id": "33",
+    "name": "Thé Noir 29",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Woody Tea",
+    "topNotes": [
+      "Bergamot",
+      "Fig",
+      "Black Tea"
+    ],
+    "middleNotes": [
+      "Bay Leaf",
+      "Tobacco",
+      "Jasmine",
+      "Vetiver"
+    ],
+    "baseNotes": [
+      "Sandalwood",
+      "Musk",
+      "Cedarwood"
+    ],
+    "year": 2006,
+    "descriptionKo": "깊고 스모키한 블랙티에 우디 담배향. 지적이고 세련된 유니섹스",
+    "longevityAvg": 7,
+    "projectionAvg": 6,
+    "ratingAvg": 4.1,
+    "accords": [
+      "Tea",
+      "Woody",
+      "Tobacco",
+      "Smoky"
+    ],
+    "keywordsKo": [
+      "스모키한",
+      "드라이한",
+      "우디한",
+      "깔끔한"
+    ],
+    "season": [
+      "Fall",
+      "Winter",
+      "Spring"
+    ],
+    "occasion": [
+      "Office",
+      "Casual",
+      "Date"
+    ],
+    "intensity": 3,
+    "warmth": 3,
+    "sweetness": 1,
+    "popularity": 7,
+    "priceTier": "Luxury",
+    "icon": "🍊"
+  },
+  {
+    "id": "34",
+    "name": "Bergamote 22",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Citrus Woody",
+    "topNotes": [
+      "Bergamot",
+      "Grapefruit"
+    ],
+    "middleNotes": [
+      "Vetiver",
+      "Musk"
+    ],
+    "baseNotes": [
+      "Ambergris",
+      "Cedarwood"
+    ],
+    "year": 2006,
+    "descriptionKo": "베르가못의 밝고 상쾌한 시트러스. 깔끔하고 미니멀한 일상향",
+    "longevityAvg": 6,
+    "projectionAvg": 6,
+    "ratingAvg": 3.9,
+    "accords": [
+      "Citrus",
+      "Woody",
+      "Fresh",
+      "Musky"
+    ],
+    "keywordsKo": [
+      "시트러시한",
+      "신선한",
+      "깔끔한",
+      "가벼운"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Office",
+      "Sport"
+    ],
+    "intensity": 2,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 7,
+    "priceTier": "Luxury",
+    "icon": "🌴"
+  },
+  {
+    "id": "35",
+    "name": "Rose 31",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Woody Rose",
+    "topNotes": [
+      "Rose Centifolia",
+      "Cumin"
+    ],
+    "middleNotes": [
+      "Vetiver",
+      "Incense",
+      "Cedarwood"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Cistus",
+      "Amber"
+    ],
+    "year": 2006,
+    "descriptionKo": "쿠민의 스파이시함과 로즈의 만남. 남성적으로 재해석한 장미",
+    "longevityAvg": 8,
+    "projectionAvg": 7,
+    "ratingAvg": 4.2,
+    "accords": [
+      "Rose",
+      "Woody",
+      "Spicy",
+      "Smoky"
+    ],
+    "keywordsKo": [
+      "스파이시한",
+      "우디한",
+      "드라이한",
+      "강렬한"
+    ],
+    "season": [
+      "Fall",
+      "Spring"
+    ],
+    "occasion": [
+      "Date",
+      "Evening",
+      "Casual"
+    ],
+    "intensity": 3,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 8,
+    "priceTier": "Luxury",
+    "icon": "🌬️"
+  },
+  {
+    "id": "36",
+    "name": "Lavande 31",
+    "house": "Le Labo",
     "concentration": "EDP",
     "gender": "Unisex",
     "family": "Aromatic Woody",
     "topNotes": [
-      "Juniper Berry",
-      "Cardamom"
+      "Lavender",
+      "Bergamot"
     ],
     "middleNotes": [
-      "Violet",
-      "Vetiver"
+      "Vetiver",
+      "Cistus"
     ],
     "baseNotes": [
       "Musk",
       "Cedarwood",
-      "Amber"
+      "Oakmoss"
     ],
-    "year": 2007,
+    "year": 2024,
+    "descriptionKo": "클래식한 라벤더를 현대적으로 재해석. 우디 베티버가 받쳐주는 아로마틱",
     "longevityAvg": 7,
     "projectionAvg": 6,
-    "icon": "🪵"
+    "ratingAvg": 4,
+    "accords": [
+      "Aromatic",
+      "Woody",
+      "Earthy",
+      "Fresh"
+    ],
+    "keywordsKo": [
+      "허브향",
+      "우디한",
+      "드라이한",
+      "깔끔한"
+    ],
+    "season": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "occasion": [
+      "Casual",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 5,
+    "priceTier": "Luxury",
+    "icon": "❄️"
+  },
+  {
+    "id": "37",
+    "name": "Baie 19",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Spicy Woody",
+    "topNotes": [
+      "Bay Leaf",
+      "Bergamot"
+    ],
+    "middleNotes": [
+      "Cypress",
+      "Orris"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Cedarwood",
+      "Vetiver"
+    ],
+    "year": 2006,
+    "descriptionKo": "월계수 잎의 허브향과 우디 드라이다운. 클린하고 강인한 인상",
+    "longevityAvg": 7,
+    "projectionAvg": 6,
+    "ratingAvg": 4,
+    "accords": [
+      "Spicy",
+      "Woody",
+      "Aromatic",
+      "Green"
+    ],
+    "keywordsKo": [
+      "허브향",
+      "우디한",
+      "드라이한",
+      "깔끔한"
+    ],
+    "season": [
+      "Spring",
+      "Fall"
+    ],
+    "occasion": [
+      "Casual",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 6,
+    "priceTier": "Luxury",
+    "icon": "🔥"
+  },
+  {
+    "id": "38",
+    "name": "Lys 41",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Floral White",
+    "topNotes": [
+      "Lily",
+      "Bergamot"
+    ],
+    "middleNotes": [
+      "Jasmine",
+      "Ylang Ylang"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Sandalwood",
+      "Cedarwood"
+    ],
+    "year": 2012,
+    "descriptionKo": "백합의 순수하고 그린한 화이트 플로럴. 투명하고 시원한 존재감",
+    "longevityAvg": 7,
+    "projectionAvg": 6,
+    "ratingAvg": 3.9,
+    "accords": [
+      "White Floral",
+      "Woody",
+      "Fresh",
+      "Musky"
+    ],
+    "keywordsKo": [
+      "플로럴한",
+      "신선한",
+      "깔끔한",
+      "가벼운"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Date",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 5,
+    "priceTier": "Luxury",
+    "icon": "🌷"
+  },
+  {
+    "id": "39",
+    "name": "Eucalyptus 20",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Aromatic Fresh",
+    "topNotes": [
+      "Eucalyptus",
+      "Bergamot"
+    ],
+    "middleNotes": [
+      "Spearmint",
+      "Lavender"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Cedarwood",
+      "Vetiver"
+    ],
+    "year": 2023,
+    "descriptionKo": "유칼립투스의 싱그럽고 쿨한 허브 아로마틱. 깨끗하고 활기찬 인상",
+    "longevityAvg": 6,
+    "projectionAvg": 6,
+    "ratingAvg": 3.9,
+    "accords": [
+      "Aromatic",
+      "Fresh",
+      "Green",
+      "Woody"
+    ],
+    "keywordsKo": [
+      "신선한",
+      "차가운",
+      "허브향",
+      "깔끔한"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Sport",
+      "Casual",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 1,
+    "sweetness": 1,
+    "popularity": 5,
+    "priceTier": "Luxury",
+    "icon": "🍃"
+  },
+  {
+    "id": "40",
+    "name": "Tonka 25",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Oriental Gourmand",
+    "topNotes": [
+      "Bergamot",
+      "Cardamom"
+    ],
+    "middleNotes": [
+      "Tonka Bean",
+      "Heliotrope"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Musk",
+      "Sandalwood"
+    ],
+    "year": 2006,
+    "descriptionKo": "통카빈의 따뜻하고 달콤한 구르망 오리엔탈. 파우더리하고 관능적",
+    "longevityAvg": 8,
+    "projectionAvg": 7,
+    "ratingAvg": 4.1,
+    "accords": [
+      "Sweet",
+      "Powdery",
+      "Vanilla",
+      "Warm Spicy"
+    ],
+    "keywordsKo": [
+      "달콤한",
+      "파우더리한",
+      "따뜻한",
+      "관능적인"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Date",
+      "Evening"
+    ],
+    "intensity": 3,
+    "warmth": 4,
+    "sweetness": 5,
+    "popularity": 6,
+    "priceTier": "Luxury",
+    "icon": "🦋"
   },
   {
     "id": "41",
-    "name": "Baccarat Rouge 540",
-    "house": "Maison Francis Kurkdjian",
+    "name": "Jasmin 17",
+    "house": "Le Labo",
     "concentration": "EDP",
     "gender": "Unisex",
-    "family": "Floral Amber",
+    "family": "Floral Woody",
     "topNotes": [
-      "Saffron",
-      "Jasmine"
+      "Jasmine",
+      "Bergamot"
     ],
     "middleNotes": [
-      "Amberwood",
-      "Ambergris"
+      "Jasmine Sambac",
+      "Ylang Ylang"
     ],
     "baseNotes": [
-      "Fir Resin",
-      "Cedar"
+      "Musk",
+      "Sandalwood",
+      "Vetiver"
     ],
-    "year": 2015,
-    "longevityAvg": 9,
-    "projectionAvg": 9,
+    "year": 2023,
+    "descriptionKo": "재스민을 중심으로 한 투명하고 감각적인 플로럴. 과하지 않은 우아함",
+    "longevityAvg": 7,
+    "projectionAvg": 6,
+    "ratingAvg": 4,
+    "accords": [
+      "Floral",
+      "Woody",
+      "Musky",
+      "White Floral"
+    ],
+    "keywordsKo": [
+      "플로럴한",
+      "신선한",
+      "가벼운",
+      "깔끔한"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Date",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 5,
+    "priceTier": "Luxury",
     "icon": "🌸"
   },
   {
     "id": "42",
-    "name": "Baccarat Rouge 540 Extrait",
-    "house": "Maison Francis Kurkdjian",
-    "concentration": "Extrait de Parfum",
+    "name": "Fleur d'Oranger 27",
+    "house": "Le Labo",
+    "concentration": "EDP",
     "gender": "Unisex",
-    "family": "Floral Amber",
+    "family": "Floral Citrus",
     "topNotes": [
-      "Saffron",
-      "Jasmine"
+      "Orange Blossom",
+      "Neroli"
     ],
     "middleNotes": [
-      "Amberwood",
-      "Ambergris"
+      "Orris",
+      "Jasmine"
     ],
     "baseNotes": [
-      "Fir Resin",
-      "Cedar"
+      "Musk",
+      "Cedarwood",
+      "Sandalwood"
     ],
-    "year": 2015,
-    "longevityAvg": 10,
-    "projectionAvg": 8,
-    "icon": "🌸"
+    "year": 2006,
+    "descriptionKo": "오렌지 블로썸의 밝고 그린한 화이트 플로럴. 봄날 과수원의 싱그러움",
+    "longevityAvg": 7,
+    "projectionAvg": 6,
+    "ratingAvg": 4.1,
+    "accords": [
+      "Floral",
+      "Citrus",
+      "White Floral",
+      "Woody"
+    ],
+    "keywordsKo": [
+      "플로럴한",
+      "신선한",
+      "그린한",
+      "시트러시한"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Date",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 7,
+    "priceTier": "Luxury",
+    "icon": "🌊"
   },
   {
     "id": "43",
-    "name": "Grand Soir",
-    "house": "Maison Francis Kurkdjian",
+    "name": "Neroli 36",
+    "house": "Le Labo",
     "concentration": "EDP",
     "gender": "Unisex",
-    "family": "Oriental Amber",
-    "topNotes": [
-      "Benzoin",
-      "Tonka Bean"
-    ],
-    "middleNotes": [
-      "Amber",
-      "Vanilla"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood"
-    ],
-    "year": 2016,
-    "longevityAvg": 10,
-    "projectionAvg": 8,
-    "icon": "🌙"
-  },
-  {
-    "id": "44",
-    "name": "Oud Satin Mood",
-    "house": "Maison Francis Kurkdjian",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Woody",
-    "topNotes": [
-      "Oud",
-      "Rose"
-    ],
-    "middleNotes": [
-      "Vanilla",
-      "Benzoin"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood"
-    ],
-    "year": 2015,
-    "longevityAvg": 10,
-    "projectionAvg": 8,
-    "icon": "🌙"
-  },
-  {
-    "id": "45",
-    "name": "Oud Extrait",
-    "house": "Maison Francis Kurkdjian",
-    "concentration": "Extrait de Parfum",
-    "gender": "Unisex",
-    "family": "Woody Oriental",
-    "topNotes": [
-      "Oud"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Patchouli"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2012,
-    "longevityAvg": 10,
-    "projectionAvg": 7,
-    "icon": "🌙"
-  },
-  {
-    "id": "46",
-    "name": "Aqua Universalis",
-    "house": "Maison Francis Kurkdjian",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Musk",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "White Musks",
-      "Lily of the Valley"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood"
-    ],
-    "year": 2009,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "47",
-    "name": "Aqua Celestia",
-    "house": "Maison Francis Kurkdjian",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Fruity",
-    "topNotes": [
-      "Blackcurrant",
-      "Mimosa"
-    ],
-    "middleNotes": [
-      "Water Lily",
-      "Lotus"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Driftwood"
-    ],
-    "year": 2018,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🍒"
-  },
-  {
-    "id": "48",
-    "name": "Gentle Fluidity Gold",
-    "house": "Maison Francis Kurkdjian",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Spicy",
-    "topNotes": [
-      "Juniper Berry",
-      "Nutmeg"
-    ],
-    "middleNotes": [
-      "Musk",
-      "Vanilla"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Amber",
-      "Oud"
-    ],
-    "year": 2019,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌶️"
-  },
-  {
-    "id": "49",
-    "name": "Gentle Fluidity Silver",
-    "house": "Maison Francis Kurkdjian",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Aromatic Woody",
-    "topNotes": [
-      "Juniper Berry",
-      "Nutmeg"
-    ],
-    "middleNotes": [
-      "Musk"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Amber",
-      "Cedarwood"
-    ],
-    "year": 2019,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🪵"
-  },
-  {
-    "id": "50",
-    "name": "724",
-    "house": "Maison Francis Kurkdjian",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Aromatic Woody",
-    "topNotes": [
-      "Bergamot",
-      "White Tea"
-    ],
-    "middleNotes": [
-      "Iris",
-      "Vetiver"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Cedarwood"
-    ],
-    "year": 2021,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🪵"
-  },
-  {
-    "id": "51",
-    "name": "L'Homme a la Rose",
-    "house": "Maison Francis Kurkdjian",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Floral Woody",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Violet"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Vetiver"
-    ],
-    "year": 2021,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "52",
-    "name": "Amyris Femme",
-    "house": "Maison Francis Kurkdjian",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Woody Floral",
-    "topNotes": [
-      "Bergamot",
-      "Grapefruit"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Sandalwood"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Amyris",
-      "Cedarwood"
-    ],
-    "year": 2009,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "53",
-    "name": "APOM Pour Homme",
-    "house": "Maison Francis Kurkdjian",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Aromatic Spicy",
-    "topNotes": [
-      "Mandarin",
-      "Cardamom"
-    ],
-    "middleNotes": [
-      "Oud",
-      "Leather"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Patchouli"
-    ],
-    "year": 2009,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌶️"
-  },
-  {
-    "id": "54",
-    "name": "Globe Trotter Dubai Oud",
-    "house": "Maison Francis Kurkdjian",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Oriental",
-    "topNotes": [
-      "Saffron",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Oud"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2017,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🌙"
-  },
-  {
-    "id": "55",
-    "name": "Lime Basil & Mandarin",
-    "house": "Jo Malone",
-    "concentration": "EDC",
-    "gender": "Unisex",
-    "family": "Aromatic Citrus",
-    "topNotes": [
-      "Lime",
-      "Basil"
-    ],
-    "middleNotes": [
-      "White Thyme"
-    ],
-    "baseNotes": [
-      "Amber",
-      "Musk",
-      "Patchouli"
-    ],
-    "year": 1999,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🍋"
-  },
-  {
-    "id": "56",
-    "name": "Peony & Blush Suede",
-    "house": "Jo Malone",
-    "concentration": "EDC",
-    "gender": "Female",
-    "family": "Floral",
-    "topNotes": [
-      "Red Apple",
-      "Peony"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Suede",
-      "Musk"
-    ],
-    "year": 2013,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "57",
-    "name": "Wood Sage & Sea Salt",
-    "house": "Jo Malone",
-    "concentration": "EDC",
-    "gender": "Unisex",
-    "family": "Aromatic Aquatic",
-    "topNotes": [
-      "Sea Salt",
-      "Ambrette Seeds"
-    ],
-    "middleNotes": [
-      "Sage"
-    ],
-    "baseNotes": [
-      "Driftwood",
-      "Musk"
-    ],
-    "year": 2014,
-    "longevityAvg": 5,
-    "projectionAvg": 5,
-    "icon": "🌊"
-  },
-  {
-    "id": "58",
-    "name": "Blackberry & Bay",
-    "house": "Jo Malone",
-    "concentration": "EDC",
-    "gender": "Unisex",
-    "family": "Fruity Aromatic",
-    "topNotes": [
-      "Blackberry",
-      "Bay Leaves"
-    ],
-    "middleNotes": [
-      "Vetiver"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood"
-    ],
-    "year": 2012,
-    "longevityAvg": 5,
-    "projectionAvg": 4,
-    "icon": "🍒"
-  },
-  {
-    "id": "59",
-    "name": "English Pear & Freesia",
-    "house": "Jo Malone",
-    "concentration": "EDC",
-    "gender": "Unisex",
-    "family": "Floral Fruity",
-    "topNotes": [
-      "Pear",
-      "Melon"
-    ],
-    "middleNotes": [
-      "Freesia",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Patchouli",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2010,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🍒"
-  },
-  {
-    "id": "60",
-    "name": "Velvet Rose & Oud",
-    "house": "Jo Malone",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Oriental",
-    "topNotes": [
-      "Rose",
-      "Spices"
-    ],
-    "middleNotes": [
-      "Oud",
-      "Patchouli"
-    ],
-    "baseNotes": [
-      "Vetiver",
-      "Sandalwood",
-      "Musk"
-    ],
-    "year": 2012,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "61",
-    "name": "Myrrh & Tonka",
-    "house": "Jo Malone",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Gourmand",
-    "topNotes": [
-      "Almond",
-      "Lavender"
-    ],
-    "middleNotes": [
-      "Tonka Bean",
-      "Iris"
-    ],
-    "baseNotes": [
-      "Myrrh",
-      "Vanilla",
-      "Musk"
-    ],
-    "year": 2016,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🍯"
-  },
-  {
-    "id": "62",
-    "name": "Oud & Bergamot",
-    "house": "Jo Malone",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Oriental",
-    "topNotes": [
-      "Bergamot",
-      "Grapefruit"
-    ],
-    "middleNotes": [
-      "Oud"
-    ],
-    "baseNotes": [
-      "Cedarwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2011,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌙"
-  },
-  {
-    "id": "63",
-    "name": "Midnight Musk & Amber",
-    "house": "Jo Malone",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Musk",
-    "topNotes": [
-      "Musk",
-      "Tonka Bean"
-    ],
-    "middleNotes": [
-      "Amber",
-      "Patchouli"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Vetiver"
-    ],
-    "year": 2022,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌙"
-  },
-  {
-    "id": "64",
-    "name": "Nectarine Blossom & Honey",
-    "house": "Jo Malone",
-    "concentration": "EDC",
-    "gender": "Unisex",
-    "family": "Floral Fruity",
-    "topNotes": [
-      "Nectarine",
-      "Cassis"
-    ],
-    "middleNotes": [
-      "Peach Blossom",
-      "Acacia"
-    ],
-    "baseNotes": [
-      "Amber",
-      "Vetiver",
-      "Musk"
-    ],
-    "year": 2006,
-    "longevityAvg": 5,
-    "projectionAvg": 4,
-    "icon": "🍒"
-  },
-  {
-    "id": "65",
-    "name": "Orange Blossom",
-    "house": "Jo Malone",
-    "concentration": "EDC",
-    "gender": "Unisex",
-    "family": "Floral Citrus",
-    "topNotes": [
-      "Orange",
-      "Grapefruit"
-    ],
-    "middleNotes": [
-      "Orange Blossom",
-      "Lilac"
-    ],
-    "baseNotes": [
-      "Amber",
-      "Musk",
-      "Vetiver"
-    ],
-    "year": 2003,
-    "longevityAvg": 5,
-    "projectionAvg": 4,
-    "icon": "🌸"
-  },
-  {
-    "id": "66",
-    "name": "Pomegranate Noir",
-    "house": "Jo Malone",
-    "concentration": "EDC",
-    "gender": "Unisex",
-    "family": "Fruity Woody",
-    "topNotes": [
-      "Pomegranate",
-      "Raspberry"
-    ],
-    "middleNotes": [
-      "Pink Pepper",
-      "Plum"
-    ],
-    "baseNotes": [
-      "Guaiac Wood",
-      "Patchouli",
-      "Frankincense"
-    ],
-    "year": 2003,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🍒"
-  },
-  {
-    "id": "67",
-    "name": "Bronze Wood & Leather",
-    "house": "Jo Malone",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Woody Leather",
-    "topNotes": [
-      "Bergamot",
-      "Cardamom"
-    ],
-    "middleNotes": [
-      "Leather",
-      "Suede"
-    ],
-    "baseNotes": [
-      "Smoky Vetiver",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2021,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🟤"
-  },
-  {
-    "id": "68",
-    "name": "Philosophykos",
-    "house": "Diptyque",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Green Woody",
-    "topNotes": [
-      "Fig Leaf",
-      "Fig Tree Bark"
-    ],
-    "middleNotes": [
-      "Fig Wood"
-    ],
-    "baseNotes": [
-      "White Cedar",
-      "Musk"
-    ],
-    "year": 1996,
-    "longevityAvg": 7,
-    "projectionAvg": 5,
-    "icon": "🌱"
-  },
-  {
-    "id": "69",
-    "name": "Tam Dao",
-    "house": "Diptyque",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Woody Floral",
-    "topNotes": [
-      "Sandalwood",
-      "Cypress"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Musk"
-    ],
-    "baseNotes": [
-      "Cedarwood",
-      "White Musk"
-    ],
-    "year": 2003,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "70",
-    "name": "Do Son",
-    "house": "Diptyque",
-    "concentration": "EDT",
-    "gender": "Female",
-    "family": "Floral Aquatic",
-    "topNotes": [
-      "Sea Notes"
-    ],
-    "middleNotes": [
-      "Tuberose",
-      "Orange Blossom"
-    ],
-    "baseNotes": [
-      "Musk",
-      "White Musks"
-    ],
-    "year": 2004,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌊"
-  },
-  {
-    "id": "71",
-    "name": "L'Ombre dans l'Eau",
-    "house": "Diptyque",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Green Floral",
-    "topNotes": [
-      "Blackcurrant Leaves"
-    ],
-    "middleNotes": [
-      "Rose"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood"
-    ],
-    "year": 1983,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "72",
-    "name": "Eau Rose",
-    "house": "Diptyque",
-    "concentration": "EDT",
-    "gender": "Female",
-    "family": "Floral",
-    "topNotes": [
-      "Lychee",
-      "Rose Petals"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Litchi"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood"
-    ],
-    "year": 2012,
-    "longevityAvg": 5,
-    "projectionAvg": 4,
-    "icon": "🌸"
-  },
-  {
-    "id": "73",
-    "name": "Volutes",
-    "house": "Diptyque",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Spicy",
-    "topNotes": [
-      "Tobacco",
-      "Spices"
-    ],
-    "middleNotes": [
-      "Iris",
-      "Leather"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Vanilla",
-      "Patchouli"
-    ],
-    "year": 2009,
-    "longevityAvg": 8,
-    "projectionAvg": 6,
-    "icon": "🌶️"
-  },
-  {
-    "id": "74",
-    "name": "Tempo",
-    "house": "Diptyque",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Earthy",
-    "topNotes": [
-      "Patchouli",
-      "Rosewood"
-    ],
-    "middleNotes": [
-      "Vetiver",
-      "Cedar"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood"
-    ],
-    "year": 2021,
-    "longevityAvg": 8,
-    "projectionAvg": 6,
-    "icon": "🌍"
-  },
-  {
-    "id": "75",
-    "name": "Orpheon",
-    "house": "Diptyque",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Aromatic",
-    "topNotes": [
-      "Juniper Berry",
-      "Cedar"
-    ],
-    "middleNotes": [
-      "Orris",
-      "Vetiver"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Leather"
-    ],
-    "year": 2021,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🪵"
-  },
-  {
-    "id": "76",
-    "name": "Fleur de Peau",
-    "house": "Diptyque",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Musk",
-    "topNotes": [
-      "Iris",
-      "Musk"
-    ],
-    "middleNotes": [
-      "Ambrette",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2019,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "77",
-    "name": "Eau Duelle",
-    "house": "Diptyque",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Oriental Spicy",
-    "topNotes": [
-      "Bergamot",
-      "Elemi"
-    ],
-    "middleNotes": [
-      "Vanilla",
-      "Cardamom"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Oud",
-      "Musk"
-    ],
-    "year": 2012,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌙"
-  },
-  {
-    "id": "78",
-    "name": "Ilio",
-    "house": "Diptyque",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Floral Citrus",
-    "topNotes": [
-      "Citrus",
-      "Osmanthus"
-    ],
-    "middleNotes": [
-      "Magnolia",
-      "Ylang-Ylang"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood"
-    ],
-    "year": 2022,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "79",
-    "name": "Essence Insensee",
-    "house": "Diptyque",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Aromatic Floral",
-    "topNotes": [
-      "Galbanum",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Immortelle",
-      "Iris"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Vetiver"
-    ],
-    "year": 2012,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "80",
-    "name": "Vetyverio",
-    "house": "Diptyque",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Woody Earthy",
-    "topNotes": [
-      "Grapefruit",
-      "Pepper"
-    ],
-    "middleNotes": [
-      "Vetiver"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood"
-    ],
-    "year": 2004,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌍"
-  },
-  {
-    "id": "81",
-    "name": "Carnal Flower",
-    "house": "Frederic Malle",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral",
-    "topNotes": [
-      "Melon",
-      "Eucalyptus"
-    ],
-    "middleNotes": [
-      "Tuberose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Coconut",
-      "Sandalwood"
-    ],
-    "year": 2005,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🌸"
-  },
-  {
-    "id": "82",
-    "name": "Portrait of a Lady",
-    "house": "Frederic Malle",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral Oriental",
-    "topNotes": [
-      "Blackcurrant",
-      "Raspberry"
-    ],
-    "middleNotes": [
-      "Turkish Rose",
-      "Patchouli"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Incense"
-    ],
-    "year": 2010,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🌸"
-  },
-  {
-    "id": "83",
-    "name": "Musc Ravageur",
-    "house": "Frederic Malle",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Musk",
-    "topNotes": [
-      "Bergamot",
-      "Lavender"
-    ],
-    "middleNotes": [
-      "Cinnamon",
-      "Clove"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Vanilla"
-    ],
-    "year": 2000,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🌙"
-  },
-  {
-    "id": "84",
-    "name": "Noir Epices",
-    "house": "Frederic Malle",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Woody Spicy",
-    "topNotes": [
-      "Tangerine",
-      "Clove"
-    ],
-    "middleNotes": [
-      "Nutmeg",
-      "Pepper"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Patchouli"
-    ],
-    "year": 2000,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌶️"
-  },
-  {
-    "id": "85",
-    "name": "En Passant",
-    "house": "Frederic Malle",
-    "concentration": "EDT",
-    "gender": "Female",
-    "family": "Floral",
-    "topNotes": [
-      "Cucumber",
-      "Wheat"
-    ],
-    "middleNotes": [
-      "Lilac"
-    ],
-    "baseNotes": [
-      "Musk",
-      "White Cedar",
-      "Orris"
-    ],
-    "year": 2000,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "86",
-    "name": "Cologne Indelebile",
-    "house": "Frederic Malle",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Musk",
+    "family": "Citrus Floral",
     "topNotes": [
       "Neroli",
-      "Musk"
-    ],
-    "middleNotes": [
-      "Orange Blossom"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood"
-    ],
-    "year": 2014,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "87",
-    "name": "Vetiver Extraordinaire",
-    "house": "Frederic Malle",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Woody Earthy",
-    "topNotes": [
-      "Vetiver",
-      "Pepper"
-    ],
-    "middleNotes": [
-      "Geranium",
-      "Vetiver"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Cedarwood"
-    ],
-    "year": 2002,
-    "longevityAvg": 8,
-    "projectionAvg": 6,
-    "icon": "🌍"
-  },
-  {
-    "id": "88",
-    "name": "Le Parfum de Therese",
-    "house": "Frederic Malle",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral Fruity",
-    "topNotes": [
-      "Melon",
-      "Mandarin"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Leather",
-      "Vetiver",
-      "Musk"
-    ],
-    "year": 2000,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🍒"
-  },
-  {
-    "id": "89",
-    "name": "Dries Van Noten",
-    "house": "Frederic Malle",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Chypre Floral",
-    "topNotes": [
       "Bergamot",
-      "Cardamom"
-    ],
-    "middleNotes": [
-      "Patchouli",
-      "Sandalwood"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Amber",
-      "Oakmoss"
-    ],
-    "year": 2013,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌿"
-  },
-  {
-    "id": "90",
-    "name": "Une Fleur de Cassie",
-    "house": "Frederic Malle",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral",
-    "topNotes": [
-      "Cassie",
-      "Mimosa"
-    ],
-    "middleNotes": [
-      "Violet",
-      "Ylang-Ylang"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Civet",
-      "Sandalwood"
-    ],
-    "year": 2000,
-    "longevityAvg": 8,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "91",
-    "name": "Acqua di Colonia",
-    "house": "Santa Maria Novella",
-    "concentration": "EDC",
-    "gender": "Unisex",
-    "family": "Aromatic Citrus",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Lavender",
-      "Rosemary"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Oakmoss",
-      "Cedarwood"
-    ],
-    "year": 1600,
-    "longevityAvg": 5,
-    "projectionAvg": 4,
-    "icon": "🍋"
-  },
-  {
-    "id": "92",
-    "name": "Melograno",
-    "house": "Santa Maria Novella",
-    "concentration": "EDC",
-    "gender": "Unisex",
-    "family": "Fruity Floral",
-    "topNotes": [
-      "Pomegranate",
-      "Citrus"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Amber"
-    ],
-    "year": 1995,
-    "longevityAvg": 5,
-    "projectionAvg": 4,
-    "icon": "🍒"
-  },
-  {
-    "id": "93",
-    "name": "Nostalgia",
-    "house": "Santa Maria Novella",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Woody",
-    "topNotes": [
-      "Bergamot",
-      "Spices"
-    ],
-    "middleNotes": [
-      "Patchouli",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Amber",
-      "Musk"
-    ],
-    "year": 2000,
-    "longevityAvg": 8,
-    "projectionAvg": 6,
-    "icon": "🌙"
-  },
-  {
-    "id": "94",
-    "name": "Tabacco Toscano",
-    "house": "Santa Maria Novella",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Spicy",
-    "topNotes": [
-      "Tobacco",
-      "Honey"
-    ],
-    "middleNotes": [
-      "Vanilla",
-      "Beeswax"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2000,
-    "longevityAvg": 9,
-    "projectionAvg": 7,
-    "icon": "🌙"
-  },
-  {
-    "id": "95",
-    "name": "Pot Pourri",
-    "house": "Santa Maria Novella",
-    "concentration": "EDC",
-    "gender": "Unisex",
-    "family": "Floral Aromatic",
-    "topNotes": [
-      "Rose",
-      "Lavender"
-    ],
-    "middleNotes": [
-      "Carnation",
-      "Clove"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Oakmoss"
-    ],
-    "year": 1990,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "96",
-    "name": "Oppoponax",
-    "house": "Santa Maria Novella",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Resinous",
-    "topNotes": [
-      "Citrus",
-      "Spices"
-    ],
-    "middleNotes": [
-      "Opoponax",
-      "Myrrh"
-    ],
-    "baseNotes": [
-      "Frankincense",
-      "Musk",
-      "Amber"
-    ],
-    "year": 1800,
-    "longevityAvg": 9,
-    "projectionAvg": 7,
-    "icon": "🕯️"
-  },
-  {
-    "id": "97",
-    "name": "Iris",
-    "house": "Santa Maria Novella",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Floral Powdery",
-    "topNotes": [
-      "Bergamot",
-      "Iris"
-    ],
-    "middleNotes": [
-      "Orris",
-      "Violet"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Cedarwood"
-    ],
-    "year": 2000,
-    "longevityAvg": 7,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "98",
-    "name": "Rosa",
-    "house": "Santa Maria Novella",
-    "concentration": "EDT",
-    "gender": "Female",
-    "family": "Floral",
-    "topNotes": [
-      "Rose",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Geranium"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood"
-    ],
-    "year": 1990,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "99",
-    "name": "Patchouli",
-    "house": "Santa Maria Novella",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Earthy",
-    "topNotes": [
-      "Patchouli",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Patchouli",
-      "Vetiver"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Amber"
-    ],
-    "year": 1990,
-    "longevityAvg": 8,
-    "projectionAvg": 6,
-    "icon": "🌍"
-  },
-  {
-    "id": "100",
-    "name": "Vetiver",
-    "house": "Santa Maria Novella",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Woody Earthy",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Vetiver",
-      "Geranium"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Oakmoss",
-      "Cedarwood"
-    ],
-    "year": 1990,
-    "longevityAvg": 7,
-    "projectionAvg": 5,
-    "icon": "🌍"
-  },
-  {
-    "id": "101",
-    "name": "Nio",
-    "house": "Xerjoff",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Woody",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2009,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "102",
-    "name": "Naxos",
-    "house": "Xerjoff",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Gourmand",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Cinnamon"
-    ],
-    "baseNotes": [
-      "Tobacco",
-      "Vanilla",
-      "Tonka Bean"
-    ],
-    "year": 2016,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🍯"
-  },
-  {
-    "id": "103",
-    "name": "Erba Pura",
-    "house": "Xerjoff",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Fruity",
-    "topNotes": [
-      "Sicilian Orange",
-      "Calabrian Bergamot"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "White Flowers"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Amber"
-    ],
-    "year": 2015,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🍒"
-  },
-  {
-    "id": "104",
-    "name": "Alexandria II",
-    "house": "Xerjoff",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Woody",
-    "topNotes": [
-      "Bergamot",
-      "Pink Pepper"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Oud"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Amber",
-      "Musk"
-    ],
-    "year": 2015,
-    "longevityAvg": 10,
-    "projectionAvg": 9,
-    "icon": "🌙"
-  },
-  {
-    "id": "105",
-    "name": "Zefiro",
-    "house": "Xerjoff",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Woody",
-    "topNotes": [
-      "Grapefruit",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Iris",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Vetiver"
-    ],
-    "year": 2009,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "106",
-    "name": "Cruz del Sur II",
-    "house": "Xerjoff",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Oriental",
-    "topNotes": [
-      "Cardamom",
-      "Saffron"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Oud"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Amber",
-      "Musk"
-    ],
-    "year": 2019,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🌙"
-  },
-  {
-    "id": "107",
-    "name": "Lira",
-    "house": "Xerjoff",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Woody",
-    "topNotes": [
-      "Bergamot",
-      "Mandarin"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2009,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "108",
-    "name": "K'uo",
-    "house": "Xerjoff",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Aromatic",
-    "topNotes": [
-      "Pepper",
-      "Cardamom"
-    ],
-    "middleNotes": [
-      "Leather",
-      "Vetiver"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Cedarwood"
-    ],
-    "year": 2015,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🪵"
-  },
-  {
-    "id": "109",
-    "name": "Irisss",
-    "house": "Xerjoff",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Powdery",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Iris",
-      "Orris"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2015,
-    "longevityAvg": 8,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "110",
-    "name": "More Than Words",
-    "house": "Xerjoff",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Woody",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine",
-      "Peony"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Vetiver"
-    ],
-    "year": 2020,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "111",
-    "name": "Chanel No.5",
-    "house": "Chanel",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral Aldehyde",
-    "topNotes": [
-      "Ylang-Ylang",
-      "Neroli",
-      "Aldehyde"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Vetiver",
-      "Vanilla"
-    ],
-    "year": 1921,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "112",
-    "name": "Chanel No.19",
-    "house": "Chanel",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Green Floral",
-    "topNotes": [
-      "Galbanum",
-      "Iris",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine",
-      "Lily of the Valley"
-    ],
-    "baseNotes": [
-      "Vetiver",
-      "Oakmoss",
-      "Musk"
-    ],
-    "year": 1970,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "113",
-    "name": "Coco Mademoiselle",
-    "house": "Chanel",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Oriental Floral",
-    "topNotes": [
-      "Orange",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine",
-      "Mimosa"
-    ],
-    "baseNotes": [
-      "Patchouli",
-      "Vetiver",
-      "Vanilla"
-    ],
-    "year": 2001,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "114",
-    "name": "Bleu de Chanel",
-    "house": "Chanel",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Aromatic Woody",
-    "topNotes": [
-      "Lemon",
-      "Bergamot",
-      "Grapefruit"
-    ],
-    "middleNotes": [
-      "Ginger",
-      "Jasmine",
-      "Nutmeg"
-    ],
-    "baseNotes": [
-      "Labdanum",
-      "Sandalwood",
-      "Patchouli"
-    ],
-    "year": 2010,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🪵"
-  },
-  {
-    "id": "115",
-    "name": "Sycomore",
-    "house": "Chanel",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Smoky",
-    "topNotes": [
-      "Pink Pepper",
-      "Juniper"
-    ],
-    "middleNotes": [
-      "Vetiver",
-      "Sandalwood"
-    ],
-    "baseNotes": [
-      "Oakmoss",
-      "Musk",
-      "Cedarwood"
-    ],
-    "year": 2008,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🕯️"
-  },
-  {
-    "id": "116",
-    "name": "Coromandel",
-    "house": "Chanel",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Woody",
-    "topNotes": [
-      "Citrus",
-      "Pink Pepper"
-    ],
-    "middleNotes": [
-      "Patchouli",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Benzoin",
-      "White Musk",
-      "Labdanum"
-    ],
-    "year": 2007,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌙"
-  },
-  {
-    "id": "117",
-    "name": "Le Lion",
-    "house": "Chanel",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Spicy",
-    "topNotes": [
-      "Bergamot",
-      "Cardamom"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Oud"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Amber",
-      "Musk"
-    ],
-    "year": 2019,
-    "longevityAvg": 8,
-    "projectionAvg": 8,
-    "icon": "🌶️"
-  },
-  {
-    "id": "118",
-    "name": "Misia",
-    "house": "Chanel",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Powdery Floral",
-    "topNotes": [
-      "Neroli",
-      "Mandarin"
-    ],
-    "middleNotes": [
-      "Iris",
-      "Rose",
-      "Violet"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Vetiver"
-    ],
-    "year": 2015,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "119",
-    "name": "Jersey",
-    "house": "Chanel",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Aromatic Lavender",
-    "topNotes": [
-      "Bergamot",
-      "Lavender"
-    ],
-    "middleNotes": [
-      "Heliotrope",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Vanilla",
-      "Musk",
-      "Sandalwood"
-    ],
-    "year": 2011,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌾"
-  },
-  {
-    "id": "120",
-    "name": "Beige",
-    "house": "Chanel",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral",
-    "topNotes": [
-      "Hawthorn",
-      "Ylang-Ylang"
-    ],
-    "middleNotes": [
-      "Freesia",
-      "Honey"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Vetiver"
-    ],
-    "year": 2005,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "121",
-    "name": "Boy",
-    "house": "Chanel",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Aromatic",
-    "topNotes": [
-      "Bergamot",
-      "Labdanum"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Grasse Rose"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Vetiver",
-      "Musk"
-    ],
-    "year": 2016,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🪵"
-  },
-  {
-    "id": "122",
-    "name": "1957",
-    "house": "Chanel",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Musk",
-    "topNotes": [
-      "Cedar",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Amber"
-    ],
-    "year": 2019,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🪵"
-  },
-  {
-    "id": "123",
-    "name": "L'Interdit (2018)",
-    "house": "Givenchy",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral Woody",
-    "topNotes": [
-      "Bergamot",
-      "Pear"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Orange Blossom",
-      "Tuberose"
-    ],
-    "baseNotes": [
-      "Patchouli",
-      "Vetiver",
-      "Musk"
-    ],
-    "year": 2018,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "124",
-    "name": "L'Air du Désert Marocain",
-    "house": "Tauer Perfumes",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Oriental",
-    "topNotes": [
-      "Grapefruit",
-      "Thyme"
-    ],
-    "middleNotes": [
-      "Vetiver",
-      "Cedarwood"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Amber",
-      "Musk"
-    ],
-    "year": 2005,
-    "longevityAvg": 9,
-    "projectionAvg": 7,
-    "icon": "🌙"
-  },
-  {
-    "id": "125",
-    "name": "Imagination",
-    "house": "Louis Vuitton",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Aromatic Aquatic",
-    "topNotes": [
-      "Bergamot",
-      "Grapefruit"
-    ],
-    "middleNotes": [
-      "Petitgrain",
-      "Vetiver"
-    ],
-    "baseNotes": [
-      "Cedar",
-      "Musk"
-    ],
-    "year": 2019,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌊"
-  },
-  {
-    "id": "126",
-    "name": "Afternoon Swim",
-    "house": "Louis Vuitton",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Aromatic Aquatic",
-    "topNotes": [
-      "Coconut",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Aquatic Notes",
-      "White Flowers"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood"
-    ],
-    "year": 2019,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌊"
-  },
-  {
-    "id": "127",
-    "name": "On the Beach",
-    "house": "Louis Vuitton",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Aromatic Aquatic",
-    "topNotes": [
-      "Sea Salt",
-      "Citrus"
-    ],
-    "middleNotes": [
-      "Aquatic Notes"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Driftwood",
-      "Amber"
-    ],
-    "year": 2019,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌊"
-  },
-  {
-    "id": "128",
-    "name": "California Dream",
-    "house": "Louis Vuitton",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Woody",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Orange Blossom"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Vetiver"
-    ],
-    "year": 2019,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "129",
-    "name": "Spell on You",
-    "house": "Louis Vuitton",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral",
-    "topNotes": [
-      "Jasmine",
-      "Rose"
-    ],
-    "middleNotes": [
-      "Tuberose",
-      "Ylang-Ylang"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Ambergris"
-    ],
-    "year": 2019,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "130",
-    "name": "Matiere Noire",
-    "house": "Louis Vuitton",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral Woody",
-    "topNotes": [
-      "Blackcurrant",
-      "Plum"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Patchouli",
-      "Musk"
-    ],
-    "year": 2019,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "131",
-    "name": "Ombre Nomade",
-    "house": "Louis Vuitton",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Oriental",
-    "topNotes": [
-      "Birch",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Oud",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Benzoin",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2018,
-    "longevityAvg": 10,
-    "projectionAvg": 8,
-    "icon": "🌙"
-  },
-  {
-    "id": "132",
-    "name": "Nuit de Feu",
-    "house": "Louis Vuitton",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Spicy",
-    "topNotes": [
-      "Cardamom",
-      "Pink Pepper"
-    ],
-    "middleNotes": [
-      "Oud",
-      "Incense"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Amber",
-      "Musk"
-    ],
-    "year": 2019,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🌙"
-  },
-  {
-    "id": "133",
-    "name": "Dans la Peau",
-    "house": "Louis Vuitton",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Leather Floral",
-    "topNotes": [
-      "Bergamot",
-      "Cardamom"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Leather"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Vetiver"
-    ],
-    "year": 2019,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🟤"
-  },
-  {
-    "id": "134",
-    "name": "Le Jour se Leve",
-    "house": "Louis Vuitton",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Woody",
-    "topNotes": [
-      "Citrus",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Iris",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Vetiver"
-    ],
-    "year": 2016,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "135",
-    "name": "Acqua di Gio",
-    "house": "Giorgio Armani",
-    "concentration": "EDT",
-    "gender": "Male",
-    "family": "Aromatic Aquatic",
-    "topNotes": [
-      "Calabrian Bergamot",
-      "Neroli",
-      "Green Tangerine"
-    ],
-    "middleNotes": [
-      "Rosemary",
-      "Persimmon",
-      "Marine Notes"
-    ],
-    "baseNotes": [
-      "Cedarwood",
-      "Patchouli",
-      "White Musk"
-    ],
-    "year": 1996,
-    "longevityAvg": 6,
-    "projectionAvg": 6,
-    "icon": "🌊"
-  },
-  {
-    "id": "136",
-    "name": "Acqua di Gio Profumo",
-    "house": "Giorgio Armani",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Aromatic Woody",
-    "topNotes": [
-      "Bergamot",
-      "Marine Accord"
-    ],
-    "middleNotes": [
-      "Geranium",
-      "Sage",
-      "Rosemary"
-    ],
-    "baseNotes": [
-      "Incense",
-      "Patchouli",
-      "Vetiver"
-    ],
-    "year": 2015,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🪵"
-  },
-  {
-    "id": "137",
-    "name": "Acqua di Gio Absolu",
-    "house": "Giorgio Armani",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Aromatic Aquatic",
-    "topNotes": [
-      "Bergamot",
-      "Mandarin"
-    ],
-    "middleNotes": [
-      "Marine Accord",
-      "Patchouli"
-    ],
-    "baseNotes": [
-      "Labdanum",
-      "Musk",
-      "Cedarwood"
-    ],
-    "year": 2018,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌊"
-  },
-  {
-    "id": "138",
-    "name": "Armani Code",
-    "house": "Giorgio Armani",
-    "concentration": "EDT",
-    "gender": "Male",
-    "family": "Oriental Woody",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Star Anise",
-      "Olive Blossom"
-    ],
-    "baseNotes": [
-      "Tobacco",
-      "Leather",
-      "Guaiac Wood"
-    ],
-    "year": 2004,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌙"
-  },
-  {
-    "id": "139",
-    "name": "Armani Code Absolu",
-    "house": "Giorgio Armani",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Oriental Gourmand",
-    "topNotes": [
-      "Mandarin",
-      "Cardamom"
-    ],
-    "middleNotes": [
-      "Rum",
-      "Tonka Bean"
-    ],
-    "baseNotes": [
-      "Vanilla",
-      "Amber",
-      "Patchouli"
-    ],
-    "year": 2019,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🍯"
-  },
-  {
-    "id": "140",
-    "name": "Si",
-    "house": "Giorgio Armani",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Chypre Floral",
-    "topNotes": [
-      "Blackcurrant Nectar",
-      "Mandarin"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Freesia"
-    ],
-    "baseNotes": [
-      "Patchouli",
-      "Vanilla",
-      "Ambroxan"
-    ],
-    "year": 2013,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌿"
-  },
-  {
-    "id": "141",
-    "name": "Si Passione",
-    "house": "Giorgio Armani",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral Fruity",
-    "topNotes": [
-      "Blackcurrant",
-      "Pear"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Patchouli",
-      "Vanilla",
-      "Musk"
-    ],
-    "year": 2017,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🍒"
-  },
-  {
-    "id": "144",
-    "name": "Colonia",
-    "house": "Acqua di Parma",
-    "concentration": "EDC",
-    "gender": "Unisex",
-    "family": "Aromatic Citrus",
-    "topNotes": [
-      "Calabrian Lemon",
-      "Bergamot",
-      "Lavender"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine",
-      "Rosemary"
-    ],
-    "baseNotes": [
-      "Vetiver",
-      "Musk",
-      "Sandalwood"
-    ],
-    "year": 1916,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🍋"
-  },
-  {
-    "id": "145",
-    "name": "Colonia Intensa",
-    "house": "Acqua di Parma",
-    "concentration": "EDC",
-    "gender": "Male",
-    "family": "Aromatic Woody",
-    "topNotes": [
-      "Bergamot",
-      "Lemon",
       "Petitgrain"
     ],
     "middleNotes": [
-      "Cardamom",
-      "Pepper",
-      "Patchouli"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Vetiver",
-      "Sandalwood"
-    ],
-    "year": 2009,
-    "longevityAvg": 6,
-    "projectionAvg": 6,
-    "icon": "🪵"
-  },
-  {
-    "id": "146",
-    "name": "Colonia Assoluta",
-    "house": "Acqua di Parma",
-    "concentration": "EDC",
-    "gender": "Unisex",
-    "family": "Aromatic Citrus",
-    "topNotes": [
-      "Grapefruit",
-      "Lemon",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Cyclamen"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood",
-      "Sandalwood"
-    ],
-    "year": 2002,
-    "longevityAvg": 5,
-    "projectionAvg": 5,
-    "icon": "🍋"
-  },
-  {
-    "id": "147",
-    "name": "Blu Mediterraneo Arancia di Capri",
-    "house": "Acqua di Parma",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Aromatic Citrus",
-    "topNotes": [
-      "Sicilian Orange",
-      "Mandarin"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Aquatic Notes"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood",
-      "Amber"
-    ],
-    "year": 2000,
-    "longevityAvg": 5,
-    "projectionAvg": 4,
-    "icon": "🍋"
-  },
-  {
-    "id": "148",
-    "name": "Magnolia Nobile",
-    "house": "Acqua di Parma",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Magnolia",
-      "Jasmine",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2013,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "149",
-    "name": "Rosa Nobile",
-    "house": "Acqua di Parma",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral",
-    "topNotes": [
-      "Bergamot",
-      "Mandarin"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Peony",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Patchouli",
-      "Musk"
-    ],
-    "year": 2009,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "150",
-    "name": "Iris Nobile",
-    "house": "Acqua di Parma",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral Powdery",
-    "topNotes": [
-      "Grapefruit",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Iris",
-      "Jasmine",
-      "Ylang-Ylang"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2004,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "151",
-    "name": "Oud",
-    "house": "Acqua di Parma",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Oriental",
-    "topNotes": [
-      "Bergamot",
-      "Saffron"
-    ],
-    "middleNotes": [
-      "Oud",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2014,
-    "longevityAvg": 9,
-    "projectionAvg": 7,
-    "icon": "🌙"
-  },
-  {
-    "id": "152",
-    "name": "Yuzu",
-    "house": "Acqua di Parma",
-    "concentration": "EDC",
-    "gender": "Unisex",
-    "family": "Aromatic Citrus",
-    "topNotes": [
-      "Yuzu",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Green Tea",
+      "Orange Blossom",
       "Jasmine"
     ],
     "baseNotes": [
       "Musk",
       "Cedarwood",
-      "Sandalwood"
-    ],
-    "year": 2007,
-    "longevityAvg": 5,
-    "projectionAvg": 4,
-    "icon": "🍋"
-  },
-  {
-    "id": "153",
-    "name": "Gypsy Water",
-    "house": "Byredo",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Aromatic",
-    "topNotes": [
-      "Bergamot",
-      "Lemon",
-      "Pepper"
-    ],
-    "middleNotes": [
-      "Juniper Berries",
-      "Orris"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Vanilla",
-      "Amber"
-    ],
-    "year": 2008,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🪵"
-  },
-  {
-    "id": "154",
-    "name": "Bal d'Afrique",
-    "house": "Byredo",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Woody",
-    "topNotes": [
-      "Bergamot",
-      "African Marigold"
-    ],
-    "middleNotes": [
-      "Violet",
-      "Neroli"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Woody Notes",
-      "Vetiver"
-    ],
-    "year": 2009,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "155",
-    "name": "Mojave Ghost",
-    "house": "Byredo",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Woody",
-    "topNotes": [
-      "Magnolia",
-      "Ambrette"
-    ],
-    "middleNotes": [
-      "Violet",
-      "Sandalwood"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood",
-      "Amber"
-    ],
-    "year": 2014,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "156",
-    "name": "Bibliotheque",
-    "house": "Byredo",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Vanilla",
-    "topNotes": [
-      "Peach",
-      "Plum"
-    ],
-    "middleNotes": [
-      "Violet",
-      "Peony"
-    ],
-    "baseNotes": [
-      "Vanilla",
-      "Sandalwood",
-      "Leather"
-    ],
-    "year": 2018,
-    "longevityAvg": 8,
-    "projectionAvg": 6,
-    "icon": "🪵"
-  },
-  {
-    "id": "157",
-    "name": "Blanche",
-    "house": "Byredo",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral Musk",
-    "topNotes": [
-      "Pink Pepper",
-      "Neroli"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Peony"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "White Musk",
-      "Cedarwood"
-    ],
-    "year": 2006,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "158",
-    "name": "Accord Oud",
-    "house": "Byredo",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Oriental",
-    "topNotes": [
-      "Saffron",
-      "Rose"
-    ],
-    "middleNotes": [
-      "Oud",
-      "Patchouli"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2012,
-    "longevityAvg": 9,
-    "projectionAvg": 7,
-    "icon": "🌙"
-  },
-  {
-    "id": "159",
-    "name": "Tobacco & Plum",
-    "house": "Byredo",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Gourmand",
-    "topNotes": [
-      "Plum",
-      "Rum"
-    ],
-    "middleNotes": [
-      "Tobacco",
-      "Iris"
-    ],
-    "baseNotes": [
-      "Vanilla",
-      "Sandalwood",
-      "Musk"
-    ],
-    "year": 2022,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🍯"
-  },
-  {
-    "id": "160",
-    "name": "La Tulipe",
-    "house": "Byredo",
-    "concentration": "EDT",
-    "gender": "Female",
-    "family": "Floral",
-    "topNotes": [
-      "Tulip",
-      "Rhubarb"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Lily of the Valley"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood",
-      "Vetiver"
-    ],
-    "year": 2009,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "161",
-    "name": "Inca Trail",
-    "house": "Byredo",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Aromatic Woody",
-    "topNotes": [
-      "Eucalyptus",
-      "Coriander"
-    ],
-    "middleNotes": [
-      "Leather",
-      "Cedarwood"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Vetiver",
-      "Amber"
-    ],
-    "year": 2014,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🪵"
-  },
-  {
-    "id": "162",
-    "name": "Tree House",
-    "house": "Byredo",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Green",
-    "topNotes": [
-      "Pine Needle",
-      "Juniper"
-    ],
-    "middleNotes": [
-      "Vetiver",
-      "Cedarwood"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Amber"
-    ],
-    "year": 2021,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌱"
-  },
-  {
-    "id": "163",
-    "name": "Cuir Amethyste",
-    "house": "Armani Prive",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Leather Woody",
-    "topNotes": [
-      "Bergamot",
-      "Violet"
-    ],
-    "middleNotes": [
-      "Leather",
-      "Iris"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2010,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🟤"
-  },
-  {
-    "id": "164",
-    "name": "Pierre de Lune",
-    "house": "Armani Prive",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Oriental",
-    "topNotes": [
-      "Bergamot",
-      "Neroli"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Patchouli",
-      "Amber"
-    ],
-    "year": 2010,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "165",
-    "name": "Rose d'Arabie",
-    "house": "Armani Prive",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Oriental",
-    "topNotes": [
-      "Rose",
-      "Saffron"
-    ],
-    "middleNotes": [
-      "Oud",
-      "Patchouli"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2004,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🌸"
-  },
-  {
-    "id": "166",
-    "name": "Oud Royal",
-    "house": "Armani Prive",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Oriental",
-    "topNotes": [
-      "Saffron",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Oud",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Amber",
-      "Musk"
-    ],
-    "year": 2012,
-    "longevityAvg": 10,
-    "projectionAvg": 8,
-    "icon": "🌙"
-  },
-  {
-    "id": "167",
-    "name": "Bleu Lazuli",
-    "house": "Armani Prive",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Woody Aromatic",
-    "topNotes": [
-      "Bergamot",
-      "Juniper Berry"
-    ],
-    "middleNotes": [
-      "Cedarwood",
-      "Cypress"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Vetiver",
-      "Sandalwood"
-    ],
-    "year": 2015,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🪵"
-  },
-  {
-    "id": "168",
-    "name": "Rouge Malachite",
-    "house": "Armani Prive",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral Woody",
-    "topNotes": [
-      "Bergamot",
-      "Mandarin"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine",
-      "Peony"
-    ],
-    "baseNotes": [
-      "Patchouli",
-      "Sandalwood",
-      "Musk"
-    ],
-    "year": 2015,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "169",
-    "name": "Bois d'Encens",
-    "house": "Armani Prive",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Resinous",
-    "topNotes": [
-      "Frankincense",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Cedarwood",
-      "Cypress"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Amber"
-    ],
-    "year": 2004,
-    "longevityAvg": 8,
-    "projectionAvg": 6,
-    "icon": "🕯️"
-  },
-  {
-    "id": "170",
-    "name": "Pivoine Suzhou",
-    "house": "Armani Prive",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral",
-    "topNotes": [
-      "Peony",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Cedarwood"
-    ],
-    "year": 2013,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "171",
-    "name": "Iris Celadon",
-    "house": "Armani Prive",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Powdery",
-    "topNotes": [
-      "Bergamot",
-      "Iris"
-    ],
-    "middleNotes": [
-      "Orris",
-      "Violet"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Amber"
-    ],
-    "year": 2013,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "172",
-    "name": "Myrrhe Imperiale",
-    "house": "Armani Prive",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Resinous",
-    "topNotes": [
-      "Bergamot",
-      "Mandarin"
-    ],
-    "middleNotes": [
-      "Myrrh",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Amber",
-      "Musk"
-    ],
-    "year": 2004,
-    "longevityAvg": 9,
-    "projectionAvg": 7,
-    "icon": "🕯️"
-  },
-  {
-    "id": "173",
-    "name": "Vetiver Babylone",
-    "house": "Armani Prive",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Woody Earthy",
-    "topNotes": [
-      "Bergamot",
-      "Grapefruit"
-    ],
-    "middleNotes": [
-      "Vetiver",
-      "Patchouli"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood",
-      "Sandalwood"
-    ],
-    "year": 2004,
-    "longevityAvg": 8,
-    "projectionAvg": 6,
-    "icon": "🌍"
-  },
-  {
-    "id": "174",
-    "name": "Ambre Soie",
-    "house": "Armani Prive",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Floral",
-    "topNotes": [
-      "Bergamot",
-      "Mandarin"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Amber",
-      "Sandalwood",
-      "Musk"
-    ],
-    "year": 2004,
-    "longevityAvg": 9,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "175",
-    "name": "Aventus",
-    "house": "Creed",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Fruity Chypre",
-    "topNotes": [
-      "Bergamot",
-      "Blackcurrant",
-      "Apple"
-    ],
-    "middleNotes": [
-      "Birch",
-      "Patchouli",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Oakmoss",
       "Ambergris"
     ],
-    "year": 2010,
-    "longevityAvg": 8,
-    "projectionAvg": 8,
-    "icon": "🌿"
-  },
-  {
-    "id": "176",
-    "name": "Silver Mountain Water",
-    "house": "Creed",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Aromatic Aquatic",
-    "topNotes": [
-      "Bergamot",
-      "Mandarin"
-    ],
-    "middleNotes": [
-      "Green Tea",
-      "Blackcurrant"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Cedarwood"
-    ],
-    "year": 1995,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌊"
-  },
-  {
-    "id": "177",
-    "name": "Green Irish Tweed",
-    "house": "Creed",
-    "concentration": "EDT",
-    "gender": "Male",
-    "family": "Aromatic Green",
-    "topNotes": [
-      "Verbena",
-      "Violet Leaves"
-    ],
-    "middleNotes": [
-      "Iris",
-      "Sandalwood"
-    ],
-    "baseNotes": [
-      "Ambergris",
-      "Musk",
-      "Cedarwood"
-    ],
-    "year": 1985,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌱"
-  },
-  {
-    "id": "178",
-    "name": "Royal Oud",
-    "house": "Creed",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Oriental",
-    "topNotes": [
-      "Bergamot",
-      "Pink Pepper"
-    ],
-    "middleNotes": [
-      "Oud",
-      "Cedar"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2011,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌙"
-  },
-  {
-    "id": "179",
-    "name": "Bois du Portugal",
-    "house": "Creed",
-    "concentration": "EDT",
-    "gender": "Male",
-    "family": "Woody Aromatic",
-    "topNotes": [
-      "Bergamot",
-      "Lavender"
-    ],
-    "middleNotes": [
-      "Cedarwood",
-      "Sandalwood"
-    ],
-    "baseNotes": [
-      "Labdanum",
-      "Musk",
-      "Oakmoss"
-    ],
-    "year": 1987,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🪵"
-  },
-  {
-    "id": "180",
-    "name": "Millisime Imperial",
-    "house": "Creed",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Aromatic Aquatic",
-    "topNotes": [
-      "Bergamot",
-      "Mandarin",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Iris",
-      "Violet"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Ambergris",
-      "Sandalwood"
-    ],
-    "year": 1995,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌊"
-  },
-  {
-    "id": "181",
-    "name": "Viking",
-    "house": "Creed",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Aromatic Woody",
-    "topNotes": [
-      "Pink Pepper",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Lavender",
-      "Vetiver"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Cedarwood"
-    ],
-    "year": 2017,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🪵"
-  },
-  {
-    "id": "182",
-    "name": "Himalaya",
-    "house": "Creed",
-    "concentration": "EDT",
-    "gender": "Male",
-    "family": "Aromatic Woody",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Sandalwood",
-      "Geranium"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Oakmoss",
-      "Cedarwood"
-    ],
-    "year": 2002,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🪵"
-  },
-  {
-    "id": "183",
-    "name": "Original Santal",
-    "house": "Creed",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Spicy",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Sandalwood",
-      "Cardamom"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Amber",
-      "Cedarwood"
-    ],
-    "year": 2000,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌶️"
-  },
-  {
-    "id": "184",
-    "name": "Erolfa",
-    "house": "Creed",
-    "concentration": "EDT",
-    "gender": "Male",
-    "family": "Aromatic Aquatic",
-    "topNotes": [
-      "Bergamot",
-      "Galbanum"
-    ],
-    "middleNotes": [
-      "Melon",
-      "Neroli"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Ambergris"
-    ],
-    "year": 1992,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌊"
-  },
-  {
-    "id": "185",
-    "name": "Sauvage",
-    "house": "Dior",
-    "concentration": "EDT",
-    "gender": "Male",
-    "family": "Aromatic Fougere",
-    "topNotes": [
-      "Bergamot",
-      "Pepper"
-    ],
-    "middleNotes": [
-      "Lavender",
-      "Pink Pepper",
-      "Vetiver"
-    ],
-    "baseNotes": [
-      "Ambroxan",
-      "Cedar",
-      "Labdanum"
-    ],
-    "year": 2015,
-    "longevityAvg": 8,
-    "projectionAvg": 8,
-    "icon": "🌾"
-  },
-  {
-    "id": "186",
-    "name": "Sauvage EDP",
-    "house": "Dior",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Aromatic Woody",
-    "topNotes": [
-      "Bergamot",
-      "Pepper"
-    ],
-    "middleNotes": [
-      "Lavender",
-      "Vetiver",
-      "Star Anise"
-    ],
-    "baseNotes": [
-      "Ambroxan",
-      "Cedar",
-      "Sandalwood"
-    ],
-    "year": 2018,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🪵"
-  },
-  {
-    "id": "187",
-    "name": "Sauvage Parfum",
-    "house": "Dior",
-    "concentration": "Parfum",
-    "gender": "Male",
-    "family": "Woody Aromatic",
-    "topNotes": [
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Lavender",
-      "Vetiver"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Haitian Vetiver",
-      "Amber"
-    ],
-    "year": 2019,
-    "longevityAvg": 10,
-    "projectionAvg": 8,
-    "icon": "🪵"
-  },
-  {
-    "id": "188",
-    "name": "J'adore",
-    "house": "Dior",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral",
-    "topNotes": [
-      "Pear",
-      "Melon"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine",
-      "Ylang-Ylang"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Cedar"
-    ],
-    "year": 1999,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "189",
-    "name": "Miss Dior",
-    "house": "Dior",
-    "concentration": "EDP",
-    "gender": "Female",
-    "family": "Floral Chypre",
-    "topNotes": [
-      "Bergamot",
-      "Grapefruit"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine",
-      "Peony"
-    ],
-    "baseNotes": [
-      "Patchouli",
-      "Musk",
-      "Sandalwood"
-    ],
-    "year": 2011,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌿"
-  },
-  {
-    "id": "190",
-    "name": "Dior Homme",
-    "house": "Dior",
-    "concentration": "EDT",
-    "gender": "Male",
-    "family": "Floral Powdery",
-    "topNotes": [
-      "Bergamot",
-      "Lemon",
-      "Pink Pepper"
-    ],
-    "middleNotes": [
-      "Iris",
-      "Orris"
-    ],
-    "baseNotes": [
-      "Vetiver",
-      "Patchouli",
-      "Leather"
-    ],
-    "year": 2005,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "191",
-    "name": "Dior Homme Intense",
-    "house": "Dior",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Floral Oriental",
-    "topNotes": [
-      "Bergamot",
-      "Lavender"
-    ],
-    "middleNotes": [
-      "Iris",
-      "Ambrette"
-    ],
-    "baseNotes": [
-      "Vetiver",
-      "Sandalwood",
-      "Virginia Cedar"
-    ],
-    "year": 2007,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "192",
-    "name": "Gris Dior",
-    "house": "Dior",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Chypre Floral",
-    "topNotes": [
-      "Bergamot",
-      "Grapefruit"
-    ],
-    "middleNotes": [
-      "Grasse Rose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Patchouli",
-      "Vetiver",
-      "Musk"
-    ],
-    "year": 2015,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌿"
-  },
-  {
-    "id": "193",
-    "name": "Bois d'Argent",
-    "house": "Dior",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Floral",
-    "topNotes": [
-      "Iris",
-      "Elemi"
-    ],
-    "middleNotes": [
-      "Musk",
-      "Sandalwood"
-    ],
-    "baseNotes": [
-      "Patchouli",
-      "Amber",
-      "Cedarwood"
-    ],
-    "year": 2004,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "194",
-    "name": "Oud Ispahan",
-    "house": "Dior",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Oriental",
-    "topNotes": [
-      "Rose",
-      "Saffron"
-    ],
-    "middleNotes": [
-      "Oud",
-      "Patchouli"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Labdanum",
-      "Musk"
-    ],
-    "year": 2012,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🌙"
-  },
-  {
-    "id": "195",
-    "name": "Leather Oud",
-    "house": "Dior",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Leather Oriental",
-    "topNotes": [
-      "Oud",
-      "Saffron"
-    ],
-    "middleNotes": [
-      "Leather",
-      "Patchouli"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Amber",
-      "Musk"
-    ],
-    "year": 2012,
-    "longevityAvg": 9,
-    "projectionAvg": 7,
-    "icon": "🟤"
-  },
-  {
-    "id": "196",
-    "name": "Granville",
-    "house": "Dior",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Floral Citrus",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Cedarwood"
-    ],
-    "year": 2011,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "197",
-    "name": "Tobacco Vanille",
-    "house": "Tom Ford",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Gourmand",
-    "topNotes": [
-      "Spices",
-      "Tobacco"
-    ],
-    "middleNotes": [
-      "Tobacco Blossom",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Vanilla",
-      "Tonka Bean",
-      "Cocoa"
-    ],
-    "year": 2007,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🍯"
-  },
-  {
-    "id": "198",
-    "name": "Oud Wood",
-    "house": "Tom Ford",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Oriental",
-    "topNotes": [
-      "Oud",
-      "Rosewood"
-    ],
-    "middleNotes": [
-      "Cardamom",
-      "Sandalwood"
-    ],
-    "baseNotes": [
-      "Vetiver",
-      "Tonka Bean",
-      "Amber"
-    ],
-    "year": 2007,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌙"
-  },
-  {
-    "id": "199",
-    "name": "Noir de Noir",
-    "house": "Tom Ford",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Oriental",
-    "topNotes": [
-      "Truffle",
-      "Saffron"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Oud"
-    ],
-    "baseNotes": [
-      "Patchouli",
-      "Sandalwood",
-      "Musk"
-    ],
-    "year": 2007,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🌸"
-  },
-  {
-    "id": "200",
-    "name": "Black Orchid",
-    "house": "Tom Ford",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Oriental",
-    "topNotes": [
-      "Truffle",
-      "Ylang-Ylang",
-      "Black Currant"
-    ],
-    "middleNotes": [
-      "Black Orchid",
-      "Lotus"
-    ],
-    "baseNotes": [
-      "Patchouli",
-      "Vanilla",
-      "Beeswax"
-    ],
     "year": 2006,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🌸"
-  },
-  {
-    "id": "201",
-    "name": "Neroli Portofino",
-    "house": "Tom Ford",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Aromatic Citrus",
-    "topNotes": [
-      "Bergamot",
-      "Lemon",
-      "Mandarin"
-    ],
-    "middleNotes": [
-      "Neroli",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Amber",
-      "Musk",
-      "Sandalwood"
-    ],
-    "year": 2011,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🍋"
-  },
-  {
-    "id": "202",
-    "name": "Sole di Positano",
-    "house": "Tom Ford",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Floral Citrus",
-    "topNotes": [
-      "Lemon",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Lilac"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood",
-      "Sandalwood"
-    ],
-    "year": 2015,
+    "descriptionKo": "네롤리의 비터한 시트러스와 화이트 플로럴. 지중해 햇살처럼 밝고 따뜻",
     "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "203",
-    "name": "Costa Azzurra",
-    "house": "Tom Ford",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Aromatic Woody",
-    "topNotes": [
-      "Sea Notes",
-      "Cypress"
-    ],
-    "middleNotes": [
-      "Mastic",
-      "Rosemary"
-    ],
-    "baseNotes": [
-      "Oakmoss",
-      "Cedarwood",
-      "Musk"
-    ],
-    "year": 2014,
-    "longevityAvg": 7,
     "projectionAvg": 6,
-    "icon": "🪵"
+    "ratingAvg": 4,
+    "accords": [
+      "Citrus",
+      "Floral",
+      "Fresh",
+      "Musky"
+    ],
+    "keywordsKo": [
+      "시트러시한",
+      "플로럴한",
+      "신선한",
+      "가벼운"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Office",
+      "Sport"
+    ],
+    "intensity": 2,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 6,
+    "priceTier": "Luxury",
+    "icon": "🌿"
   },
   {
-    "id": "204",
-    "name": "Grey Vetiver",
-    "house": "Tom Ford",
-    "concentration": "EDT",
-    "gender": "Male",
-    "family": "Woody Aromatic",
-    "topNotes": [
-      "Grapefruit",
-      "Orange Blossom"
-    ],
-    "middleNotes": [
-      "Vetiver",
-      "Sage"
-    ],
-    "baseNotes": [
-      "Oakmoss",
-      "Sandalwood",
-      "Amber"
-    ],
-    "year": 2009,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🪵"
-  },
-  {
-    "id": "205",
-    "name": "Tuscan Leather",
-    "house": "Tom Ford",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Leather Woody",
-    "topNotes": [
-      "Raspberry",
-      "Saffron"
-    ],
-    "middleNotes": [
-      "Thyme",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Leather",
-      "Suede",
-      "Musk"
-    ],
-    "year": 2007,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🟤"
-  },
-  {
-    "id": "206",
-    "name": "Fougere Platine",
-    "house": "Tom Ford",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Aromatic Fougere",
-    "topNotes": [
-      "Bergamot",
-      "Lavender"
-    ],
-    "middleNotes": [
-      "Orris",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2019,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌾"
-  },
-  {
-    "id": "207",
-    "name": "Rose Prick",
-    "house": "Tom Ford",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Spicy",
-    "topNotes": [
-      "Rose",
-      "Pink Pepper"
-    ],
-    "middleNotes": [
-      "Geranium",
-      "Clove"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Patchouli",
-      "Vetiver"
-    ],
-    "year": 2020,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌸"
-  },
-  {
-    "id": "208",
-    "name": "Ebene Fume",
-    "house": "Tom Ford",
+    "id": "44",
+    "name": "Patchouli 24",
+    "house": "Le Labo",
     "concentration": "EDP",
     "gender": "Unisex",
     "family": "Woody Smoky",
     "topNotes": [
-      "Bergamot",
-      "Rum"
+      "Birch Tar",
+      "Bergamot"
     ],
     "middleNotes": [
-      "Oud",
-      "Leather"
-    ],
-    "baseNotes": [
-      "Ebony Wood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2020,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🕯️"
-  },
-  {
-    "id": "209",
-    "name": "Fleur de Portofino",
-    "house": "Tom Ford",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Floral Citrus",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Peony",
-      "Rose"
+      "Patchouli",
+      "Vetiver"
     ],
     "baseNotes": [
       "Musk",
-      "Sandalwood",
+      "Vanilla",
       "Cedarwood"
     ],
-    "year": 2016,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "211",
-    "name": "Fleur Narcotique",
-    "house": "Ex Nihilo",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Fruity",
-    "topNotes": [
-      "Lychee",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Peony",
-      "Rose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Amber"
-    ],
-    "year": 2013,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🍒"
-  },
-  {
-    "id": "212",
-    "name": "Lust in Paradise",
-    "house": "Ex Nihilo",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Fruity",
-    "topNotes": [
-      "Passion Fruit",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Tiare Flower",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Coconut"
-    ],
-    "year": 2013,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🍒"
-  },
-  {
-    "id": "213",
-    "name": "Fire Party",
-    "house": "Ex Nihilo",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Woody",
-    "topNotes": [
-      "Saffron",
-      "Cardamom"
-    ],
-    "middleNotes": [
-      "Oud",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Amber",
-      "Musk"
-    ],
-    "year": 2018,
+    "year": 2006,
+    "descriptionKo": "버치 타르와 파츄리의 강렬하고 스모키한 어둠. 밤의 캠프파이어",
     "longevityAvg": 9,
     "projectionAvg": 8,
-    "icon": "🌙"
+    "ratingAvg": 4.3,
+    "accords": [
+      "Smoky",
+      "Woody",
+      "Earthy",
+      "Sweet"
+    ],
+    "keywordsKo": [
+      "스모키한",
+      "강렬한",
+      "우디한",
+      "이국적인"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Date",
+      "Casual"
+    ],
+    "intensity": 4,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 8,
+    "priceTier": "Luxury",
+    "icon": "🍋"
   },
   {
-    "id": "214",
-    "name": "Cologne 352",
-    "house": "Ex Nihilo",
+    "id": "45",
+    "name": "Vetiver 46",
+    "house": "Le Labo",
     "concentration": "EDP",
     "gender": "Unisex",
-    "family": "Aromatic Citrus",
+    "family": "Woody Earthy",
     "topNotes": [
-      "Bergamot",
       "Lemon",
-      "Grapefruit"
+      "Pink Pepper"
     ],
     "middleNotes": [
-      "Jasmine",
+      "Vetiver",
       "Orris"
     ],
     "baseNotes": [
       "Musk",
-      "Sandalwood",
-      "Cedarwood"
+      "Cedarwood",
+      "Sandalwood"
     ],
-    "year": 2015,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🍋"
+    "year": 2006,
+    "descriptionKo": "베티버의 어시하고 건조한 우디 어스. 극도로 정갈하고 미니멀한 베티버",
+    "longevityAvg": 8,
+    "projectionAvg": 6,
+    "ratingAvg": 4.2,
+    "accords": [
+      "Woody",
+      "Earthy",
+      "Vetiver",
+      "Smoky"
+    ],
+    "keywordsKo": [
+      "드라이한",
+      "우디한",
+      "깔끔한",
+      "스모키한"
+    ],
+    "season": [
+      "Fall",
+      "Spring"
+    ],
+    "occasion": [
+      "Office",
+      "Casual"
+    ],
+    "intensity": 3,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 7,
+    "priceTier": "Luxury",
+    "icon": "🌹"
   },
   {
-    "id": "215",
-    "name": "Vetiver Moloko",
-    "house": "Ex Nihilo",
+    "id": "46",
+    "name": "Ylang 49",
+    "house": "Le Labo",
     "concentration": "EDP",
     "gender": "Unisex",
-    "family": "Woody Creamy",
+    "family": "Floral Woody",
     "topNotes": [
-      "Vetiver",
+      "Ylang Ylang",
       "Bergamot"
     ],
     "middleNotes": [
-      "Milk",
+      "Jasmine",
+      "Geranium"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Sandalwood",
+      "Vetiver"
+    ],
+    "year": 2006,
+    "descriptionKo": "일랑일랑의 크리미하고 달콤한 이국적 플로럴. 열대 특유의 관능미",
+    "longevityAvg": 8,
+    "projectionAvg": 7,
+    "ratingAvg": 4,
+    "accords": [
+      "Floral",
+      "Tropical",
+      "Woody",
+      "Creamy"
+    ],
+    "keywordsKo": [
+      "이국적인",
+      "크리미한",
+      "플로럴한",
+      "관능적인"
+    ],
+    "season": [
+      "Summer",
+      "Spring"
+    ],
+    "occasion": [
+      "Date",
+      "Evening",
+      "Casual"
+    ],
+    "intensity": 3,
+    "warmth": 4,
+    "sweetness": 3,
+    "popularity": 5,
+    "priceTier": "Luxury",
+    "icon": "🪵"
+  },
+  {
+    "id": "47",
+    "name": "Labdanum 18",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Oriental Resinous",
+    "topNotes": [
+      "Bergamot",
+      "Citrus"
+    ],
+    "middleNotes": [
+      "Labdanum",
+      "Cistus"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Ambergris",
+      "Vanilla"
+    ],
+    "year": 2006,
+    "descriptionKo": "라브다눔의 깊고 따뜻한 수지향. 오래된 교회와 앰버의 신비로운 조화",
+    "longevityAvg": 8,
+    "projectionAvg": 6,
+    "ratingAvg": 4,
+    "accords": [
+      "Resinous",
+      "Amber",
+      "Woody",
+      "Sweet"
+    ],
+    "keywordsKo": [
+      "따뜻한",
+      "이국적인",
+      "우디한",
+      "드라이한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Date",
+      "Casual"
+    ],
+    "intensity": 3,
+    "warmth": 4,
+    "sweetness": 2,
+    "popularity": 5,
+    "priceTier": "Luxury",
+    "icon": "🌙"
+  },
+  {
+    "id": "48",
+    "name": "Ambrette 9",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Musky Citrus",
+    "topNotes": [
+      "Bergamot",
+      "Citrus",
+      "Lychee"
+    ],
+    "middleNotes": [
+      "Ambrette Seeds",
+      "Rose"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Iris"
+    ],
+    "year": 2006,
+    "descriptionKo": "앰브레트 씨앗의 자연적인 머스크. 가볍고 투명하며 피부에 밀착되는 스킨센트",
+    "longevityAvg": 6,
+    "projectionAvg": 5,
+    "ratingAvg": 3.9,
+    "accords": [
+      "Musky",
+      "Citrus",
+      "Floral",
+      "Soft"
+    ],
+    "keywordsKo": [
+      "가벼운",
+      "깔끔한",
+      "신선한",
+      "관능적인"
+    ],
+    "season": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "occasion": [
+      "Casual",
+      "Office"
+    ],
+    "intensity": 1,
+    "warmth": 3,
+    "sweetness": 1,
+    "popularity": 6,
+    "priceTier": "Luxury",
+    "icon": "✨"
+  },
+  {
+    "id": "49",
+    "name": "Violette 30",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Floral Woody",
+    "topNotes": [
+      "Violet Leaves",
+      "Cardamom"
+    ],
+    "middleNotes": [
+      "Orris",
+      "Ambrox",
+      "Cedarwood"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Sandalwood",
+      "Cypriol"
+    ],
+    "year": 2024,
+    "descriptionKo": "화이트 바이올렛의 그린하고 파우더리한 플로럴. 모순적 아름다움의 탐구",
+    "longevityAvg": 7,
+    "projectionAvg": 6,
+    "ratingAvg": 4.1,
+    "accords": [
+      "Floral",
+      "Powdery",
+      "Woody",
+      "Green"
+    ],
+    "keywordsKo": [
+      "파우더리한",
+      "그린한",
+      "플로럴한",
+      "깔끔한"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Date",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 5,
+    "priceTier": "Luxury",
+    "icon": "🍀"
+  },
+  {
+    "id": "50",
+    "name": "Iris 39",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Floral Woody",
+    "topNotes": [
+      "Bergamot",
+      "Grapefruit"
+    ],
+    "middleNotes": [
+      "Iris",
+      "Violet",
+      "Orris"
+    ],
+    "baseNotes": [
+      "Patchouli",
+      "Cedarwood",
+      "Musk"
+    ],
+    "year": 2015,
+    "descriptionKo": "아이리스의 파우더리하고 우아한 크리미함. 귀족적이고 고요한 플로럴 우디",
+    "longevityAvg": 7,
+    "projectionAvg": 6,
+    "ratingAvg": 4.1,
+    "accords": [
+      "Floral",
+      "Powdery",
+      "Woody",
+      "Earthy"
+    ],
+    "keywordsKo": [
+      "파우더리한",
+      "크리미한",
+      "우디한",
+      "플로럴한"
+    ],
+    "season": [
+      "Spring",
+      "Fall"
+    ],
+    "occasion": [
+      "Office",
+      "Formal",
+      "Date"
+    ],
+    "intensity": 3,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 6,
+    "priceTier": "Luxury",
+    "icon": "🌺"
+  },
+  {
+    "id": "51",
+    "name": "Oud 27",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Woody Oriental",
+    "topNotes": [
+      "Bergamot",
+      "Saffron"
+    ],
+    "middleNotes": [
+      "Oud",
+      "Rose",
+      "Geranium"
+    ],
+    "baseNotes": [
+      "Sandalwood",
+      "Musk",
+      "Amber"
+    ],
+    "year": 2015,
+    "descriptionKo": "오우드의 깊고 복잡한 수지 우디. 로즈와 사프란으로 완성된 럭셔리 오리엔탈",
+    "longevityAvg": 9,
+    "projectionAvg": 7,
+    "ratingAvg": 4.2,
+    "accords": [
+      "Oud",
+      "Woody",
+      "Spicy",
+      "Rose"
+    ],
+    "keywordsKo": [
+      "이국적인",
+      "강렬한",
+      "우디한",
+      "스파이시한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Formal",
+      "Date"
+    ],
+    "intensity": 4,
+    "warmth": 4,
+    "sweetness": 2,
+    "popularity": 7,
+    "priceTier": "Luxury",
+    "icon": "🏔️"
+  },
+  {
+    "id": "52",
+    "name": "Gaiac 10",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Woody Resinous",
+    "topNotes": [
+      "Olibanum",
+      "Incense"
+    ],
+    "middleNotes": [
+      "Gaiac Wood",
+      "Cedarwood"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Amber",
       "Sandalwood"
+    ],
+    "year": 2006,
+    "descriptionKo": "가이악우드와 유향의 드라이하고 수지질 우디. 도쿄 시티 익스클루시브",
+    "longevityAvg": 8,
+    "projectionAvg": 6,
+    "ratingAvg": 4.1,
+    "accords": [
+      "Woody",
+      "Resinous",
+      "Smoky",
+      "Incense"
+    ],
+    "keywordsKo": [
+      "드라이한",
+      "우디한",
+      "스모키한",
+      "이국적인"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Casual",
+      "Date"
+    ],
+    "intensity": 3,
+    "warmth": 3,
+    "sweetness": 1,
+    "popularity": 6,
+    "priceTier": "Ultra",
+    "icon": "🌾"
+  },
+  {
+    "id": "53",
+    "name": "Vanille 44",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Oriental Vanilla",
+    "topNotes": [
+      "Vanilla",
+      "Rum"
+    ],
+    "middleNotes": [
+      "Tonka Bean",
+      "Tobacco"
+    ],
+    "baseNotes": [
+      "Sandalwood",
+      "Musk",
+      "Cedarwood"
+    ],
+    "year": 2006,
+    "descriptionKo": "스파이시하고 우디한 바닐라. 지나치게 달지 않은 어른의 바닐라 오리엔탈. 파리 익스클루시브",
+    "longevityAvg": 9,
+    "projectionAvg": 7,
+    "ratingAvg": 4.4,
+    "accords": [
+      "Vanilla",
+      "Woody",
+      "Tobacco",
+      "Sweet"
+    ],
+    "keywordsKo": [
+      "달콤한",
+      "따뜻한",
+      "우디한",
+      "크리미한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Date",
+      "Formal"
+    ],
+    "intensity": 4,
+    "warmth": 5,
+    "sweetness": 4,
+    "popularity": 8,
+    "priceTier": "Ultra",
+    "icon": "🍊"
+  },
+  {
+    "id": "54",
+    "name": "Cedrat 37",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Citrus Woody",
+    "topNotes": [
+      "Cedrat",
+      "Bergamot",
+      "Ginger"
+    ],
+    "middleNotes": [
+      "Vetiver",
+      "Cypress"
     ],
     "baseNotes": [
       "Musk",
       "Cedarwood",
-      "Amber"
+      "Ambergris"
     ],
-    "year": 2019,
-    "longevityAvg": 8,
+    "year": 2022,
+    "descriptionKo": "세드라의 비터 시트러스. 베를린의 진보와 전통. 베를린 익스클루시브",
+    "longevityAvg": 7,
     "projectionAvg": 6,
-    "icon": "🪵"
+    "ratingAvg": 4,
+    "accords": [
+      "Citrus",
+      "Woody",
+      "Fresh",
+      "Spicy"
+    ],
+    "keywordsKo": [
+      "시트러시한",
+      "신선한",
+      "드라이한",
+      "깔끔한"
+    ],
+    "season": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "occasion": [
+      "Casual",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 5,
+    "priceTier": "Ultra",
+    "icon": "🌴"
   },
   {
-    "id": "216",
-    "name": "Sweet Morphine",
-    "house": "Ex Nihilo",
+    "id": "55",
+    "name": "Tabac 28",
+    "house": "Le Labo",
     "concentration": "EDP",
     "gender": "Unisex",
-    "family": "Oriental Gourmand",
+    "family": "Oriental Tobacco",
+    "topNotes": [
+      "Tobacco",
+      "Bergamot"
+    ],
+    "middleNotes": [
+      "Vanilla",
+      "Tonka Bean"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Sandalwood",
+      "Amber"
+    ],
+    "year": 2006,
+    "descriptionKo": "담배의 따뜻하고 달콤한 관능미. 부드럽고 크리미한 바닐라. 모스크바 익스클루시브",
+    "longevityAvg": 9,
+    "projectionAvg": 7,
+    "ratingAvg": 4.3,
+    "accords": [
+      "Tobacco",
+      "Sweet",
+      "Woody",
+      "Vanilla"
+    ],
+    "keywordsKo": [
+      "달콤한",
+      "따뜻한",
+      "관능적인",
+      "크리미한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Date"
+    ],
+    "intensity": 4,
+    "warmth": 5,
+    "sweetness": 4,
+    "popularity": 7,
+    "priceTier": "Ultra",
+    "icon": "🌬️"
+  },
+  {
+    "id": "56",
+    "name": "Mousse de Chêne 30",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Chypre Woody",
+    "topNotes": [
+      "Bergamot",
+      "Citrus"
+    ],
+    "middleNotes": [
+      "Oakmoss",
+      "Vetiver"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Cedarwood",
+      "Patchouli"
+    ],
+    "year": 2006,
+    "descriptionKo": "오크모스의 어시하고 그린한 클래식 시프레. 런던 익스클루시브",
+    "longevityAvg": 8,
+    "projectionAvg": 6,
+    "ratingAvg": 4.2,
+    "accords": [
+      "Mossy",
+      "Woody",
+      "Earthy",
+      "Chypre"
+    ],
+    "keywordsKo": [
+      "드라이한",
+      "그린한",
+      "우디한",
+      "스모키한"
+    ],
+    "season": [
+      "Fall",
+      "Spring"
+    ],
+    "occasion": [
+      "Office",
+      "Casual"
+    ],
+    "intensity": 3,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 6,
+    "priceTier": "Ultra",
+    "icon": "❄️"
+  },
+  {
+    "id": "57",
+    "name": "Musc 25",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Musky Citrus",
+    "topNotes": [
+      "Bergamot",
+      "Neroli",
+      "Aldehydes"
+    ],
+    "middleNotes": [
+      "Musk",
+      "Iris"
+    ],
+    "baseNotes": [
+      "Sandalwood",
+      "Ambergris",
+      "Cedarwood"
+    ],
+    "year": 2006,
+    "descriptionKo": "알데히드와 머스크의 루미너스한 스킨센트. 로스앤젤레스 익스클루시브",
+    "longevityAvg": 7,
+    "projectionAvg": 5,
+    "ratingAvg": 3.9,
+    "accords": [
+      "Musky",
+      "Citrus",
+      "Powdery",
+      "Clean"
+    ],
+    "keywordsKo": [
+      "깔끔한",
+      "가벼운",
+      "신선한",
+      "파우더리한"
+    ],
+    "season": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "occasion": [
+      "Casual",
+      "Office"
+    ],
+    "intensity": 1,
+    "warmth": 3,
+    "sweetness": 1,
+    "popularity": 6,
+    "priceTier": "Ultra",
+    "icon": "🔥"
+  },
+  {
+    "id": "58",
+    "name": "Tubéreuse 40",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Floral White",
+    "topNotes": [
+      "Aldehydes",
+      "Bergamot"
+    ],
+    "middleNotes": [
+      "Tuberose",
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Cedarwood",
+      "Sandalwood"
+    ],
+    "year": 2006,
+    "descriptionKo": "투베로즈의 강렬하고 크리미한 화이트 플로럴. 뉴욕 익스클루시브",
+    "longevityAvg": 8,
+    "projectionAvg": 7,
+    "ratingAvg": 3.8,
+    "accords": [
+      "White Floral",
+      "Creamy",
+      "Powdery",
+      "Sweet"
+    ],
+    "keywordsKo": [
+      "플로럴한",
+      "크리미한",
+      "강렬한",
+      "관능적인"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Date",
+      "Evening"
+    ],
+    "intensity": 4,
+    "warmth": 3,
+    "sweetness": 3,
+    "popularity": 6,
+    "priceTier": "Ultra",
+    "icon": "🌷"
+  },
+  {
+    "id": "59",
+    "name": "Bigarade 18",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Citrus Aromatic",
+    "topNotes": [
+      "Bitter Orange",
+      "Bergamot",
+      "Petitgrain"
+    ],
+    "middleNotes": [
+      "Neroli",
+      "Vetiver"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Cedarwood",
+      "Sandalwood"
+    ],
+    "year": 2006,
+    "descriptionKo": "비가라드의 비터오렌지와 페티그레인. 싱가포르 익스클루시브",
+    "longevityAvg": 6,
+    "projectionAvg": 6,
+    "ratingAvg": 4,
+    "accords": [
+      "Citrus",
+      "Aromatic",
+      "Woody",
+      "Fresh"
+    ],
+    "keywordsKo": [
+      "시트러시한",
+      "신선한",
+      "드라이한",
+      "깔끔한"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Office",
+      "Sport"
+    ],
+    "intensity": 2,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 5,
+    "priceTier": "Ultra",
+    "icon": "🍃"
+  },
+  {
+    "id": "60",
+    "name": "Citron 28",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Citrus Woody",
+    "topNotes": [
+      "Lemon",
+      "Bergamot",
+      "Neroli"
+    ],
+    "middleNotes": [
+      "Vetiver",
+      "Musk"
+    ],
+    "baseNotes": [
+      "Cedarwood",
+      "Ambergris",
+      "Sandalwood"
+    ],
+    "year": 2006,
+    "descriptionKo": "레몬의 밝고 상쾌한 시트러스. 홍콩 익스클루시브",
+    "longevityAvg": 6,
+    "projectionAvg": 6,
+    "ratingAvg": 3.9,
+    "accords": [
+      "Citrus",
+      "Woody",
+      "Fresh",
+      "Musky"
+    ],
+    "keywordsKo": [
+      "시트러시한",
+      "신선한",
+      "깔끔한",
+      "가벼운"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Sport",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 5,
+    "priceTier": "Ultra",
+    "icon": "🦋"
+  },
+  {
+    "id": "61",
+    "name": "Myrrhe 55",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Oriental Resinous",
+    "topNotes": [
+      "Bergamot",
+      "Incense"
+    ],
+    "middleNotes": [
+      "Myrrh",
+      "Labdanum"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Sandalwood",
+      "Amber"
+    ],
+    "year": 2006,
+    "descriptionKo": "몰약의 깊고 복잡한 수지향. 두바이 익스클루시브",
+    "longevityAvg": 9,
+    "projectionAvg": 7,
+    "ratingAvg": 4.3,
+    "accords": [
+      "Resinous",
+      "Incense",
+      "Woody",
+      "Amber"
+    ],
+    "keywordsKo": [
+      "이국적인",
+      "강렬한",
+      "따뜻한",
+      "스모키한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Formal",
+      "Date"
+    ],
+    "intensity": 4,
+    "warmth": 4,
+    "sweetness": 2,
+    "popularity": 6,
+    "priceTier": "Ultra",
+    "icon": "🌸"
+  },
+  {
+    "id": "62",
+    "name": "Benjoin 19",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Oriental Balsamic",
     "topNotes": [
       "Bergamot",
       "Cardamom"
     ],
     "middleNotes": [
-      "Rose",
-      "Patchouli"
+      "Benzoin",
+      "Vanilla"
     ],
     "baseNotes": [
-      "Vanilla",
       "Musk",
-      "Sandalwood"
+      "Sandalwood",
+      "Tonka Bean"
     ],
-    "year": 2013,
+    "year": 2006,
+    "descriptionKo": "벤조인의 발사믹하고 달콤한 따뜻함. 마이애미 익스클루시브",
     "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🍯"
+    "projectionAvg": 6,
+    "ratingAvg": 4,
+    "accords": [
+      "Balsamic",
+      "Sweet",
+      "Woody",
+      "Resinous"
+    ],
+    "keywordsKo": [
+      "달콤한",
+      "따뜻한",
+      "크리미한",
+      "이국적인"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Date",
+      "Casual"
+    ],
+    "intensity": 3,
+    "warmth": 4,
+    "sweetness": 3,
+    "popularity": 5,
+    "priceTier": "Ultra",
+    "icon": "🌊"
   },
   {
-    "id": "217",
-    "name": "Outlaw",
-    "house": "Ex Nihilo",
+    "id": "63",
+    "name": "Cuir 28",
+    "house": "Le Labo",
     "concentration": "EDP",
     "gender": "Unisex",
     "family": "Leather Woody",
@@ -5344,132 +3329,6 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     ],
     "middleNotes": [
       "Leather",
-      "Iris"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Vetiver"
-    ],
-    "year": 2021,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🟤"
-  },
-  {
-    "id": "218",
-    "name": "Moonlight in Heaven",
-    "house": "Ex Nihilo",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Fruity",
-    "topNotes": [
-      "Grapefruit",
-      "Coconut"
-    ],
-    "middleNotes": [
-      "Jasmine",
-      "Tuberose"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Vanilla",
-      "Sandalwood"
-    ],
-    "year": 2022,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🍒"
-  },
-  {
-    "id": "219",
-    "name": "Amber Sky",
-    "house": "Ex Nihilo",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Amber",
-    "topNotes": [
-      "Bergamot",
-      "Saffron"
-    ],
-    "middleNotes": [
-      "Amber",
-      "Rose"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Oud"
-    ],
-    "year": 2020,
-    "longevityAvg": 9,
-    "projectionAvg": 7,
-    "icon": "🌙"
-  },
-  {
-    "id": "220",
-    "name": "Replica Jazz Club",
-    "house": "Maison Margiela",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Aromatic Woody",
-    "topNotes": [
-      "Rum",
-      "Lemon",
-      "Pink Pepper"
-    ],
-    "middleNotes": [
-      "Vetiver",
-      "Clary Sage"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Vanilla",
-      "Tonka Bean"
-    ],
-    "year": 2013,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🪵"
-  },
-  {
-    "id": "221",
-    "name": "Replica By the Fireplace",
-    "house": "Maison Margiela",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Oriental Woody",
-    "topNotes": [
-      "Clementine",
-      "Pink Pepper"
-    ],
-    "middleNotes": [
-      "Chestnut",
-      "Guaiac Wood"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Vanilla",
-      "Cashmeran"
-    ],
-    "year": 2015,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🌙"
-  },
-  {
-    "id": "222",
-    "name": "Replica Beach Walk",
-    "house": "Maison Margiela",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Aromatic Citrus",
-    "topNotes": [
-      "Bergamot",
-      "Lemon"
-    ],
-    "middleNotes": [
-      "Coconut Milk",
       "Jasmine"
     ],
     "baseNotes": [
@@ -5477,224 +3336,265 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Cedarwood",
       "Sandalwood"
     ],
-    "year": 2013,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🍋"
+    "year": 2006,
+    "descriptionKo": "가죽의 날카롭고 스모키한 무게감. 서울 익스클루시브",
+    "longevityAvg": 8,
+    "projectionAvg": 7,
+    "ratingAvg": 4.1,
+    "accords": [
+      "Leather",
+      "Woody",
+      "Smoky",
+      "Spicy"
+    ],
+    "keywordsKo": [
+      "강렬한",
+      "스모키한",
+      "우디한",
+      "드라이한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Date",
+      "Formal"
+    ],
+    "intensity": 4,
+    "warmth": 3,
+    "sweetness": 1,
+    "popularity": 5,
+    "priceTier": "Ultra",
+    "icon": "🌿"
   },
   {
-    "id": "223",
-    "name": "Replica Under the Lemon Trees",
-    "house": "Maison Margiela",
-    "concentration": "EDT",
+    "id": "64",
+    "name": "Aldéhyde 44",
+    "house": "Le Labo",
+    "concentration": "EDP",
     "gender": "Unisex",
-    "family": "Aromatic Citrus",
+    "family": "Floral Aldehyde",
     "topNotes": [
-      "Lemon",
-      "Basil"
-    ],
-    "middleNotes": [
-      "Petitgrain",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood",
-      "Amber"
-    ],
-    "year": 2019,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🍋"
-  },
-  {
-    "id": "224",
-    "name": "Replica Flower Market",
-    "house": "Maison Margiela",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Floral Green",
-    "topNotes": [
-      "Peony",
-      "Magnolia"
+      "Aldehydes",
+      "Bergamot"
     ],
     "middleNotes": [
       "Rose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood",
-      "Sandalwood"
-    ],
-    "year": 2016,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌸"
-  },
-  {
-    "id": "225",
-    "name": "Replica Sailing Day",
-    "house": "Maison Margiela",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Aromatic Aquatic",
-    "topNotes": [
-      "Sea Notes",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Vetiver",
-      "Cypress"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood",
-      "Sandalwood"
-    ],
-    "year": 2016,
-    "longevityAvg": 6,
-    "projectionAvg": 5,
-    "icon": "🌊"
-  },
-  {
-    "id": "226",
-    "name": "Replica When the Rain Stops",
-    "house": "Maison Margiela",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Aromatic",
-    "topNotes": [
-      "Petrichor",
-      "Galbanum"
-    ],
-    "middleNotes": [
-      "Vetiver",
-      "Cedarwood"
+      "Jasmine",
+      "Iris"
     ],
     "baseNotes": [
       "Musk",
       "Sandalwood",
-      "Amber"
+      "Cedarwood"
     ],
-    "year": 2021,
+    "year": 2006,
+    "descriptionKo": "알데히드의 빛나고 클래식한 플로럴. 암스테르담 익스클루시브",
+    "longevityAvg": 7,
+    "projectionAvg": 7,
+    "ratingAvg": 4,
+    "accords": [
+      "Floral",
+      "Powdery",
+      "Aldehydic",
+      "Woody"
+    ],
+    "keywordsKo": [
+      "파우더리한",
+      "플로럴한",
+      "깔끔한",
+      "따뜻한"
+    ],
+    "season": [
+      "Spring",
+      "Fall"
+    ],
+    "occasion": [
+      "Formal",
+      "Office",
+      "Date"
+    ],
+    "intensity": 3,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 5,
+    "priceTier": "Ultra",
+    "icon": "🍋"
+  },
+  {
+    "id": "65",
+    "name": "Coriandre 39",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Green Aromatic",
+    "topNotes": [
+      "Coriander",
+      "Aldehydes",
+      "Bergamot"
+    ],
+    "middleNotes": [
+      "Vetiver",
+      "Iris"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Cedarwood",
+      "Sandalwood"
+    ],
+    "year": 2019,
+    "descriptionKo": "고수의 그린하고 허브향. 멕시코시티 익스클루시브",
     "longevityAvg": 7,
     "projectionAvg": 6,
+    "ratingAvg": 3.8,
+    "accords": [
+      "Green",
+      "Aromatic",
+      "Woody",
+      "Citrus"
+    ],
+    "keywordsKo": [
+      "그린한",
+      "허브향",
+      "드라이한",
+      "깔끔한"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 4,
+    "priceTier": "Ultra",
+    "icon": "🌹"
+  },
+  {
+    "id": "66",
+    "name": "Baie Rose 26",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Spicy Rose",
+    "topNotes": [
+      "Pink Pepper",
+      "Clove"
+    ],
+    "middleNotes": [
+      "Rose Absolute",
+      "Cedar",
+      "Aldehydes"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Sandalwood"
+    ],
+    "year": 2006,
+    "descriptionKo": "핑크 페퍼의 재즈처럼 경쾌한 로즈 스파이시. 시카고 익스클루시브",
+    "longevityAvg": 8,
+    "projectionAvg": 7,
+    "ratingAvg": 4.2,
+    "accords": [
+      "Spicy",
+      "Rose",
+      "Woody",
+      "Powdery"
+    ],
+    "keywordsKo": [
+      "스파이시한",
+      "플로럴한",
+      "우디한",
+      "강렬한"
+    ],
+    "season": [
+      "Spring",
+      "Fall"
+    ],
+    "occasion": [
+      "Date",
+      "Evening",
+      "Casual"
+    ],
+    "intensity": 3,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 6,
+    "priceTier": "Ultra",
     "icon": "🪵"
   },
   {
-    "id": "227",
-    "name": "Replica Whispers in the Library",
-    "house": "Maison Margiela",
-    "concentration": "EDT",
+    "id": "67",
+    "name": "Poivre 23",
+    "house": "Le Labo",
+    "concentration": "EDP",
     "gender": "Unisex",
-    "family": "Woody Aromatic",
+    "family": "Spicy Woody",
     "topNotes": [
-      "Cardamom",
+      "Black Pepper",
       "Pink Pepper"
     ],
     "middleNotes": [
       "Vetiver",
-      "Leather"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Cedarwood",
       "Sandalwood"
     ],
-    "year": 2017,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🪵"
-  },
-  {
-    "id": "228",
-    "name": "Replica Springtime in a Park",
-    "house": "Maison Margiela",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Floral Green",
-    "topNotes": [
-      "Green Notes",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Lily of the Valley",
-      "Rose"
-    ],
     "baseNotes": [
+      "Vanilla",
       "Musk",
-      "Sandalwood",
       "Cedarwood"
     ],
-    "year": 2017,
-    "longevityAvg": 5,
-    "projectionAvg": 4,
-    "icon": "🌸"
+    "year": 2006,
+    "descriptionKo": "페퍼의 날카롭고 피리한 스파이시. 24시간 지속되는 롱래스팅. 상파울루 익스클루시브",
+    "longevityAvg": 10,
+    "projectionAvg": 8,
+    "ratingAvg": 4.5,
+    "accords": [
+      "Spicy",
+      "Woody",
+      "Pepper",
+      "Earthy"
+    ],
+    "keywordsKo": [
+      "스파이시한",
+      "강렬한",
+      "드라이한",
+      "우디한"
+    ],
+    "season": [
+      "Fall",
+      "Winter"
+    ],
+    "occasion": [
+      "Evening",
+      "Date",
+      "Formal"
+    ],
+    "intensity": 5,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 7,
+    "priceTier": "Ultra",
+    "icon": "🌙"
   },
   {
-    "id": "229",
-    "name": "Replica On a Date",
-    "house": "Maison Margiela",
+    "id": "68",
+    "name": "Osmanthus 19",
+    "house": "Le Labo",
     "concentration": "EDP",
     "gender": "Unisex",
     "family": "Floral Woody",
     "topNotes": [
-      "Bergamot",
-      "Pink Pepper"
+      "Incense",
+      "Lavender"
     ],
     "middleNotes": [
-      "Rose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Amber"
-    ],
-    "year": 2021,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "230",
-    "name": "Trudon Mortel",
-    "house": "Trudon",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Resinous",
-    "topNotes": [
-      "Bergamot",
-      "Pink Pepper"
-    ],
-    "middleNotes": [
-      "Leather",
-      "Iris"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Musk",
-      "Amber"
-    ],
-    "year": 2019,
-    "longevityAvg": 8,
-    "projectionAvg": 7,
-    "icon": "🕯️"
-  },
-  {
-    "id": "231",
-    "name": "Trudon Abd El Kader",
-    "house": "Trudon",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Aromatic Minty",
-    "topNotes": [
-      "Mint",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Tea",
+      "Osmanthus",
       "Jasmine"
     ],
     "baseNotes": [
@@ -5702,134 +3602,91 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "Cedarwood",
       "Sandalwood"
     ],
-    "year": 2012,
+    "year": 2006,
+    "descriptionKo": "금목서의 크리미하고 업리프팅한 플로럴. 교토의 전통과 현대. 교토 익스클루시브",
     "longevityAvg": 7,
     "projectionAvg": 6,
-    "icon": "🌾"
+    "ratingAvg": 4.1,
+    "accords": [
+      "Floral",
+      "Woody",
+      "Aromatic",
+      "Creamy"
+    ],
+    "keywordsKo": [
+      "플로럴한",
+      "크리미한",
+      "따뜻한",
+      "이국적인"
+    ],
+    "season": [
+      "Spring",
+      "Fall"
+    ],
+    "occasion": [
+      "Date",
+      "Casual",
+      "Evening"
+    ],
+    "intensity": 3,
+    "warmth": 3,
+    "sweetness": 2,
+    "popularity": 6,
+    "priceTier": "Ultra",
+    "icon": "✨"
   },
   {
-    "id": "232",
-    "name": "Trudon Bruma",
-    "house": "Trudon",
+    "id": "69",
+    "name": "Limette 37",
+    "house": "Le Labo",
     "concentration": "EDP",
     "gender": "Unisex",
-    "family": "Woody Floral",
+    "family": "Citrus Woody",
     "topNotes": [
+      "Lime",
       "Bergamot",
-      "Aldehydes"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Jasmine"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Cedarwood"
-    ],
-    "year": 2019,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🌸"
-  },
-  {
-    "id": "233",
-    "name": "Trudon Olim",
-    "house": "Trudon",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Resinous",
-    "topNotes": [
-      "Incense",
-      "Bergamot"
-    ],
-    "middleNotes": [
-      "Myrrh",
-      "Labdanum"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Amber",
-      "Musk"
-    ],
-    "year": 2015,
-    "longevityAvg": 9,
-    "projectionAvg": 7,
-    "icon": "🕯️"
-  },
-  {
-    "id": "234",
-    "name": "Trudon Ere",
-    "house": "Trudon",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Aromatic Woody",
-    "topNotes": [
-      "Cardamom",
-      "Bergamot"
+      "Grapefruit"
     ],
     "middleNotes": [
       "Vetiver",
-      "Iris"
-    ],
-    "baseNotes": [
-      "Musk",
-      "Sandalwood",
-      "Amber"
-    ],
-    "year": 2019,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "icon": "🪵"
-  },
-  {
-    "id": "235",
-    "name": "Trudon Arabesque",
-    "house": "Trudon",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Oriental Spicy",
-    "topNotes": [
-      "Saffron",
-      "Rose"
-    ],
-    "middleNotes": [
-      "Oud",
-      "Patchouli"
-    ],
-    "baseNotes": [
-      "Sandalwood",
-      "Amber",
-      "Musk"
-    ],
-    "year": 2020,
-    "longevityAvg": 9,
-    "projectionAvg": 8,
-    "icon": "🌙"
-  },
-  {
-    "id": "236",
-    "name": "Trudon Graphic",
-    "house": "Trudon",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Woody Aromatic",
-    "topNotes": [
-      "Bergamot",
-      "Pepper"
-    ],
-    "middleNotes": [
-      "Leather",
-      "Vetiver"
+      "Basil"
     ],
     "baseNotes": [
       "Musk",
       "Cedarwood",
-      "Sandalwood"
+      "Ambergris"
     ],
-    "year": 2021,
-    "longevityAvg": 7,
+    "year": 2019,
+    "descriptionKo": "라임의 청량하고 쥬시한 시트러스. 케이프타운 익스클루시브",
+    "longevityAvg": 6,
     "projectionAvg": 6,
-    "icon": "🪵"
+    "ratingAvg": 3.9,
+    "accords": [
+      "Citrus",
+      "Woody",
+      "Fresh",
+      "Aromatic"
+    ],
+    "keywordsKo": [
+      "시트러시한",
+      "신선한",
+      "깔끔한",
+      "그린한"
+    ],
+    "season": [
+      "Spring",
+      "Summer"
+    ],
+    "occasion": [
+      "Casual",
+      "Sport",
+      "Office"
+    ],
+    "intensity": 2,
+    "warmth": 2,
+    "sweetness": 1,
+    "popularity": 5,
+    "priceTier": "Ultra",
+    "icon": "🍀"
   }
 ];

@@ -24,7 +24,8 @@ function NoteBar({ label, notes }: { label: string; notes: string[] }) {
   );
 }
 
-function ScoreBar({ label, value, color }: { label: string; value: number; color: string }) {
+function ScoreBar({ label, value, color }: { label: string; value: number | null; color: string }) {
+  if (value == null) return null;
   return (
     <div className="space-y-1">
       <div className="flex justify-between text-xs">
@@ -47,8 +48,20 @@ const GENDER_LABEL: Record<string, string> = {
   Unisex: "유니섹스",
 };
 
+const SEASON_LABEL: Record<string, string> = {
+  Spring: "봄", Summer: "여름", Fall: "가을", Winter: "겨울",
+};
+
+const OCCASION_LABEL: Record<string, string> = {
+  Casual: "캐주얼", Office: "오피스", Date: "데이트",
+  Evening: "이브닝", Formal: "포멀", Sport: "스포츠",
+};
+
+const PRICE_LABEL: Record<string, string> = {
+  Budget: "저가", Mid: "중가", Luxury: "럭셔리", Ultra: "울트라럭셔리",
+};
+
 export default function FragranceDetailSheet({ fragrance: f, onClose }: Props) {
-  // Lock body scroll when open
   useEffect(() => {
     if (f) document.body.style.overflow = "hidden";
     return () => { document.body.style.overflow = ""; };
@@ -89,12 +102,33 @@ export default function FragranceDetailSheet({ fragrance: f, onClose }: Props) {
                   <span className="px-2.5 py-1 rounded-full bg-stone-100 text-stone-600 text-xs">
                     {GENDER_LABEL[f.gender] ?? f.gender}
                   </span>
-                  <span className="px-2.5 py-1 rounded-full bg-stone-100 text-stone-600 text-xs">
-                    {f.year}년
-                  </span>
+                  {f.year && (
+                    <span className="px-2.5 py-1 rounded-full bg-stone-100 text-stone-600 text-xs">
+                      {f.year}년
+                    </span>
+                  )}
+                  {f.priceTier && (
+                    <span className="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs">
+                      {PRICE_LABEL[f.priceTier] ?? f.priceTier}
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
+
+            {/* Rating */}
+            {f.ratingAvg != null && (
+              <div className="mt-4 flex items-center gap-2">
+                <span className="text-yellow-400 text-sm">★</span>
+                <span className="text-sm font-semibold text-stone-800">{f.ratingAvg.toFixed(1)}</span>
+                <span className="text-xs text-stone-400">/ 5.0</span>
+              </div>
+            )}
+
+            {/* Korean description */}
+            {f.descriptionKo && (
+              <p className="mt-3 text-sm text-stone-600 leading-relaxed">{f.descriptionKo}</p>
+            )}
           </div>
 
           {/* Notes */}
@@ -104,6 +138,50 @@ export default function FragranceDetailSheet({ fragrance: f, onClose }: Props) {
             <NoteBar label="미들" notes={f.middleNotes} />
             <NoteBar label="베이스" notes={f.baseNotes} />
           </div>
+
+          {/* Accords */}
+          {f.accords.length > 0 && (
+            <div className="px-6 py-5 border-b border-stone-100">
+              <h3 className="text-sm font-bold text-stone-700 mb-3">어코드</h3>
+              <div className="flex flex-wrap gap-1.5">
+                {f.accords.map((a) => (
+                  <span key={a} className="px-2.5 py-1 rounded-full bg-violet-50 text-violet-700 text-xs">
+                    {a}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Season & Occasion */}
+          {(f.season.length > 0 || f.occasion.length > 0) && (
+            <div className="px-6 py-5 border-b border-stone-100 space-y-3">
+              {f.season.length > 0 && (
+                <div className="flex gap-3 items-start">
+                  <span className="text-xs text-stone-400 w-12 shrink-0 pt-0.5">계절</span>
+                  <div className="flex flex-wrap gap-1.5">
+                    {f.season.map((s) => (
+                      <span key={s} className="px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs">
+                        {SEASON_LABEL[s] ?? s}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {f.occasion.length > 0 && (
+                <div className="flex gap-3 items-start">
+                  <span className="text-xs text-stone-400 w-12 shrink-0 pt-0.5">상황</span>
+                  <div className="flex flex-wrap gap-1.5">
+                    {f.occasion.map((o) => (
+                      <span key={o} className="px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs">
+                        {OCCASION_LABEL[o] ?? o}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Performance */}
           <div className="px-6 py-5 space-y-4">

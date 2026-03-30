@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { OnboardingData } from "@/types/fragrance";
+import { saveOnboardingData } from "../../../../lib/supabase/userFragrances";
 
 const PRIORITY_LABELS: Record<string, string> = {
   longevity:  "⏳ 지속력",
@@ -28,8 +29,19 @@ export default function Step5Complete({ data }: Props) {
 
   const favorite = data.collection.find((f) => f.id === data.favoriteId);
 
-  const handleStart = () => {
+  const [saving, setSaving] = useState(false);
+
+  const handleStart = async () => {
+    setSaving(true);
+    // Always save to localStorage as fallback
     localStorage.setItem("scentedeer_onboarding", JSON.stringify(data));
+    try {
+      // Try to save to Supabase (no-op if not logged in / not configured)
+      await saveOnboardingData(data);
+    } catch {
+      // Silently continue — localStorage is the source of truth until Supabase is connected
+    }
+    setSaving(false);
     router.push("/home");
   };
 
@@ -133,9 +145,10 @@ export default function Step5Complete({ data }: Props) {
 
       <button
         onClick={handleStart}
-        className="w-full py-4 rounded-2xl bg-amber-600 text-white font-bold text-base hover:bg-amber-700 active:scale-[0.98] transition-all duration-150 shadow-md"
+        disabled={saving}
+        className="w-full py-4 rounded-2xl bg-amber-600 text-white font-bold text-base hover:bg-amber-700 active:scale-[0.98] transition-all duration-150 shadow-md disabled:opacity-60"
       >
-        향수 탐험 시작하기 →
+        {saving ? "저장 중..." : "향수 탐험 시작하기 →"}
       </button>
     </div>
   );
