@@ -24,16 +24,7 @@ const WEATHER_MSG: Record<string, string> = {
   stormy: "거친 날씨엔 가죽·스모키 향이 잘 맞아요",
 };
 
-const WEATHER_SEASON: Record<string, string[]> = {
-  sunny:  ["Spring", "Summer"],
-  cloudy: ["Fall", "Spring"],
-  rainy:  ["Fall", "Winter"],
-  snowy:  ["Winter"],
-  foggy:  ["Fall", "Winter"],
-  stormy: ["Fall", "Winter"],
-};
-
-function scoreFragrance(f: FragranceDB, data: OnboardingData, weatherFamilies: string[], weatherCondition: string): number {
+function scoreFragrance(f: FragranceDB, data: OnboardingData, weatherFamilies: string[]): number {
   let score = 0;
 
   // Weather family match
@@ -42,10 +33,6 @@ function scoreFragrance(f: FragranceDB, data: OnboardingData, weatherFamilies: s
     wf.toLowerCase().includes(f.family.toLowerCase())
   );
   if (familyMatch) score += 30;
-
-  // Season match with weather
-  const weatherSeasons = WEATHER_SEASON[weatherCondition] ?? [];
-  if (f.season.some((s) => weatherSeasons.includes(s))) score += 15;
 
   // Preferred house match
   if (data.favoriteHouses.includes(f.house)) score += 20;
@@ -58,25 +45,19 @@ function scoreFragrance(f: FragranceDB, data: OnboardingData, weatherFamilies: s
   else if (data.priorities[0] === "projection") score += (f.projectionAvg ?? 0) * 3;
   else score += (f.longevityAvg ?? 0) + (f.projectionAvg ?? 0);
 
-  // Popularity boost
-  score += (f.popularity ?? 0) * 0.5;
-
-  // Disliked categories
+  // Disliked categories (family-based)
   const dislikedKeywords: Record<string, string[]> = {
-    "너무 달콤한 향":   ["gourmand", "vanilla", "caramel"],
-    "강한 스모키":      ["smoky", "tobacco"],
-    "과한 플로럴":      ["floral"],
-    "동물성 무스크":    ["musk"],
-    "진한 오우드":      ["oud"],
-    "과한 시트러스":    ["citrus"],
-    "파우더리":         ["powdery"],
+    "너무 달콤한 향": ["gourmand", "vanilla", "caramel"],
+    "강한 스모키":    ["smoky", "tobacco"],
+    "과한 플로럴":    ["floral"],
+    "동물성 무스크":  ["musk"],
+    "진한 오우드":    ["oud"],
+    "과한 시트러스":  ["citrus"],
+    "파우더리":       ["powdery"],
   };
   for (const cat of data.dislikedCategories) {
     const keywords = dislikedKeywords[cat] ?? [];
-    if (keywords.some((k) =>
-      f.family.toLowerCase().includes(k) ||
-      f.accords.some((a) => a.toLowerCase().includes(k))
-    )) score -= 25;
+    if (keywords.some((k) => f.family.toLowerCase().includes(k))) score -= 25;
   }
 
   // Small deterministic variance by id
@@ -99,7 +80,7 @@ export default function RecommendedFragrances({ weather, onboardingData }: Props
     };
 
     return FRAGRANCES_DB
-      .map((f) => ({ f, score: scoreFragrance(f, data, weatherFamilies, weather?.condition ?? "") }))
+      .map((f) => ({ f, score: scoreFragrance(f, data, weatherFamilies) }))
       .sort((a, b) => b.score - a.score)
       .slice(0, 8)
       .map((x) => x.f);

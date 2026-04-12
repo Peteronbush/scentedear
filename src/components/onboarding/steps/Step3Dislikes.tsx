@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Fragrance } from "@/types/fragrance";
 import { FRAGRANCES_DB } from "@/data/fragrances";
+import { matchesFragrance } from "@/lib/search";
 
 const DISLIKE_CATEGORIES = [
   "너무 달콤한 향",
@@ -30,10 +31,7 @@ export default function Step3Dislikes({
 
   const results = query.trim().length > 0
     ? FRAGRANCES_DB.filter(
-        (f) =>
-          !dislikedFragrances.find((d) => d.id === f.id) &&
-          (f.name.toLowerCase().includes(query.toLowerCase()) ||
-            f.house.toLowerCase().includes(query.toLowerCase()))
+        (f) => !dislikedFragrances.find((d) => d.id === f.id) && matchesFragrance(f, query)
       ).slice(0, 10)
     : [];
 

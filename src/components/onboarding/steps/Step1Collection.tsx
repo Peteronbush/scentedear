@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Fragrance } from "@/types/fragrance";
 import { FRAGRANCES_DB } from "@/data/fragrances";
+import { matchesFragrance } from "@/lib/search";
 
 const ALL_HOUSES = Array.from(new Set(FRAGRANCES_DB.map((f) => f.house))).sort();
 
@@ -18,10 +19,7 @@ export default function Step1Collection({ collection, favoriteId, onChange }: Pr
 
   const searchResults = query.trim().length > 0
     ? FRAGRANCES_DB.filter(
-        (f) =>
-          !collection.find((c) => c.id === f.id) &&
-          (f.name.toLowerCase().includes(query.toLowerCase()) ||
-            f.house.toLowerCase().includes(query.toLowerCase()))
+        (f) => !collection.find((c) => c.id === f.id) && matchesFragrance(f, query)
       ).slice(0, 10)
     : [];
 

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FRAGRANCES_DB, FragranceDB } from "@/data/fragrances";
+import { matchesFragrance, matchesString } from "@/lib/search";
 
 type SearchMode = "fragrance" | "house" | "user";
 
@@ -24,18 +25,15 @@ export default function ExploreTab({ onSelectFragrance }: Props) {
   const [query, setQuery] = useState("");
 
   const fragranceResults = query.trim()
-    ? FRAGRANCES_DB.filter((f) =>
-        f.name.toLowerCase().includes(query.toLowerCase()) ||
-        f.house.toLowerCase().includes(query.toLowerCase())
-      ).slice(0, 30)
+    ? FRAGRANCES_DB.filter((f) => matchesFragrance(f, query)).slice(0, 30)
     : [];
 
   const houseResults = query.trim()
-    ? ALL_HOUSES.filter((h) => h.toLowerCase().includes(query.toLowerCase()))
+    ? ALL_HOUSES.filter((h) => matchesString(h, query))
     : ALL_HOUSES;
 
   const userResults = query.trim()
-    ? MOCK_USERS.filter((u) => u.nickname.toLowerCase().includes(query.toLowerCase()))
+    ? MOCK_USERS.filter((u) => matchesString(u.nickname, query))
     : MOCK_USERS;
 
   const PLACEHOLDER: Record<SearchMode, string> = {

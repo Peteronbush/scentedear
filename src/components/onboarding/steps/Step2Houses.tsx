@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FRAGRANCES_DB } from "@/data/fragrances";
+import { matchesString } from "@/lib/search";
 
 const DB_HOUSES = Array.from(new Set(FRAGRANCES_DB.map((f) => f.house))).sort();
 
@@ -22,7 +23,7 @@ export default function Step2Houses({ favoriteHouses, onChange }: Props) {
   };
 
   const filteredHouses = query.trim()
-    ? DB_HOUSES.filter((h) => h.toLowerCase().includes(query.toLowerCase()))
+    ? DB_HOUSES.filter((h) => matchesString(h, query))
     : DB_HOUSES;
 
   const addCustom = () => {
