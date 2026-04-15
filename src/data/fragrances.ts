@@ -1,4 +1,4 @@
-// Auto-generated from scentedeer_fragrances_with_house_number.csv
+// Auto-generated from scentedeer_fragrances_2.5.csv
 export interface FragranceDB {
   id: string;
   name: string;
@@ -22,7 +22,7 @@ export interface FragranceDB {
 
 export const FRAGRANCES_DB: FragranceDB[] = [
   {
-    "id": "147",
+    "id": "1",
     "name": "Blu Mediterraneo Arancia di Capri",
     "house": "Acqua di Parma",
     "concentration": "EDT",
@@ -56,7 +56,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌸"
   },
   {
-    "id": "144",
+    "id": "2",
     "name": "Colonia",
     "house": "Acqua di Parma",
     "concentration": "EDC",
@@ -92,7 +92,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌊"
   },
   {
-    "id": "146",
+    "id": "3",
     "name": "Colonia Assoluta",
     "house": "Acqua di Parma",
     "concentration": "EDC",
@@ -127,7 +127,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌿"
   },
   {
-    "id": "145",
+    "id": "5",
     "name": "Colonia Intensa",
     "house": "Acqua di Parma",
     "concentration": "EDC",
@@ -163,7 +163,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍋"
   },
   {
-    "id": "150",
+    "id": "6",
     "name": "Iris Nobile",
     "house": "Acqua di Parma",
     "concentration": "EDP",
@@ -198,7 +198,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌹"
   },
   {
-    "id": "148",
+    "id": "7",
     "name": "Magnolia Nobile",
     "house": "Acqua di Parma",
     "concentration": "EDP",
@@ -233,7 +233,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🪵"
   },
   {
-    "id": "151",
+    "id": "8",
     "name": "Oud",
     "house": "Acqua di Parma",
     "concentration": "EDP",
@@ -267,7 +267,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌙"
   },
   {
-    "id": "149",
+    "id": "9",
     "name": "Rosa Nobile",
     "house": "Acqua di Parma",
     "concentration": "EDP",
@@ -302,7 +302,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "✨"
   },
   {
-    "id": "152",
+    "id": "10",
     "name": "Yuzu",
     "house": "Acqua di Parma",
     "concentration": "EDC",
@@ -336,7 +336,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍀"
   },
   {
-    "id": "16",
+    "id": "11",
     "name": "Interlude Man",
     "house": "Amouage",
     "concentration": "EDP",
@@ -370,7 +370,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌺"
   },
   {
-    "id": "17",
+    "id": "12",
     "name": "Reflection Man",
     "house": "Amouage",
     "concentration": "EDP",
@@ -404,7 +404,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🏔️"
   },
   {
-    "id": "174",
+    "id": "13",
     "name": "Ambre Soie",
     "house": "Armani",
     "concentration": "EDP",
@@ -439,7 +439,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌾"
   },
   {
-    "id": "167",
+    "id": "14",
     "name": "Bleu Lazuli",
     "house": "Armani",
     "concentration": "EDP",
@@ -474,7 +474,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍊"
   },
   {
-    "id": "169",
+    "id": "15",
     "name": "Bois d'Encens",
     "house": "Armani",
     "concentration": "EDP",
@@ -509,7 +509,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌴"
   },
   {
-    "id": "163",
+    "id": "16",
     "name": "Cuir Amethyste",
     "house": "Armani",
     "concentration": "EDP",
@@ -544,7 +544,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌬️"
   },
   {
-    "id": "171",
+    "id": "17",
     "name": "Iris Celadon",
     "house": "Armani",
     "concentration": "EDP",
@@ -579,7 +579,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "❄️"
   },
   {
-    "id": "172",
+    "id": "18",
     "name": "Myrrhe Imperiale",
     "house": "Armani",
     "concentration": "EDP",
@@ -614,7 +614,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🔥"
   },
   {
-    "id": "166",
+    "id": "19",
     "name": "Oud Royal",
     "house": "Armani",
     "concentration": "EDP",
@@ -649,7 +649,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌷"
   },
   {
-    "id": "164",
+    "id": "20",
     "name": "Pierre de Lune",
     "house": "Armani",
     "concentration": "EDP",
@@ -684,7 +684,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍃"
   },
   {
-    "id": "170",
+    "id": "21",
     "name": "Pivoine Suzhou",
     "house": "Armani",
     "concentration": "EDP",
@@ -719,7 +719,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🦋"
   },
   {
-    "id": "165",
+    "id": "22",
     "name": "Rose d'Arabie",
     "house": "Armani",
     "concentration": "EDP",
@@ -754,7 +754,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🫧"
   },
   {
-    "id": "168",
+    "id": "23",
     "name": "Rouge Malachite",
     "house": "Armani",
     "concentration": "EDP",
@@ -790,7 +790,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌫️"
   },
   {
-    "id": "173",
+    "id": "24",
     "name": "Vetiver Babylone",
     "house": "Armani",
     "concentration": "EDP",
@@ -825,7 +825,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍂"
   },
   {
-    "id": "158",
+    "id": "25",
     "name": "Accord Oud",
     "house": "Byredo",
     "concentration": "EDP",
@@ -859,7 +859,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌻"
   },
   {
-    "id": "22",
+    "id": "26",
     "name": "Bal d'Afrique",
     "house": "Byredo",
     "concentration": "EDP",
@@ -893,7 +893,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🎋"
   },
   {
-    "id": "154",
+    "id": "27",
     "name": "Bal d'Afrique absolu",
     "house": "Byredo",
     "concentration": "EDP",
@@ -927,7 +927,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🫐"
   },
   {
-    "id": "156",
+    "id": "28",
     "name": "Bibliotheque",
     "house": "Byredo",
     "concentration": "EDP",
@@ -961,7 +961,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌵"
   },
   {
-    "id": "157",
+    "id": "29",
     "name": "Blanche",
     "house": "Byredo",
     "concentration": "EDP",
@@ -995,7 +995,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🕌"
   },
   {
-    "id": "21",
+    "id": "30",
     "name": "Gypsy Water",
     "house": "Byredo",
     "concentration": "EDP",
@@ -1030,7 +1030,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍵"
   },
   {
-    "id": "153",
+    "id": "31",
     "name": "Gypsy Water absolu",
     "house": "Byredo",
     "concentration": "EDP",
@@ -1065,7 +1065,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌼"
   },
   {
-    "id": "161",
+    "id": "32",
     "name": "Inca Trail",
     "house": "Byredo",
     "concentration": "EDP",
@@ -1099,7 +1099,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌸"
   },
   {
-    "id": "160",
+    "id": "33",
     "name": "La Tulipe",
     "house": "Byredo",
     "concentration": "EDT",
@@ -1133,7 +1133,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌊"
   },
   {
-    "id": "155",
+    "id": "34",
     "name": "Mojave Ghost",
     "house": "Byredo",
     "concentration": "EDP",
@@ -1167,7 +1167,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌿"
   },
   {
-    "id": "23",
+    "id": "35",
     "name": "Slow Dance",
     "house": "Byredo",
     "concentration": "EDP",
@@ -1200,7 +1200,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍋"
   },
   {
-    "id": "159",
+    "id": "36",
     "name": "Tobacco & Plum",
     "house": "Byredo",
     "concentration": "EDP",
@@ -1234,7 +1234,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌹"
   },
   {
-    "id": "162",
+    "id": "37",
     "name": "Tree House",
     "house": "Byredo",
     "concentration": "EDP",
@@ -1268,7 +1268,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🪵"
   },
   {
-    "id": "122",
+    "id": "38",
     "name": "1957",
     "house": "Chanel",
     "concentration": "EDP",
@@ -1302,7 +1302,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌙"
   },
   {
-    "id": "120",
+    "id": "39",
     "name": "Beige",
     "house": "Chanel",
     "concentration": "EDP",
@@ -1336,7 +1336,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "✨"
   },
   {
-    "id": "114",
+    "id": "40",
     "name": "Bleu de Chanel",
     "house": "Chanel",
     "concentration": "EDP",
@@ -1372,7 +1372,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍀"
   },
   {
-    "id": "121",
+    "id": "41",
     "name": "Boy",
     "house": "Chanel",
     "concentration": "EDP",
@@ -1406,7 +1406,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌺"
   },
   {
-    "id": "112",
+    "id": "42",
     "name": "Chanel No.19",
     "house": "Chanel",
     "concentration": "EDP",
@@ -1442,7 +1442,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🏔️"
   },
   {
-    "id": "111",
+    "id": "43",
     "name": "Chanel No.5",
     "house": "Chanel",
     "concentration": "EDP",
@@ -1477,7 +1477,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌾"
   },
   {
-    "id": "113",
+    "id": "44",
     "name": "Coco Mademoiselle",
     "house": "Chanel",
     "concentration": "EDP",
@@ -1512,7 +1512,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍊"
   },
   {
-    "id": "7",
+    "id": "45",
     "name": "Coromandel",
     "house": "Chanel",
     "concentration": "EDP",
@@ -1546,7 +1546,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌴"
   },
   {
-    "id": "116",
+    "id": "46",
     "name": "Coromandel",
     "house": "Chanel",
     "concentration": "EDP",
@@ -1580,7 +1580,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌬️"
   },
   {
-    "id": "119",
+    "id": "47",
     "name": "Jersey",
     "house": "Chanel",
     "concentration": "EDT",
@@ -1614,7 +1614,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "❄️"
   },
   {
-    "id": "8",
+    "id": "48",
     "name": "Le Lion",
     "house": "Chanel",
     "concentration": "EDP",
@@ -1648,7 +1648,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🔥"
   },
   {
-    "id": "117",
+    "id": "49",
     "name": "Le Lion",
     "house": "Chanel",
     "concentration": "EDP",
@@ -1682,7 +1682,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌷"
   },
   {
-    "id": "118",
+    "id": "50",
     "name": "Misia",
     "house": "Chanel",
     "concentration": "EDP",
@@ -1717,7 +1717,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍃"
   },
   {
-    "id": "6",
+    "id": "51",
     "name": "Sycomore",
     "house": "Chanel",
     "concentration": "EDP",
@@ -1751,7 +1751,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🦋"
   },
   {
-    "id": "115",
+    "id": "52",
     "name": "Sycomore",
     "house": "Chanel",
     "concentration": "EDP",
@@ -1785,7 +1785,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🫧"
   },
   {
-    "id": "14",
+    "id": "53",
     "name": "Aventus",
     "house": "Creed",
     "concentration": "EDP",
@@ -1821,7 +1821,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌫️"
   },
   {
-    "id": "175",
+    "id": "55",
     "name": "Aventus",
     "house": "Creed",
     "concentration": "EDP",
@@ -1857,7 +1857,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍂"
   },
   {
-    "id": "179",
+    "id": "57",
     "name": "Bois du Portugal",
     "house": "Creed",
     "concentration": "EDT",
@@ -1891,7 +1891,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌻"
   },
   {
-    "id": "184",
+    "id": "58",
     "name": "Erolfa",
     "house": "Creed",
     "concentration": "EDT",
@@ -1925,7 +1925,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🎋"
   },
   {
-    "id": "177",
+    "id": "69",
     "name": "Green Irish Tweed",
     "house": "Creed",
     "concentration": "EDT",
@@ -1959,7 +1959,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🫐"
   },
   {
-    "id": "182",
+    "id": "70",
     "name": "Himalaya",
     "house": "Creed",
     "concentration": "EDT",
@@ -1993,7 +1993,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌵"
   },
   {
-    "id": "180",
+    "id": "71",
     "name": "Millisime Imperial",
     "house": "Creed",
     "concentration": "EDT",
@@ -2028,7 +2028,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🕌"
   },
   {
-    "id": "183",
+    "id": "72",
     "name": "Original Santal",
     "house": "Creed",
     "concentration": "EDP",
@@ -2062,7 +2062,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍵"
   },
   {
-    "id": "178",
+    "id": "73",
     "name": "Royal Oud",
     "house": "Creed",
     "concentration": "EDP",
@@ -2096,7 +2096,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌼"
   },
   {
-    "id": "15",
+    "id": "74",
     "name": "Silver Mountain Water",
     "house": "Creed",
     "concentration": "EDP",
@@ -2131,7 +2131,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌸"
   },
   {
-    "id": "176",
+    "id": "75",
     "name": "Silver Mountain Water",
     "house": "Creed",
     "concentration": "EDP",
@@ -2166,7 +2166,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌊"
   },
   {
-    "id": "181",
+    "id": "76",
     "name": "Viking",
     "house": "Creed",
     "concentration": "EDP",
@@ -2200,7 +2200,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌿"
   },
   {
-    "id": "193",
+    "id": "77",
     "name": "Bois d'Argent",
     "house": "Dior",
     "concentration": "EDP",
@@ -2234,7 +2234,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍋"
   },
   {
-    "id": "190",
+    "id": "78",
     "name": "Dior Homme",
     "house": "Dior",
     "concentration": "EDT",
@@ -2269,7 +2269,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌹"
   },
   {
-    "id": "191",
+    "id": "79",
     "name": "Dior Homme Intense",
     "house": "Dior",
     "concentration": "EDP",
@@ -2303,7 +2303,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🪵"
   },
   {
-    "id": "196",
+    "id": "80",
     "name": "Granville",
     "house": "Dior",
     "concentration": "EDT",
@@ -2337,7 +2337,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌙"
   },
   {
-    "id": "192",
+    "id": "81",
     "name": "Gris Dior",
     "house": "Dior",
     "concentration": "EDP",
@@ -2371,7 +2371,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "✨"
   },
   {
-    "id": "188",
+    "id": "82",
     "name": "J'adore",
     "house": "Dior",
     "concentration": "EDP",
@@ -2406,7 +2406,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍀"
   },
   {
-    "id": "195",
+    "id": "83",
     "name": "Leather Oud",
     "house": "Dior",
     "concentration": "EDP",
@@ -2440,7 +2440,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌺"
   },
   {
-    "id": "189",
+    "id": "84",
     "name": "Miss Dior",
     "house": "Dior",
     "concentration": "EDP",
@@ -2475,7 +2475,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🏔️"
   },
   {
-    "id": "194",
+    "id": "85",
     "name": "Oud Ispahan",
     "house": "Dior",
     "concentration": "EDP",
@@ -2509,7 +2509,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌾"
   },
   {
-    "id": "185",
+    "id": "86",
     "name": "Sauvage",
     "house": "Dior",
     "concentration": "EDT",
@@ -2544,7 +2544,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🍊"
   },
   {
-    "id": "186",
+    "id": "87",
     "name": "Sauvage EDP",
     "house": "Dior",
     "concentration": "EDP",
@@ -2579,7 +2579,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌴"
   },
   {
-    "id": "187",
+    "id": "88",
     "name": "Sauvage Parfum",
     "house": "Dior",
     "concentration": "Parfum",
@@ -2612,7 +2612,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌬️"
   },
   {
-    "id": "26",
+    "id": "89",
     "name": "Do Son",
     "house": "Diptyque",
     "concentration": "EDT",
@@ -2644,39 +2644,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "❄️"
   },
   {
-    "id": "70",
-    "name": "Do Son",
-    "house": "Diptyque",
-    "concentration": "EDT",
-    "gender": "Female",
-    "family": "Floral Aquatic",
-    "topNotes": [
-      "Sea Notes"
-    ],
-    "middleNotes": [
-      "Tuberose",
-      "Orange Blossom"
-    ],
-    "baseNotes": [
-      "Musk",
-      "White Musks"
-    ],
-    "year": 2004,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "nameKo": "도손",
-    "nameAliases": [
-      "doson"
-    ],
-    "houseKo": "딥티크",
-    "houseAliases": [
-      "diptyque"
-    ],
-    "houseNumber": 8,
-    "icon": "🔥"
-  },
-  {
-    "id": "77",
+    "id": "91",
     "name": "Eau Duelle",
     "house": "Diptyque",
     "concentration": "EDT",
@@ -2707,10 +2675,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "diptyque"
     ],
     "houseNumber": 8,
-    "icon": "🌷"
+    "icon": "🔥"
   },
   {
-    "id": "72",
+    "id": "92",
     "name": "Eau Rose",
     "house": "Diptyque",
     "concentration": "EDT",
@@ -2740,10 +2708,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "diptyque"
     ],
     "houseNumber": 8,
-    "icon": "🍃"
+    "icon": "🌷"
   },
   {
-    "id": "79",
+    "id": "93",
     "name": "Essence Insensee",
     "house": "Diptyque",
     "concentration": "EDT",
@@ -2774,10 +2742,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "diptyque"
     ],
     "houseNumber": 8,
-    "icon": "🦋"
+    "icon": "🍃"
   },
   {
-    "id": "76",
+    "id": "94",
     "name": "Fleur de Peau",
     "house": "Diptyque",
     "concentration": "EDP",
@@ -2808,10 +2776,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "diptyque"
     ],
     "houseNumber": 8,
-    "icon": "🫧"
+    "icon": "🦋"
   },
   {
-    "id": "78",
+    "id": "95",
     "name": "Ilio",
     "house": "Diptyque",
     "concentration": "EDT",
@@ -2841,10 +2809,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "diptyque"
     ],
     "houseNumber": 8,
-    "icon": "🌫️"
+    "icon": "🫧"
   },
   {
-    "id": "71",
+    "id": "96",
     "name": "L'Ombre dans l'Eau",
     "house": "Diptyque",
     "concentration": "EDT",
@@ -2872,10 +2840,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "diptyque"
     ],
     "houseNumber": 8,
-    "icon": "🍂"
+    "icon": "🌫️"
   },
   {
-    "id": "75",
+    "id": "97",
     "name": "Orpheon",
     "house": "Diptyque",
     "concentration": "EDP",
@@ -2906,10 +2874,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "diptyque"
     ],
     "houseNumber": 8,
-    "icon": "🌻"
+    "icon": "🍂"
   },
   {
-    "id": "24",
+    "id": "98",
     "name": "Philosykos",
     "house": "Diptyque",
     "concentration": "EDT",
@@ -2938,10 +2906,43 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "diptyque"
     ],
     "houseNumber": 8,
+    "icon": "🌻"
+  },
+  {
+    "id": "99",
+    "name": "Tam Dao",
+    "house": "Diptyque",
+    "concentration": "EDT",
+    "gender": "Unisex",
+    "family": "Woody Floral",
+    "topNotes": [
+      "Sandalwood",
+      "Cypress"
+    ],
+    "middleNotes": [
+      "Rose",
+      "Musk"
+    ],
+    "baseNotes": [
+      "Cedarwood",
+      "White Musk"
+    ],
+    "year": 2003,
+    "longevityAvg": 7,
+    "projectionAvg": 6,
+    "nameKo": "탐다오",
+    "nameAliases": [
+      "tamdao"
+    ],
+    "houseKo": "딥티크",
+    "houseAliases": [
+      "diptyque"
+    ],
+    "houseNumber": 8,
     "icon": "🎋"
   },
   {
-    "id": "25",
+    "id": "100",
     "name": "Tam Dao",
     "house": "Diptyque",
     "concentration": "EDT",
@@ -2974,40 +2975,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🫐"
   },
   {
-    "id": "69",
-    "name": "Tam Dao",
-    "house": "Diptyque",
-    "concentration": "EDT",
-    "gender": "Unisex",
-    "family": "Woody Floral",
-    "topNotes": [
-      "Sandalwood",
-      "Cypress"
-    ],
-    "middleNotes": [
-      "Rose",
-      "Musk"
-    ],
-    "baseNotes": [
-      "Cedarwood",
-      "White Musk"
-    ],
-    "year": 2003,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "nameKo": "탐다오",
-    "nameAliases": [
-      "tamdao"
-    ],
-    "houseKo": "딥티크",
-    "houseAliases": [
-      "diptyque"
-    ],
-    "houseNumber": 8,
-    "icon": "🌵"
-  },
-  {
-    "id": "74",
+    "id": "101",
     "name": "Tempo",
     "house": "Diptyque",
     "concentration": "EDP",
@@ -3037,10 +3005,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "diptyque"
     ],
     "houseNumber": 8,
-    "icon": "🕌"
+    "icon": "🌵"
   },
   {
-    "id": "80",
+    "id": "102",
     "name": "Vetyverio",
     "house": "Diptyque",
     "concentration": "EDT",
@@ -3069,10 +3037,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "diptyque"
     ],
     "houseNumber": 8,
-    "icon": "🍵"
+    "icon": "🕌"
   },
   {
-    "id": "73",
+    "id": "103",
     "name": "Volutes",
     "house": "Diptyque",
     "concentration": "EDP",
@@ -3103,10 +3071,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "diptyque"
     ],
     "houseNumber": 8,
-    "icon": "🌼"
+    "icon": "🍵"
   },
   {
-    "id": "9",
+    "id": "104",
     "name": "Bois Imperial",
     "house": "Essential Parfums",
     "concentration": "EDP",
@@ -3137,10 +3105,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "essential parfumes"
     ],
     "houseNumber": 9,
-    "icon": "🌸"
+    "icon": "🌼"
   },
   {
-    "id": "219",
+    "id": "105",
     "name": "Amber Sky",
     "house": "Ex Nihilo",
     "concentration": "EDP",
@@ -3171,10 +3139,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "exnihilo"
     ],
     "houseNumber": 10,
-    "icon": "🌊"
+    "icon": "🌸"
   },
   {
-    "id": "214",
+    "id": "106",
     "name": "Cologne 352",
     "house": "Ex Nihilo",
     "concentration": "EDP",
@@ -3206,10 +3174,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "exnihilo"
     ],
     "houseNumber": 10,
-    "icon": "🌿"
+    "icon": "🌊"
   },
   {
-    "id": "213",
+    "id": "107",
     "name": "Fire Party",
     "house": "Ex Nihilo",
     "concentration": "EDP",
@@ -3240,10 +3208,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "exnihilo"
     ],
     "houseNumber": 10,
-    "icon": "🍋"
+    "icon": "🌿"
   },
   {
-    "id": "211",
+    "id": "108",
     "name": "Fleur Narcotique",
     "house": "Ex Nihilo",
     "concentration": "EDP",
@@ -3275,10 +3243,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "exnihilo"
     ],
     "houseNumber": 10,
-    "icon": "🌹"
+    "icon": "🍋"
   },
   {
-    "id": "212",
+    "id": "109",
     "name": "Lust in Paradise",
     "house": "Ex Nihilo",
     "concentration": "EDP",
@@ -3309,10 +3277,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "exnihilo"
     ],
     "houseNumber": 10,
-    "icon": "🪵"
+    "icon": "🌹"
   },
   {
-    "id": "218",
+    "id": "110",
     "name": "Moonlight in Heaven",
     "house": "Ex Nihilo",
     "concentration": "EDP",
@@ -3343,10 +3311,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "exnihilo"
     ],
     "houseNumber": 10,
-    "icon": "🌙"
+    "icon": "🪵"
   },
   {
-    "id": "217",
+    "id": "111",
     "name": "Outlaw",
     "house": "Ex Nihilo",
     "concentration": "EDP",
@@ -3377,10 +3345,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "exnihilo"
     ],
     "houseNumber": 10,
-    "icon": "✨"
+    "icon": "🌙"
   },
   {
-    "id": "216",
+    "id": "112",
     "name": "Sweet Morphine",
     "house": "Ex Nihilo",
     "concentration": "EDP",
@@ -3411,10 +3379,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "exnihilo"
     ],
     "houseNumber": 10,
-    "icon": "🍀"
+    "icon": "✨"
   },
   {
-    "id": "215",
+    "id": "113",
     "name": "Vetiver Moloko",
     "house": "Ex Nihilo",
     "concentration": "EDP",
@@ -3445,10 +3413,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "exnihilo"
     ],
     "houseNumber": 10,
-    "icon": "🌺"
+    "icon": "🍀"
   },
   {
-    "id": "81",
+    "id": "114",
     "name": "Carnal Flower",
     "house": "Frederic Malle",
     "concentration": "EDP",
@@ -3480,10 +3448,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "malle"
     ],
     "houseNumber": 11,
-    "icon": "🏔️"
+    "icon": "🌺"
   },
   {
-    "id": "86",
+    "id": "115",
     "name": "Cologne Indelebile",
     "house": "Frederic Malle",
     "concentration": "EDP",
@@ -3513,10 +3481,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "malle"
     ],
     "houseNumber": 11,
-    "icon": "🌾"
+    "icon": "🏔️"
   },
   {
-    "id": "89",
+    "id": "116",
     "name": "Dries Van Noten",
     "house": "Frederic Malle",
     "concentration": "EDP",
@@ -3548,10 +3516,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "malle"
     ],
     "houseNumber": 11,
-    "icon": "🍊"
+    "icon": "🌾"
   },
   {
-    "id": "85",
+    "id": "117",
     "name": "En Passant",
     "house": "Frederic Malle",
     "concentration": "EDT",
@@ -3582,10 +3550,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "malle"
     ],
     "houseNumber": 11,
-    "icon": "🌴"
+    "icon": "🍊"
   },
   {
-    "id": "88",
+    "id": "118",
     "name": "Le Parfum de Therese",
     "house": "Frederic Malle",
     "concentration": "EDP",
@@ -3617,10 +3585,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "malle"
     ],
     "houseNumber": 11,
-    "icon": "🌬️"
+    "icon": "🌴"
   },
   {
-    "id": "83",
+    "id": "119",
     "name": "Musc Ravageur",
     "house": "Frederic Malle",
     "concentration": "EDP",
@@ -3652,10 +3620,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "malle"
     ],
     "houseNumber": 11,
-    "icon": "❄️"
+    "icon": "🌬️"
   },
   {
-    "id": "84",
+    "id": "120",
     "name": "Noir Epices",
     "house": "Frederic Malle",
     "concentration": "EDT",
@@ -3687,10 +3655,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "malle"
     ],
     "houseNumber": 11,
-    "icon": "🔥"
+    "icon": "❄️"
   },
   {
-    "id": "82",
+    "id": "121",
     "name": "Portrait of a Lady",
     "house": "Frederic Malle",
     "concentration": "EDP",
@@ -3723,10 +3691,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "malle"
     ],
     "houseNumber": 11,
-    "icon": "🌷"
+    "icon": "🔥"
   },
   {
-    "id": "90",
+    "id": "122",
     "name": "Une Fleur de Cassie",
     "house": "Frederic Malle",
     "concentration": "EDP",
@@ -3758,10 +3726,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "malle"
     ],
     "houseNumber": 11,
-    "icon": "🍃"
+    "icon": "🌷"
   },
   {
-    "id": "87",
+    "id": "123",
     "name": "Vetiver Extraordinaire",
     "house": "Frederic Malle",
     "concentration": "EDP",
@@ -3793,10 +3761,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "malle"
     ],
     "houseNumber": 11,
-    "icon": "🦋"
+    "icon": "🍃"
   },
   {
-    "id": "135",
+    "id": "125",
     "name": "Acqua di Gio",
     "house": "Giorgio Armani",
     "concentration": "EDT",
@@ -3829,10 +3797,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "armani"
     ],
     "houseNumber": 3,
-    "icon": "🫧"
+    "icon": "🦋"
   },
   {
-    "id": "137",
+    "id": "126",
     "name": "Acqua di Gio Absolu",
     "house": "Giorgio Armani",
     "concentration": "EDP",
@@ -3863,10 +3831,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "armani"
     ],
     "houseNumber": 3,
-    "icon": "🌫️"
+    "icon": "🫧"
   },
   {
-    "id": "136",
+    "id": "127",
     "name": "Acqua di Gio Profumo",
     "house": "Giorgio Armani",
     "concentration": "EDP",
@@ -3898,10 +3866,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "armani"
     ],
     "houseNumber": 3,
-    "icon": "🍂"
+    "icon": "🌫️"
   },
   {
-    "id": "138",
+    "id": "128",
     "name": "Armani Code",
     "house": "Giorgio Armani",
     "concentration": "EDT",
@@ -3932,10 +3900,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "armani"
     ],
     "houseNumber": 3,
-    "icon": "🌻"
+    "icon": "🍂"
   },
   {
-    "id": "139",
+    "id": "129",
     "name": "Armani Code Absolu",
     "house": "Giorgio Armani",
     "concentration": "EDP",
@@ -3966,10 +3934,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "armani"
     ],
     "houseNumber": 3,
-    "icon": "🎋"
+    "icon": "🌻"
   },
   {
-    "id": "140",
+    "id": "130",
     "name": "Si",
     "house": "Giorgio Armani",
     "concentration": "EDP",
@@ -4000,10 +3968,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "armani"
     ],
     "houseNumber": 3,
-    "icon": "🫐"
+    "icon": "🎋"
   },
   {
-    "id": "141",
+    "id": "131",
     "name": "Si Passione",
     "house": "Giorgio Armani",
     "concentration": "EDP",
@@ -4034,10 +4002,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "armani"
     ],
     "houseNumber": 3,
-    "icon": "🌵"
+    "icon": "🫐"
   },
   {
-    "id": "123",
+    "id": "132",
     "name": "L'Interdit",
     "house": "Givenchy",
     "concentration": "EDP",
@@ -4069,10 +4037,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "givenchy"
     ],
     "houseNumber": 12,
-    "icon": "🕌"
+    "icon": "🌵"
   },
   {
-    "id": "5",
+    "id": "133",
     "name": "Terre D'Hermes Eau Givree",
     "house": "Hermes",
     "concentration": "EDP",
@@ -4104,10 +4072,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "hermes"
     ],
     "houseNumber": 13,
-    "icon": "🍵"
+    "icon": "🕌"
   },
   {
-    "id": "58",
+    "id": "134",
     "name": "Blackberry & Bay",
     "house": "Jo Malone",
     "concentration": "EDC",
@@ -4136,10 +4104,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "jomarlone"
     ],
     "houseNumber": 14,
-    "icon": "🌼"
+    "icon": "🍵"
   },
   {
-    "id": "55",
+    "id": "135",
     "name": "Lime Basil & Mandarin",
     "house": "Jo Malone",
     "concentration": "EDC",
@@ -4169,10 +4137,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "jomarlone"
     ],
     "houseNumber": 14,
-    "icon": "🌸"
+    "icon": "🌼"
   },
   {
-    "id": "57",
+    "id": "136",
     "name": "Wood Sage & Sea Salt",
     "house": "Jo Malone",
     "concentration": "EDC",
@@ -4201,10 +4169,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "jomarlone"
     ],
     "houseNumber": 14,
-    "icon": "🌊"
+    "icon": "🌸"
   },
   {
-    "id": "36",
+    "id": "137",
     "name": "Angels' Share",
     "house": "Kilian",
     "concentration": "EDP",
@@ -4235,10 +4203,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "killian"
     ],
     "houseNumber": 15,
-    "icon": "🌿"
+    "icon": "🌊"
   },
   {
-    "id": "33",
+    "id": "138",
     "name": "Apple Brandy",
     "house": "Kilian",
     "concentration": "EDP",
@@ -4269,10 +4237,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "killian"
     ],
     "houseNumber": 15,
-    "icon": "🍋"
+    "icon": "🌿"
   },
   {
-    "id": "32",
+    "id": "139",
     "name": "Black Phantom",
     "house": "Kilian",
     "concentration": "EDP",
@@ -4303,10 +4271,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "killian"
     ],
     "houseNumber": 15,
-    "icon": "🌹"
+    "icon": "🍋"
   },
   {
-    "id": "34",
+    "id": "140",
     "name": "Good Girl Gone Bad",
     "house": "Kilian",
     "concentration": "EDP",
@@ -4336,10 +4304,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "killian"
     ],
     "houseNumber": 15,
-    "icon": "🪵"
+    "icon": "🌹"
   },
   {
-    "id": "38",
+    "id": "141",
     "name": "Imperial Tea",
     "house": "Kilian",
     "concentration": "EDP",
@@ -4370,10 +4338,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "killian"
     ],
     "houseNumber": 15,
-    "icon": "🌙"
+    "icon": "🪵"
   },
   {
-    "id": "31",
+    "id": "144",
     "name": "Love Don't Be Shy",
     "house": "Kilian",
     "concentration": "EDP",
@@ -4404,10 +4372,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "killian"
     ],
     "houseNumber": 15,
-    "icon": "✨"
+    "icon": "🌙"
   },
   {
-    "id": "37",
+    "id": "145",
     "name": "Moonlight in Heaven",
     "house": "Kilian",
     "concentration": "EDP",
@@ -4437,10 +4405,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "killian"
     ],
     "houseNumber": 15,
-    "icon": "🍀"
+    "icon": "✨"
   },
   {
-    "id": "39",
+    "id": "146",
     "name": "Playing with the Devil",
     "house": "Kilian",
     "concentration": "EDP",
@@ -4471,10 +4439,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "killian"
     ],
     "houseNumber": 15,
-    "icon": "🌺"
+    "icon": "🍀"
   },
   {
-    "id": "35",
+    "id": "147",
     "name": "Straight to Heaven",
     "house": "Kilian",
     "concentration": "EDP",
@@ -4505,10 +4473,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "killian"
     ],
     "houseNumber": 15,
-    "icon": "🏔️"
+    "icon": "🌺"
   },
   {
-    "id": "40",
+    "id": "148",
     "name": "Vodka on the Rocks",
     "house": "Kilian",
     "concentration": "EDP",
@@ -4539,10 +4507,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "killian"
     ],
     "houseNumber": 15,
-    "icon": "🌾"
+    "icon": "🏔️"
   },
   {
-    "id": "13",
+    "id": "149",
     "name": "Encre Noire",
     "house": "Lalique",
     "concentration": "EDT",
@@ -4570,10 +4538,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "lalique"
     ],
     "houseNumber": 16,
-    "icon": "🍊"
+    "icon": "🌾"
   },
   {
-    "id": "3",
+    "id": "150",
     "name": "Santal 33",
     "house": "Le Labo",
     "concentration": "EDP",
@@ -4604,10 +4572,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "lelabo"
     ],
     "houseNumber": 17,
-    "icon": "🌴"
+    "icon": "🍊"
   },
   {
-    "id": "126",
+    "id": "151",
     "name": "Afternoon Swim",
     "house": "Louis Vuitton",
     "concentration": "EDP",
@@ -4638,10 +4606,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "louisvuitton"
     ],
     "houseNumber": 18,
-    "icon": "🌬️"
+    "icon": "🌴"
   },
   {
-    "id": "128",
+    "id": "152",
     "name": "California Dream",
     "house": "Louis Vuitton",
     "concentration": "EDP",
@@ -4673,10 +4641,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "louisvuitton"
     ],
     "houseNumber": 18,
-    "icon": "❄️"
+    "icon": "🌬️"
   },
   {
-    "id": "133",
+    "id": "153",
     "name": "Dans la Peau",
     "house": "Louis Vuitton",
     "concentration": "EDP",
@@ -4708,10 +4676,44 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "louisvuitton"
     ],
     "houseNumber": 18,
+    "icon": "❄️"
+  },
+  {
+    "id": "154",
+    "name": "Imagination",
+    "house": "Louis Vuitton",
+    "concentration": "EDP",
+    "gender": "Male",
+    "family": "Aromatic Aquatic",
+    "topNotes": [
+      "Bergamot",
+      "Grapefruit"
+    ],
+    "middleNotes": [
+      "Petitgrain",
+      "Vetiver"
+    ],
+    "baseNotes": [
+      "Cedar",
+      "Musk"
+    ],
+    "year": 2019,
+    "longevityAvg": 7,
+    "projectionAvg": 6,
+    "nameKo": "이마지나시옹",
+    "nameAliases": [
+      "imagination"
+    ],
+    "houseKo": "루이비통",
+    "houseAliases": [
+      "lv",
+      "louisvuitton"
+    ],
+    "houseNumber": 18,
     "icon": "🔥"
   },
   {
-    "id": "10",
+    "id": "155",
     "name": "Imagination",
     "house": "Louis Vuitton",
     "concentration": "EDP",
@@ -4745,41 +4747,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌷"
   },
   {
-    "id": "125",
-    "name": "Imagination",
-    "house": "Louis Vuitton",
-    "concentration": "EDP",
-    "gender": "Male",
-    "family": "Aromatic Aquatic",
-    "topNotes": [
-      "Bergamot",
-      "Grapefruit"
-    ],
-    "middleNotes": [
-      "Petitgrain",
-      "Vetiver"
-    ],
-    "baseNotes": [
-      "Cedar",
-      "Musk"
-    ],
-    "year": 2019,
-    "longevityAvg": 7,
-    "projectionAvg": 6,
-    "nameKo": "이마지나시옹",
-    "nameAliases": [
-      "imagination"
-    ],
-    "houseKo": "루이비통",
-    "houseAliases": [
-      "lv",
-      "louisvuitton"
-    ],
-    "houseNumber": 18,
-    "icon": "🍃"
-  },
-  {
-    "id": "134",
+    "id": "156",
     "name": "Le Jour se Leve",
     "house": "Louis Vuitton",
     "concentration": "EDP",
@@ -4811,10 +4779,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "louisvuitton"
     ],
     "houseNumber": 18,
-    "icon": "🦋"
+    "icon": "🍃"
   },
   {
-    "id": "130",
+    "id": "157",
     "name": "Matiere Noire",
     "house": "Louis Vuitton",
     "concentration": "EDP",
@@ -4846,10 +4814,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "louisvuitton"
     ],
     "houseNumber": 18,
-    "icon": "🫧"
+    "icon": "🦋"
   },
   {
-    "id": "132",
+    "id": "158",
     "name": "Nuit de Feu",
     "house": "Louis Vuitton",
     "concentration": "EDP",
@@ -4881,10 +4849,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "louisvuitton"
     ],
     "houseNumber": 18,
-    "icon": "🌫️"
+    "icon": "🫧"
   },
   {
-    "id": "131",
+    "id": "159",
     "name": "Ombre Nomade",
     "house": "Louis Vuitton",
     "concentration": "EDP",
@@ -4916,10 +4884,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "louisvuitton"
     ],
     "houseNumber": 18,
-    "icon": "🍂"
+    "icon": "🌫️"
   },
   {
-    "id": "127",
+    "id": "160",
     "name": "On the Beach",
     "house": "Louis Vuitton",
     "concentration": "EDP",
@@ -4950,10 +4918,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "louisvuitton"
     ],
     "houseNumber": 18,
-    "icon": "🌻"
+    "icon": "🍂"
   },
   {
-    "id": "129",
+    "id": "161",
     "name": "Spell on You",
     "house": "Louis Vuitton",
     "concentration": "EDP",
@@ -4985,10 +4953,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "louisvuitton"
     ],
     "houseNumber": 18,
-    "icon": "🎋"
+    "icon": "🌻"
   },
   {
-    "id": "50",
+    "id": "162",
     "name": "724",
     "house": "Maison Francis Kurkdjian",
     "concentration": "EDP",
@@ -5021,10 +4989,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "kurkdjian"
     ],
     "houseNumber": 19,
-    "icon": "🫐"
+    "icon": "🎋"
   },
   {
-    "id": "52",
+    "id": "163",
     "name": "Amyris Femme",
     "house": "Maison Francis Kurkdjian",
     "concentration": "EDP",
@@ -5057,10 +5025,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "kurkdjian"
     ],
     "houseNumber": 19,
-    "icon": "🌵"
+    "icon": "🫐"
   },
   {
-    "id": "53",
+    "id": "164",
     "name": "APOM Pour Homme",
     "house": "Maison Francis Kurkdjian",
     "concentration": "EDP",
@@ -5093,10 +5061,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "kurkdjian"
     ],
     "houseNumber": 19,
-    "icon": "🕌"
+    "icon": "🌵"
   },
   {
-    "id": "47",
+    "id": "165",
     "name": "Aqua Celestia",
     "house": "Maison Francis Kurkdjian",
     "concentration": "EDP",
@@ -5128,10 +5096,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "kurkdjian"
     ],
     "houseNumber": 19,
-    "icon": "🍵"
+    "icon": "🕌"
   },
   {
-    "id": "46",
+    "id": "166",
     "name": "Aqua Universalis",
     "house": "Maison Francis Kurkdjian",
     "concentration": "EDP",
@@ -5163,10 +5131,46 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "kurkdjian"
     ],
     "houseNumber": 19,
+    "icon": "🍵"
+  },
+  {
+    "id": "167",
+    "name": "Baccarat Rouge 540",
+    "house": "Maison Francis Kurkdjian",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Floral Amber",
+    "topNotes": [
+      "Saffron",
+      "Jasmine"
+    ],
+    "middleNotes": [
+      "Amberwood",
+      "Ambergris"
+    ],
+    "baseNotes": [
+      "Fir Resin",
+      "Cedar"
+    ],
+    "year": 2015,
+    "longevityAvg": 9,
+    "projectionAvg": 9,
+    "nameKo": "바카라루쥬540",
+    "nameAliases": [
+      "br540",
+      "baccaratrouge"
+    ],
+    "houseKo": "메종프란시스커정, 커정",
+    "houseAliases": [
+      "mfk",
+      "francis",
+      "kurkdjian"
+    ],
+    "houseNumber": 19,
     "icon": "🌼"
   },
   {
-    "id": "2",
+    "id": "168",
     "name": "Baccarat Rouge 540",
     "house": "Maison Francis Kurkdjian",
     "concentration": "EDP",
@@ -5202,43 +5206,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
     "icon": "🌸"
   },
   {
-    "id": "41",
-    "name": "Baccarat Rouge 540",
-    "house": "Maison Francis Kurkdjian",
-    "concentration": "EDP",
-    "gender": "Unisex",
-    "family": "Floral Amber",
-    "topNotes": [
-      "Saffron",
-      "Jasmine"
-    ],
-    "middleNotes": [
-      "Amberwood",
-      "Ambergris"
-    ],
-    "baseNotes": [
-      "Fir Resin",
-      "Cedar"
-    ],
-    "year": 2015,
-    "longevityAvg": 9,
-    "projectionAvg": 9,
-    "nameKo": "바카라루쥬540",
-    "nameAliases": [
-      "br540",
-      "baccaratrouge"
-    ],
-    "houseKo": "메종프란시스커정, 커정",
-    "houseAliases": [
-      "mfk",
-      "francis",
-      "kurkdjian"
-    ],
-    "houseNumber": 19,
-    "icon": "🌊"
-  },
-  {
-    "id": "42",
+    "id": "169",
     "name": "Baccarat Rouge 540 Extrait",
     "house": "Maison Francis Kurkdjian",
     "concentration": "Extrait de Parfum",
@@ -5271,10 +5239,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "kurkdjian"
     ],
     "houseNumber": 19,
-    "icon": "🌿"
+    "icon": "🌊"
   },
   {
-    "id": "48",
+    "id": "170",
     "name": "Gentle Fluidity Gold",
     "house": "Maison Francis Kurkdjian",
     "concentration": "EDP",
@@ -5307,10 +5275,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "kurkdjian"
     ],
     "houseNumber": 19,
-    "icon": "🍋"
+    "icon": "🌿"
   },
   {
-    "id": "49",
+    "id": "171",
     "name": "Gentle Fluidity Silver",
     "house": "Maison Francis Kurkdjian",
     "concentration": "EDP",
@@ -5342,10 +5310,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "kurkdjian"
     ],
     "houseNumber": 19,
-    "icon": "🌹"
+    "icon": "🍋"
   },
   {
-    "id": "43",
+    "id": "172",
     "name": "Grand Soir",
     "house": "Maison Francis Kurkdjian",
     "concentration": "EDP",
@@ -5377,10 +5345,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "kurkdjian"
     ],
     "houseNumber": 19,
-    "icon": "🪵"
+    "icon": "🌹"
   },
   {
-    "id": "51",
+    "id": "173",
     "name": "L'Homme a la Rose",
     "house": "Maison Francis Kurkdjian",
     "concentration": "EDP",
@@ -5414,10 +5382,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "kurkdjian"
     ],
     "houseNumber": 19,
-    "icon": "🌙"
+    "icon": "🪵"
   },
   {
-    "id": "45",
+    "id": "174",
     "name": "Oud Extrait",
     "house": "Maison Francis Kurkdjian",
     "concentration": "Extrait de Parfum",
@@ -5449,10 +5417,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "kurkdjian"
     ],
     "houseNumber": 19,
-    "icon": "✨"
+    "icon": "🌙"
   },
   {
-    "id": "44",
+    "id": "175",
     "name": "Oud Satin Mood",
     "house": "Maison Francis Kurkdjian",
     "concentration": "EDP",
@@ -5484,10 +5452,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "kurkdjian"
     ],
     "houseNumber": 19,
-    "icon": "🍀"
+    "icon": "✨"
   },
   {
-    "id": "222",
+    "id": "176",
     "name": "Replica Beach Walk",
     "house": "Maison Margiela",
     "concentration": "EDT",
@@ -5520,10 +5488,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "replica"
     ],
     "houseNumber": 20,
-    "icon": "🌺"
+    "icon": "🍀"
   },
   {
-    "id": "221",
+    "id": "177",
     "name": "Replica By the Fireplace",
     "house": "Maison Margiela",
     "concentration": "EDT",
@@ -5556,10 +5524,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "replica"
     ],
     "houseNumber": 20,
-    "icon": "🏔️"
+    "icon": "🌺"
   },
   {
-    "id": "224",
+    "id": "178",
     "name": "Replica Flower Market",
     "house": "Maison Margiela",
     "concentration": "EDT",
@@ -5592,10 +5560,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "replica"
     ],
     "houseNumber": 20,
-    "icon": "🌾"
+    "icon": "🏔️"
   },
   {
-    "id": "220",
+    "id": "179",
     "name": "Replica Jazz Club",
     "house": "Maison Margiela",
     "concentration": "EDT",
@@ -5629,10 +5597,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "replica"
     ],
     "houseNumber": 20,
-    "icon": "🍊"
+    "icon": "🌾"
   },
   {
-    "id": "229",
+    "id": "180",
     "name": "Replica On a Date",
     "house": "Maison Margiela",
     "concentration": "EDP",
@@ -5665,10 +5633,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "replica"
     ],
     "houseNumber": 20,
-    "icon": "🌴"
+    "icon": "🍊"
   },
   {
-    "id": "225",
+    "id": "181",
     "name": "Replica Sailing Day",
     "house": "Maison Margiela",
     "concentration": "EDT",
@@ -5701,10 +5669,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "replica"
     ],
     "houseNumber": 20,
-    "icon": "🌬️"
+    "icon": "🌴"
   },
   {
-    "id": "228",
+    "id": "182",
     "name": "Replica Springtime in a Park",
     "house": "Maison Margiela",
     "concentration": "EDT",
@@ -5737,10 +5705,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "replica"
     ],
     "houseNumber": 20,
-    "icon": "❄️"
+    "icon": "🌬️"
   },
   {
-    "id": "223",
+    "id": "183",
     "name": "Replica Under the Lemon Trees",
     "house": "Maison Margiela",
     "concentration": "EDT",
@@ -5773,10 +5741,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "replica"
     ],
     "houseNumber": 20,
-    "icon": "🔥"
+    "icon": "❄️"
   },
   {
-    "id": "226",
+    "id": "184",
     "name": "Replica When the Rain Stops",
     "house": "Maison Margiela",
     "concentration": "EDP",
@@ -5809,10 +5777,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "replica"
     ],
     "houseNumber": 20,
-    "icon": "🌷"
+    "icon": "🔥"
   },
   {
-    "id": "227",
+    "id": "185",
     "name": "Replica Whispers in the Library",
     "house": "Maison Margiela",
     "concentration": "EDT",
@@ -5845,10 +5813,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "replica"
     ],
     "houseNumber": 20,
-    "icon": "🍃"
+    "icon": "🌷"
   },
   {
-    "id": "1",
+    "id": "186",
     "name": "Ege",
     "house": "Nishane",
     "concentration": "Extrait de Parfum",
@@ -5881,10 +5849,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "nishane"
     ],
     "houseNumber": 21,
-    "icon": "🦋"
+    "icon": "🍃"
   },
   {
-    "id": "11",
+    "id": "187",
     "name": "Hacivat",
     "house": "Nishane",
     "concentration": "Extrait de Parfum",
@@ -5915,10 +5883,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "nishane"
     ],
     "houseNumber": 21,
-    "icon": "🫧"
+    "icon": "🦋"
   },
   {
-    "id": "12",
+    "id": "188",
     "name": "Wulong Cha",
     "house": "Nishane",
     "concentration": "Extrait de Parfum",
@@ -5949,10 +5917,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "nishane"
     ],
     "houseNumber": 21,
-    "icon": "🌫️"
+    "icon": "🫧"
   },
   {
-    "id": "30",
+    "id": "189",
     "name": "Castille",
     "house": "Parfums de Marly",
     "concentration": "EDP",
@@ -5984,10 +5952,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "pdm"
     ],
     "houseNumber": 22,
-    "icon": "🍂"
+    "icon": "🌫️"
   },
   {
-    "id": "29",
+    "id": "190",
     "name": "Greenley",
     "house": "Parfums de Marly",
     "concentration": "EDP",
@@ -6019,10 +5987,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "pdm"
     ],
     "houseNumber": 22,
-    "icon": "🌻"
+    "icon": "🍂"
   },
   {
-    "id": "28",
+    "id": "191",
     "name": "Herod",
     "house": "Parfums de Marly",
     "concentration": "EDP",
@@ -6054,10 +6022,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "pdm"
     ],
     "houseNumber": 22,
-    "icon": "🎋"
+    "icon": "🌻"
   },
   {
-    "id": "27",
+    "id": "192",
     "name": "Layton",
     "house": "Parfums de Marly",
     "concentration": "EDP",
@@ -6089,10 +6057,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "pdm"
     ],
     "houseNumber": 22,
-    "icon": "🫐"
+    "icon": "🎋"
   },
   {
-    "id": "91",
+    "id": "193",
     "name": "Acqua di Colonia",
     "house": "Santa Maria Novella",
     "concentration": "EDC",
@@ -6124,10 +6092,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "santamarianovella"
     ],
     "houseNumber": 23,
-    "icon": "🌵"
+    "icon": "🫐"
   },
   {
-    "id": "97",
+    "id": "194",
     "name": "Iris",
     "house": "Santa Maria Novella",
     "concentration": "EDT",
@@ -6159,10 +6127,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "santamarianovella"
     ],
     "houseNumber": 23,
-    "icon": "🕌"
+    "icon": "🌵"
   },
   {
-    "id": "92",
+    "id": "195",
     "name": "Melograno",
     "house": "Santa Maria Novella",
     "concentration": "EDC",
@@ -6194,10 +6162,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "santamarianovella"
     ],
     "houseNumber": 23,
-    "icon": "🍵"
+    "icon": "🕌"
   },
   {
-    "id": "93",
+    "id": "196",
     "name": "Nostalgia",
     "house": "Santa Maria Novella",
     "concentration": "EDP",
@@ -6229,10 +6197,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "santamarianovella"
     ],
     "houseNumber": 23,
-    "icon": "🌼"
+    "icon": "🍵"
   },
   {
-    "id": "96",
+    "id": "200",
     "name": "Oppoponax",
     "house": "Santa Maria Novella",
     "concentration": "EDP",
@@ -6264,10 +6232,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "santamarianovella"
     ],
     "houseNumber": 23,
-    "icon": "🌸"
+    "icon": "🌼"
   },
   {
-    "id": "99",
+    "id": "201",
     "name": "Patchouli",
     "house": "Santa Maria Novella",
     "concentration": "EDP",
@@ -6299,10 +6267,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "santamarianovella"
     ],
     "houseNumber": 23,
-    "icon": "🌊"
+    "icon": "🌸"
   },
   {
-    "id": "95",
+    "id": "202",
     "name": "Pot Pourri",
     "house": "Santa Maria Novella",
     "concentration": "EDC",
@@ -6334,10 +6302,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "santamarianovella"
     ],
     "houseNumber": 23,
-    "icon": "🌿"
+    "icon": "🌊"
   },
   {
-    "id": "98",
+    "id": "203",
     "name": "Rosa",
     "house": "Santa Maria Novella",
     "concentration": "EDT",
@@ -6368,10 +6336,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "santamarianovella"
     ],
     "houseNumber": 23,
-    "icon": "🍋"
+    "icon": "🌿"
   },
   {
-    "id": "94",
+    "id": "204",
     "name": "Tabacco Toscano",
     "house": "Santa Maria Novella",
     "concentration": "EDP",
@@ -6403,10 +6371,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "santamarianovella"
     ],
     "houseNumber": 23,
-    "icon": "🌹"
+    "icon": "🍋"
   },
   {
-    "id": "100",
+    "id": "205",
     "name": "Vetiver",
     "house": "Santa Maria Novella",
     "concentration": "EDT",
@@ -6438,10 +6406,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "santamarianovella"
     ],
     "houseNumber": 23,
-    "icon": "🪵"
+    "icon": "🌹"
   },
   {
-    "id": "200",
+    "id": "206",
     "name": "Black Orchid",
     "house": "Tom Ford",
     "concentration": "EDP",
@@ -6473,10 +6441,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "tomford"
     ],
     "houseNumber": 24,
-    "icon": "🌙"
+    "icon": "🪵"
   },
   {
-    "id": "203",
+    "id": "207",
     "name": "Costa Azzurra",
     "house": "Tom Ford",
     "concentration": "EDT",
@@ -6507,7 +6475,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "tomford"
     ],
     "houseNumber": 24,
-    "icon": "✨"
+    "icon": "🌙"
   },
   {
     "id": "208",
@@ -6541,7 +6509,7 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "tomford"
     ],
     "houseNumber": 24,
-    "icon": "🍀"
+    "icon": "✨"
   },
   {
     "id": "209",
@@ -6576,10 +6544,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "tomford"
     ],
     "houseNumber": 24,
-    "icon": "🌺"
+    "icon": "🍀"
   },
   {
-    "id": "206",
+    "id": "211",
     "name": "Fougere Platine",
     "house": "Tom Ford",
     "concentration": "EDP",
@@ -6610,10 +6578,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "tomford"
     ],
     "houseNumber": 24,
-    "icon": "🏔️"
+    "icon": "🌺"
   },
   {
-    "id": "204",
+    "id": "212",
     "name": "Grey Vetiver",
     "house": "Tom Ford",
     "concentration": "EDT",
@@ -6644,10 +6612,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "tomford"
     ],
     "houseNumber": 24,
-    "icon": "🌾"
+    "icon": "🏔️"
   },
   {
-    "id": "201",
+    "id": "213",
     "name": "Neroli Portofino",
     "house": "Tom Ford",
     "concentration": "EDT",
@@ -6679,10 +6647,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "tomford"
     ],
     "houseNumber": 24,
-    "icon": "🍊"
+    "icon": "🌾"
   },
   {
-    "id": "20",
+    "id": "214",
     "name": "Noir de Noir",
     "house": "Tom Ford",
     "concentration": "EDP",
@@ -6713,10 +6681,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "tomford"
     ],
     "houseNumber": 24,
-    "icon": "🌴"
+    "icon": "🍊"
   },
   {
-    "id": "19",
+    "id": "215",
     "name": "Oud Wood",
     "house": "Tom Ford",
     "concentration": "EDP",
@@ -6747,10 +6715,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "tomford"
     ],
     "houseNumber": 24,
-    "icon": "🌬️"
+    "icon": "🌴"
   },
   {
-    "id": "207",
+    "id": "216",
     "name": "Rose Prick",
     "house": "Tom Ford",
     "concentration": "EDP",
@@ -6781,10 +6749,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "tomford"
     ],
     "houseNumber": 24,
-    "icon": "❄️"
+    "icon": "🌬️"
   },
   {
-    "id": "202",
+    "id": "217",
     "name": "Sole di Positano",
     "house": "Tom Ford",
     "concentration": "EDT",
@@ -6815,10 +6783,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "tomford"
     ],
     "houseNumber": 24,
-    "icon": "🔥"
+    "icon": "❄️"
   },
   {
-    "id": "18",
+    "id": "218",
     "name": "Tobacco Vanille",
     "house": "Tom Ford",
     "concentration": "EDP",
@@ -6849,10 +6817,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "tomford"
     ],
     "houseNumber": 24,
-    "icon": "🌷"
+    "icon": "🔥"
   },
   {
-    "id": "205",
+    "id": "219",
     "name": "Tuscan Leather",
     "house": "Tom Ford",
     "concentration": "EDP",
@@ -6883,10 +6851,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "tomford"
     ],
     "houseNumber": 24,
-    "icon": "🍃"
+    "icon": "🌷"
   },
   {
-    "id": "231",
+    "id": "220",
     "name": "Trudon Abd El Kader",
     "house": "Trudon",
     "concentration": "EDP",
@@ -6917,10 +6885,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "trudon"
     ],
     "houseNumber": 25,
-    "icon": "🦋"
+    "icon": "🍃"
   },
   {
-    "id": "235",
+    "id": "221",
     "name": "Trudon Arabesque",
     "house": "Trudon",
     "concentration": "EDP",
@@ -6951,10 +6919,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "trudon"
     ],
     "houseNumber": 25,
-    "icon": "🫧"
+    "icon": "🦋"
   },
   {
-    "id": "232",
+    "id": "222",
     "name": "Trudon Bruma",
     "house": "Trudon",
     "concentration": "EDP",
@@ -6985,10 +6953,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "trudon"
     ],
     "houseNumber": 25,
-    "icon": "🌫️"
+    "icon": "🫧"
   },
   {
-    "id": "234",
+    "id": "223",
     "name": "Trudon Ere",
     "house": "Trudon",
     "concentration": "EDP",
@@ -7019,10 +6987,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "trudon"
     ],
     "houseNumber": 25,
-    "icon": "🍂"
+    "icon": "🌫️"
   },
   {
-    "id": "236",
+    "id": "224",
     "name": "Trudon Graphic",
     "house": "Trudon",
     "concentration": "EDP",
@@ -7053,10 +7021,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "trudon"
     ],
     "houseNumber": 25,
-    "icon": "🌻"
+    "icon": "🍂"
   },
   {
-    "id": "230",
+    "id": "225",
     "name": "Trudon Mortel",
     "house": "Trudon",
     "concentration": "EDP",
@@ -7087,10 +7055,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "trudon"
     ],
     "houseNumber": 25,
-    "icon": "🎋"
+    "icon": "🌻"
   },
   {
-    "id": "233",
+    "id": "226",
     "name": "Trudon Olim",
     "house": "Trudon",
     "concentration": "EDP",
@@ -7121,10 +7089,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "trudon"
     ],
     "houseNumber": 25,
-    "icon": "🫐"
+    "icon": "🎋"
   },
   {
-    "id": "104",
+    "id": "227",
     "name": "Alexandria II",
     "house": "Xerjoff",
     "concentration": "EDP",
@@ -7155,10 +7123,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "xerjoff"
     ],
     "houseNumber": 26,
-    "icon": "🌵"
+    "icon": "🫐"
   },
   {
-    "id": "106",
+    "id": "228",
     "name": "Cruz del Sur II",
     "house": "Xerjoff",
     "concentration": "EDP",
@@ -7189,10 +7157,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "xerjoff"
     ],
     "houseNumber": 26,
-    "icon": "🕌"
+    "icon": "🌵"
   },
   {
-    "id": "103",
+    "id": "229",
     "name": "Erba Pura",
     "house": "Xerjoff",
     "concentration": "EDP",
@@ -7223,10 +7191,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "xerjoff"
     ],
     "houseNumber": 26,
-    "icon": "🍵"
+    "icon": "🕌"
   },
   {
-    "id": "109",
+    "id": "230",
     "name": "Irisss",
     "house": "Xerjoff",
     "concentration": "EDP",
@@ -7257,10 +7225,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "xerjoff"
     ],
     "houseNumber": 26,
-    "icon": "🌼"
+    "icon": "🍵"
   },
   {
-    "id": "108",
+    "id": "231",
     "name": "K'uo",
     "house": "Xerjoff",
     "concentration": "EDP",
@@ -7291,10 +7259,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "xerjoff"
     ],
     "houseNumber": 26,
-    "icon": "🌸"
+    "icon": "🌼"
   },
   {
-    "id": "107",
+    "id": "232",
     "name": "Lira",
     "house": "Xerjoff",
     "concentration": "EDP",
@@ -7325,10 +7293,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "xerjoff"
     ],
     "houseNumber": 26,
-    "icon": "🌊"
+    "icon": "🌸"
   },
   {
-    "id": "110",
+    "id": "233",
     "name": "More Than Words",
     "house": "Xerjoff",
     "concentration": "EDP",
@@ -7360,10 +7328,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "xerjoff"
     ],
     "houseNumber": 26,
-    "icon": "🌿"
+    "icon": "🌊"
   },
   {
-    "id": "102",
+    "id": "234",
     "name": "Naxos",
     "house": "Xerjoff",
     "concentration": "EDP",
@@ -7394,10 +7362,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "xerjoff"
     ],
     "houseNumber": 26,
-    "icon": "🍋"
+    "icon": "🌿"
   },
   {
-    "id": "101",
+    "id": "235",
     "name": "Nio",
     "house": "Xerjoff",
     "concentration": "EDP",
@@ -7428,10 +7396,10 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "xerjoff"
     ],
     "houseNumber": 26,
-    "icon": "🌹"
+    "icon": "🍋"
   },
   {
-    "id": "105",
+    "id": "236",
     "name": "Zefiro",
     "house": "Xerjoff",
     "concentration": "EDP",
@@ -7462,6 +7430,700 @@ export const FRAGRANCES_DB: FragranceDB[] = [
       "xerjoff"
     ],
     "houseNumber": 26,
+    "icon": "🌹"
+  },
+  {
+    "id": "237",
+    "name": "Ambrette 9",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Aromatic Woody",
+    "topNotes": [
+      "Single note"
+    ],
+    "middleNotes": [
+      "Ambrette",
+      "fruity note",
+      "musk",
+      "aldehyde",
+      "amalfi lemon",
+      "amber"
+    ],
+    "baseNotes": [
+      "Ambrette",
+      "fruity note",
+      "musk",
+      "aldehyde",
+      "amalfi lemon",
+      "amber"
+    ],
+    "year": 2006,
+    "longevityAvg": 5,
+    "projectionAvg": 5,
+    "nameKo": "암브레트",
+    "nameAliases": [
+      "ambrette"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
     "icon": "🪵"
+  },
+  {
+    "id": "238",
+    "name": "Another 13",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Oriental Woody",
+    "topNotes": [
+      "Pear",
+      "Citruses",
+      "Apple"
+    ],
+    "middleNotes": [
+      "Ambrette (Musk Mallow)",
+      "Amyl Salicylate",
+      "Moss",
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "Iso E Super",
+      "Cetalox",
+      "Helvetolide",
+      "Ambrettolide"
+    ],
+    "year": 2010,
+    "longevityAvg": 8,
+    "projectionAvg": 8,
+    "nameKo": "어나더",
+    "nameAliases": [
+      "another"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🌙"
+  },
+  {
+    "id": "239",
+    "name": "Baie 19",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Aromatic green",
+    "topNotes": [
+      "Single note"
+    ],
+    "middleNotes": [
+      "Patchouli",
+      "Ozonic notes",
+      "Green Leaves",
+      "Juniper Berries",
+      "Ambroxan",
+      "Musk"
+    ],
+    "baseNotes": [
+      "Patchouli",
+      "Ozonic notes",
+      "Green Leaves",
+      "Juniper Berries",
+      "Ambroxan",
+      "Musk"
+    ],
+    "year": 2019,
+    "longevityAvg": 6,
+    "projectionAvg": 7,
+    "nameKo": "베이",
+    "nameAliases": [
+      "baie"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "✨"
+  },
+  {
+    "id": "240",
+    "name": "Bergamotte 22",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Woody Aromatic",
+    "topNotes": [
+      "Single note"
+    ],
+    "middleNotes": [
+      "Bergamot",
+      "Vetiver",
+      "Grapefruit",
+      "Orange Blossom",
+      "Petitgrain",
+      "Musk",
+      "Cedar",
+      "Vanilla",
+      "Amber"
+    ],
+    "baseNotes": [
+      "Bergamot",
+      "Vetiver",
+      "Grapefruit",
+      "Orange Blossom",
+      "Petitgrain",
+      "Musk",
+      "Cedar",
+      "Vanilla",
+      "Amber"
+    ],
+    "year": 2006,
+    "longevityAvg": 5,
+    "projectionAvg": 5,
+    "nameKo": "베르가못",
+    "nameAliases": [
+      "bergamotte"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🍀"
+  },
+  {
+    "id": "241",
+    "name": "Eucalyptus 20",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Woody Aromatic",
+    "topNotes": [
+      "Single note"
+    ],
+    "middleNotes": [
+      "Olibanum",
+      "Cedarwood",
+      "Eucalyptus",
+      "Gurjan balsam",
+      "Red Thyme",
+      "Hyssop",
+      "Labdanum",
+      "Musk"
+    ],
+    "baseNotes": [
+      "Olibanum",
+      "Cedarwood",
+      "Eucalyptus",
+      "Gurjan balsam",
+      "Red Thyme",
+      "Hyssop",
+      "Labdanum",
+      "Musk"
+    ],
+    "year": 2025,
+    "longevityAvg": 7,
+    "projectionAvg": 8,
+    "nameKo": "유칼립투스",
+    "nameAliases": [],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🌺"
+  },
+  {
+    "id": "242",
+    "name": "Fleur d'Oranger 27",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Floral",
+    "topNotes": [
+      "Single note"
+    ],
+    "middleNotes": [
+      "Orange Blossom",
+      "Petitgrain",
+      "Bergamot",
+      "Lemon"
+    ],
+    "baseNotes": [
+      "Orange Blossom",
+      "Petitgrain",
+      "Bergamot",
+      "Lemon"
+    ],
+    "year": 2006,
+    "longevityAvg": 6,
+    "projectionAvg": 8,
+    "nameKo": "플뢰르 도랑쥬,플레르 도란줴",
+    "nameAliases": [
+      "fleur d'oranger"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🏔️"
+  },
+  {
+    "id": "243",
+    "name": "Violette 30",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Oriental Floral",
+    "topNotes": [
+      "Violet",
+      "Aldehydes",
+      "White Tea",
+      "Rose"
+    ],
+    "middleNotes": [
+      "Incense",
+      "Cumin",
+      "Saffron"
+    ],
+    "baseNotes": [
+      "Cedar",
+      "Guaiac Wood",
+      "Amber",
+      "Patchouli"
+    ],
+    "year": 2026,
+    "longevityAvg": 6,
+    "projectionAvg": 6,
+    "nameKo": "비올렛",
+    "nameAliases": [
+      "Violette"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🌾"
+  },
+  {
+    "id": "244",
+    "name": "Jasmine 17",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Floral woody musk",
+    "topNotes": [
+      "Single note"
+    ],
+    "middleNotes": [
+      "Orange Blossom",
+      "Jasmine",
+      "Bitter Orange",
+      "Neroli",
+      "Vanilla",
+      "Musk",
+      "Palmarosa",
+      "Amber",
+      "Litsea Cubeba",
+      "Sandalwood"
+    ],
+    "baseNotes": [],
+    "year": 2006,
+    "longevityAvg": 6,
+    "projectionAvg": 8,
+    "nameKo": "자스민",
+    "nameAliases": [
+      "jasmine"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🍊"
+  },
+  {
+    "id": "245",
+    "name": "Labdanum 18",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Oriental",
+    "topNotes": [
+      "Single note"
+    ],
+    "middleNotes": [
+      "French labdanum",
+      "Vanilla",
+      "Civetta",
+      "Musk",
+      "Castoreum",
+      "Resins",
+      "Tonka Bean",
+      "Gurjan balsam",
+      "Birch",
+      "Patchouli",
+      "Cinnamon"
+    ],
+    "baseNotes": [],
+    "year": 2006,
+    "longevityAvg": 7,
+    "projectionAvg": 9,
+    "nameKo": "랍다넘",
+    "nameAliases": [
+      "labdanum"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🌴"
+  },
+  {
+    "id": "246",
+    "name": "Lavande 31",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Aromatic Fougere",
+    "topNotes": [
+      "Neroli",
+      "Bergamot"
+    ],
+    "middleNotes": [
+      "Lavender"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Tonka",
+      "Amber"
+    ],
+    "year": 2023,
+    "longevityAvg": 7,
+    "projectionAvg": 9,
+    "nameKo": "라방드",
+    "nameAliases": [
+      "lavande"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🌬️"
+  },
+  {
+    "id": "247",
+    "name": "Lys 41",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Floral",
+    "topNotes": [
+      "Single note"
+    ],
+    "middleNotes": [
+      "Tuberose",
+      "Lily",
+      "Jasmine",
+      "Vanilla",
+      "Musk",
+      "Woody"
+    ],
+    "baseNotes": [],
+    "year": 2013,
+    "longevityAvg": 7,
+    "projectionAvg": 9,
+    "nameKo": "리스",
+    "nameAliases": [
+      "lys"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "❄️"
+  },
+  {
+    "id": "248",
+    "name": "Neroli 36",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Oriental Floral",
+    "topNotes": [
+      "Orange Blossom",
+      "Aldehydes",
+      "Mandarin Orange"
+    ],
+    "middleNotes": [
+      "Jasmine",
+      "Rose"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Vanilla",
+      "Tonka Bean"
+    ],
+    "year": 2006,
+    "longevityAvg": 6,
+    "projectionAvg": 8,
+    "nameKo": "네롤리",
+    "nameAliases": [
+      "neroli"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🔥"
+  },
+  {
+    "id": "249",
+    "name": "Patchouli 24",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Woody Chypre",
+    "topNotes": [
+      "Patchouli"
+    ],
+    "middleNotes": [
+      "Birch",
+      "Styrax"
+    ],
+    "baseNotes": [
+      "Vanilla"
+    ],
+    "year": 2006,
+    "longevityAvg": 8,
+    "projectionAvg": 10,
+    "nameKo": "패출리",
+    "nameAliases": [
+      "patchouli"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🌷"
+  },
+  {
+    "id": "250",
+    "name": "Rose 31",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Floral woody",
+    "topNotes": [
+      "Rose",
+      "Cumin"
+    ],
+    "middleNotes": [
+      "Rose",
+      "Vetiver",
+      "Cedar"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Guaiac Wood",
+      "Agarwood (Oud)",
+      "Olibanum",
+      "Labdanum"
+    ],
+    "year": 2006,
+    "longevityAvg": 7,
+    "projectionAvg": 9,
+    "nameKo": "로즈",
+    "nameAliases": [
+      "rose"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🍃"
+  },
+  {
+    "id": "251",
+    "name": "The Matcha 26",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Woody fruity",
+    "topNotes": [
+      "Single note"
+    ],
+    "middleNotes": [
+      "Fig",
+      "Cedar",
+      "Matcha Tea",
+      "Bitter Orange and Vetiver"
+    ],
+    "baseNotes": [],
+    "year": 2021,
+    "longevityAvg": 6,
+    "projectionAvg": 7,
+    "nameKo": "떼마차",
+    "nameAliases": [
+      "thematcha"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🦋"
+  },
+  {
+    "id": "252",
+    "name": "The Noir 29",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Aromatic",
+    "topNotes": [
+      "Fig",
+      "Bay Leaf",
+      "Bergamot"
+    ],
+    "middleNotes": [
+      "Cedar",
+      "Vetiver",
+      "Musk"
+    ],
+    "baseNotes": [
+      "Tobacco",
+      "Hay"
+    ],
+    "year": 2015,
+    "longevityAvg": 7,
+    "projectionAvg": 9,
+    "nameKo": "떼누아",
+    "nameAliases": [
+      "thenoir"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🫧"
+  },
+  {
+    "id": "253",
+    "name": "Tonka 25",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Woody musk",
+    "topNotes": [
+      "Single note"
+    ],
+    "middleNotes": [
+      "Musk",
+      "Atlas Cedar",
+      "Tonka Bean",
+      "Orange Blossom",
+      "Styrax",
+      "Vanilla"
+    ],
+    "baseNotes": [],
+    "year": 2018,
+    "longevityAvg": 7,
+    "projectionAvg": 9,
+    "nameKo": "통카",
+    "nameAliases": [
+      "tonka"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🌫️"
+  },
+  {
+    "id": "254",
+    "name": "Vetiver 46",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Woody",
+    "topNotes": [
+      "Single note"
+    ],
+    "middleNotes": [
+      "Olibanum",
+      "Tahitian Vetiver",
+      "Pepper",
+      "Guaiac Wood",
+      "Labdanum",
+      "Cedar",
+      "Cloves",
+      "Bergamot",
+      "Amber",
+      "Vanilla"
+    ],
+    "baseNotes": [],
+    "year": 2006,
+    "longevityAvg": 7,
+    "projectionAvg": 9,
+    "nameKo": "베티버",
+    "nameAliases": [
+      "vetiver"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🍂"
+  },
+  {
+    "id": "255",
+    "name": "Ylang 49",
+    "house": "Le Labo",
+    "concentration": "EDP",
+    "gender": "Unisex",
+    "family": "Chypre Floral",
+    "topNotes": [
+      "Single note"
+    ],
+    "middleNotes": [
+      "Ylang-Ylang",
+      "Patchouli",
+      "Oakmoss",
+      "Tahitian Gardenia",
+      "Vetiver",
+      "Benzoin",
+      "Sandalwood"
+    ],
+    "baseNotes": [],
+    "year": 2015,
+    "longevityAvg": 8,
+    "projectionAvg": 10,
+    "nameKo": "일랑",
+    "nameAliases": [
+      "ylang"
+    ],
+    "houseKo": "르라보",
+    "houseAliases": [
+      "lelabo"
+    ],
+    "houseNumber": 17,
+    "icon": "🌻"
   }
 ];
